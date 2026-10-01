@@ -1,0 +1,15 @@
+# Secrets — chỉ nằm trong env của cloud environment / GitHub secret / .env.local (local)
+.env
+.env.*
+*.local
+
+# Instruction cho phiên dev local — routine trên cloud không được thấy
+CLAUDE.local.md
+.claude/settings.local.json
+
+# Nháp (crawl tạm, log)
+.cache/
+
+__pycache__/
+*.pyc
+.DS_Store

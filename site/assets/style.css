@@ -1,0 +1,383 @@
+/* Weekly Trending — theme. Bản build: site/assets/style.css (đừng sửa bản copy).
+   Màu đặt bằng biến ở :root; dark mode theo hệ thống (prefers-color-scheme) hoặc nút chuyển (html[data-theme]). */
+:root {
+  color-scheme: light;
+  --bg: #f6f6f8;
+  --surface: #ffffff;
+  --surface-2: #f1f2f5;
+  --text: #16181d;
+  --muted: #5d6470;
+  --border: #e3e5ea;
+  --accent: #5b3fd6;
+  --accent-soft: #efebff;
+  --on-accent: #ffffff;
+  --up: #157a3c;
+  --up-soft: #e6f5eb;
+  --star: #a35a00;
+  --shadow: 0 1px 2px rgba(17, 20, 28, 0.04), 0 8px 24px rgba(17, 20, 28, 0.06);
+  --radius: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0d0e11;
+    --surface: #17191e;
+    --surface-2: #20232a;
+    --text: #e8eaee;
+    --muted: #9aa2ae;
+    --border: #2a2e36;
+    --accent: #a594ff;
+    --accent-soft: #272143;
+    --on-accent: #0d0e11;
+    --up: #4fd47f;
+    --up-soft: #12301e;
+    --star: #f5b83d;
+    --shadow: none;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0d0e11;
+  --surface: #17191e;
+  --surface-2: #20232a;
+  --text: #e8eaee;
+  --muted: #9aa2ae;
+  --border: #2a2e36;
+  --accent: #a594ff;
+  --accent-soft: #272143;
+  --on-accent: #0d0e11;
+  --up: #4fd47f;
+  --up-soft: #12301e;
+  --star: #f5b83d;
+  --shadow: none;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); }
+code {
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: var(--surface-2);
+  font: 0.88em/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.i {
+  width: 1em;
+  height: 1em;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.wrap { max-width: 1160px; margin: 0 auto; padding: 32px 16px 64px; }
+.home .wrap { max-width: 860px; }
+
+/* ---------- Header ---------- */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.top-text { min-width: 0; }
+.brand, .title { margin: 0; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+.brand { display: flex; align-items: center; gap: 12px; font-size: 32px; }
+.brand span { color: var(--accent); }
+.logo { width: 34px; height: 34px; border-radius: 9px; }
+.title { font-size: 34px; }
+.tagline { margin: 8px 0 0; color: var(--muted); }
+.back { display: inline-block; margin-bottom: 10px; font-size: 14px; font-weight: 600; text-decoration: none; }
+.back:hover { text-decoration: underline; }
+
+.toolbar { display: flex; gap: 8px; flex: none; }
+.icon-btn {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.icon-btn:hover { color: var(--accent); border-color: var(--accent); }
+.icon-btn:focus-visible, .issue:focus-visible, .button:focus-visible, .repo-name a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.icon-sun { display: none; }
+:root[data-theme="dark"] .icon-sun { display: block; }
+:root[data-theme="dark"] .icon-moon { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .icon-sun { display: block; }
+  :root:not([data-theme="light"]) .icon-moon { display: none; }
+}
+
+/* ---------- Trang danh sách ---------- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-block: 1px solid var(--border);
+}
+.stat { padding: 12px 0 12px 20px; border-left: 1px solid var(--border); }
+.stat:first-child { padding-left: 0; border-left: 0; }
+.stat b { display: block; font-size: 22px; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.stat span { color: var(--muted); font-size: 13px; }
+
+.section-title {
+  margin: 36px 0 14px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.issue-list { display: grid; gap: 14px; }
+.issue {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  color: inherit;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: border-color 0.15s ease;
+}
+.issue:hover { border-color: var(--accent); }
+
+.issue-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: none;
+  width: 72px;
+  padding: 10px 0 9px;
+  border-radius: 14px;
+  background: var(--surface-2);
+  line-height: 1.1;
+}
+.issue-date b { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.issue-date span { margin-top: 5px; color: var(--muted); font-size: 12px; font-weight: 700; }
+.is-latest .issue-date { background: var(--accent); color: var(--on-accent); }
+.is-latest .issue-date span { color: inherit; opacity: 0.85; }
+
+.issue-body { display: flex; flex-direction: column; gap: 12px; flex: 1; min-width: 0; }
+.issue-head { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; }
+.issue-head h3 { margin: 0; font-size: 18px; line-height: 1.3; }
+.issue-summary { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; font-size: 15px; }
+.issue-foot { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 12px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; min-width: 0; }
+.chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  max-width: 100%;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+.chip b { color: var(--accent); }
+.issue .more { margin-left: auto; color: var(--muted); font-size: 14px; font-weight: 700; white-space: nowrap; }
+.issue:hover .more { color: var(--accent); }
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ---------- Trang tuần ---------- */
+.highlights {
+  margin-bottom: 24px;
+  padding: 18px 22px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.highlights h2 {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.highlights ul { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; }
+
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(470px, 100%), 1fr));
+  gap: 16px;
+}
+.repo {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+  padding: 20px 22px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow-wrap: anywhere;
+}
+.repo:target { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+
+.repo-head { display: flex; align-items: flex-start; gap: 14px; }
+.rank {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 11px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 16px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.is-top .rank { background: var(--accent); color: var(--on-accent); }
+.repo-title { min-width: 0; }
+.repo-name { margin: 0; font-size: 18px; line-height: 1.35; }
+.repo-name a { color: var(--text); text-decoration: none; }
+.repo-name a:hover .name { color: var(--accent); text-decoration: underline; }
+.repo-name .owner { color: var(--muted); font-weight: 500; }
+.repo-name .i { margin-left: 6px; color: var(--muted); font-size: 0.8em; vertical-align: -0.05em; }
+.repo-tagline { margin: 4px 0 0; color: var(--text); font-size: 15px; font-weight: 600; line-height: 1.45; }
+
+.repo-stats { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.repo-stats li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.repo-stats .stat-star .i { color: var(--star); }
+.repo-stats .stat-up { background: var(--up-soft); color: var(--up); }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: var(--lang, var(--muted)); }
+
+.repo-body { display: grid; gap: 12px; font-size: 15px; }
+.repo-body section { display: grid; gap: 4px; }
+.repo-body h3 {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.repo-body p { margin: 0; }
+.uses { display: grid; gap: 4px; margin: 0; padding-left: 20px; }
+.uses li::marker { color: var(--accent); }
+.notable { padding: 10px 14px; border-radius: 12px; background: var(--accent-soft); }
+.notable b {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--accent);
+  font-size: 12px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+/* ---------- Trạng thái rỗng, 404 ---------- */
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  padding: 44px 24px;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--muted);
+  text-align: center;
+}
+.empty p { max-width: 520px; margin: 0; }
+.empty .big { font-size: 40px; line-height: 1; }
+.gone { border-style: solid; box-shadow: var(--shadow); }
+.gone h2 { margin: 0; color: var(--text); font-size: 22px; line-height: 1.3; }
+.button {
+  margin-top: 6px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+.button:hover { opacity: 0.9; }
+
+/* ---------- Pager + footer ---------- */
+.pager { display: flex; justify-content: space-between; gap: 12px; margin-top: 28px; }
+.pager a { font-weight: 700; text-decoration: none; }
+.pager a:hover { text-decoration: underline; }
+.pager .next { margin-left: auto; text-align: right; }
+footer { margin-top: 48px; color: var(--muted); font-size: 13px; text-align: center; }
+footer a { color: inherit; }
+
+@media (max-width: 640px) {
+  .wrap { padding-top: 22px; }
+  .brand { gap: 10px; font-size: 25px; }
+  .logo { width: 28px; height: 28px; }
+  .title { font-size: 26px; }
+  .tagline { font-size: 15px; }
+  .icon-btn { width: 36px; height: 36px; border-radius: 10px; font-size: 16px; }
+  .stat { padding-left: 12px; }
+  .stat b { font-size: 19px; }
+  .stat span { font-size: 12px; }
+  .issue { gap: 14px; padding: 16px 14px; }
+  .issue-date { width: 54px; padding: 8px 0 7px; border-radius: 11px; }
+  .issue-date b { font-size: 23px; }
+  .issue-date span { font-size: 11px; }
+  .issue-head h3 { font-size: 16px; }
+  .issue .more { margin-left: 0; }
+  .highlights { padding: 14px 16px; }
+  .repo { padding: 16px; }
+  .repo-head { gap: 12px; }
+  .rank { width: 32px; height: 32px; border-radius: 10px; font-size: 15px; }
+  .repo-name { font-size: 17px; }
+}

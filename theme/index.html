@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly Trending · Top GitHub Trending mỗi tuần</title>
+<meta name="description" content="$description">
+<link rel="canonical" href="$url">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Weekly Trending">
+<meta property="og:title" content="Weekly Trending · Top GitHub Trending mỗi tuần">
+<meta property="og:description" content="$description">
+<meta property="og:url" content="$url">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="alternate" type="application/atom+xml" title="Weekly Trending" href="feed.xml">
+<script src="assets/theme.js"></script>
+</head>
+<body class="home">
+<div class="wrap">
+  <header class="top">
+    <div class="top-text">
+      <h1 class="brand"><img class="logo" src="assets/favicon.svg" alt="" width="34" height="34">Weekly <span>Trending</span></h1>
+      <p class="tagline">Top 10 repo nổi bật trên GitHub mỗi tuần: để làm gì, ai nên dùng, use case — tóm tắt bằng tiếng Việt.</p>
+    </div>
+    <div class="toolbar">
+      <a class="icon-btn" href="feed.xml" title="Theo dõi qua RSS/Atom" aria-label="RSS/Atom feed"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg></a>
+      <button class="icon-btn" id="theme-toggle" type="button" title="Đổi giao diện sáng/tối" aria-label="Đổi giao diện sáng/tối"><svg class="i icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="i icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button>
+    </div>
+  </header>
+
+  <div class="stats">$stats</div>
+
+  $issue_cards
+
+  <footer>Số liệu lấy từ <a href="https://github.com/trending?since=weekly" target="_blank" rel="noopener">GitHub Trending</a> lúc 19:00 tối Chủ nhật · giữ $retention_weeks tuần gần nhất · cập nhật $updated</footer>
+</div>
+</body>
+</html>

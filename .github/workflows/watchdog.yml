@@ -1,0 +1,42 @@
+name: Watchdog
+
+# Lưới an toàn cho trường hợp routine không chạy hoặc chết giữa chừng (không tự báo được):
+# 21:00 tối Chủ nhật giờ VN mà bản tin của Chủ nhật đó chưa có trên main hoặc chưa lên Pages → báo Google Chat.
+on:
+  schedule:
+    - cron: "0 14 * * 0"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Ngày bản tin cần kiểm tra (YYYY-MM-DD). Bỏ trống = Chủ nhật gần nhất theo giờ VN."
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Kiểm tra bản tin tuần này
+        env:
+          GCHAT_WEBHOOK_URL: ${{ secrets.GCHAT_WEBHOOK_URL }}
+          INPUT_DATE: ${{ inputs.date }}
+        run: |
+          # Chủ nhật gần nhất theo giờ VN (cron GitHub có thể trễ sang sáng thứ Hai).
+          TODAY=$(TZ=Asia/Ho_Chi_Minh date +%F)
+          DATE="${INPUT_DATE:-$(date -d "$TODAY -$(( $(TZ=Asia/Ho_Chi_Minh date +%u) % 7 )) days" +%F)}"
+          BASE=$(sed -n 's/^PAGES_BASE_URL="\(.*\)"$/\1/p' config/weekly.env)
+          URL="$BASE/$DATE/"
+          if [ ! -f "site/$DATE/index.html" ]; then
+            problem="chưa có site/$DATE/index.html trên main"
+          elif ! curl -fsS -o /dev/null --retry 3 --retry-all-errors --max-time 20 "$URL"; then
+            problem="main đã có bản tin nhưng $URL chưa trả 200"
+          else
+            echo "OK: $URL"
+            exit 0
+          fi
+          bash scripts/notify.sh failure "$DATE" watchdog \
+            "21:00 Chủ nhật: $problem. Routine có thể không chạy, hết quota, mất kết nối GitHub hoặc dừng giữa chừng — mở claude.ai/code/routines để xem run." || true
+          exit 1
