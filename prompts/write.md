@@ -39,7 +39,7 @@ Chạy `python3 scripts/trending.py validate <DATE> --cards-only`.
 Đọc 10 card (dùng Read) và `content/<DATE>/trending.json`, rồi ghi `content/<DATE>/highlights.txt`.
 
 **Định dạng:**
-- 1–3 dòng; mỗi dòng gồm 1 emoji, một dấu cách, rồi 1 câu tiếng Việt ngắn (≤ 110 ký tự).
+- 1–3 dòng; mỗi dòng gồm 1 emoji, một dấu cách, rồi 1 câu tiếng Việt ngắn (≤ 22 từ).
 - Plain text: không markdown, không link, không thêm emoji nào khác trong câu.
 
 **Nội dung:**

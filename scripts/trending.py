@@ -61,12 +61,13 @@ TAG = re.compile(r"<[^>]+>")
 # --- luật validate (giữ khớp với .claude/agents/repo-writer.md và prompts/write.md) ---
 CARD_KEYS = {"repo", "tagline", "summary", "use_cases", "audience", "notable", "refs"}
 CARD_REQUIRED = {"repo", "tagline", "summary", "use_cases", "audience"}
-TEXT_LIMITS = {"tagline": (15, 90), "summary": (60, 300), "audience": (20, 160), "notable": (0, 160)}
-USE_CASE_LIMITS = (10, 110)
+# Độ dài tính bằng SỐ TỪ (tách theo khoảng trắng), khớp với cách prompt mô tả — LLM không đếm được ký tự.
+TEXT_LIMITS = {"tagline": (4, 18), "summary": (15, 60), "audience": (5, 32), "notable": (0, 32)}
+USE_CASE_LIMITS = (3, 22)
 USE_CASE_COUNT = (2, 3)
 MAX_REFS = 3
 HIGHLIGHT_LINES = (1, 3)
-HIGHLIGHT_MAX_CHARS = 110
+HIGHLIGHT_MAX_WORDS = 22
 MIN_VI_LETTERS = 15
 VI_LETTERS = set("ăâđêôơưáàảãạắằẳẵặấầẩẫậéèẻẽẹếềểễệíìỉĩịóòỏõọốồổỗộớờởỡợúùủũụứừửữựýỳỷỹỵ")
 LINK_LIKE = re.compile(r"https?://|www\.|\]\(", re.I)
@@ -364,8 +365,9 @@ def check_card(folder: Path, item: dict) -> tuple[list[str], list[str]]:
         value = value.strip()
         if key == "notable" and not value:
             continue
-        if not low <= len(value) <= high:
-            errors.append(f"{key} dài {len(value)} ký tự, cần {low}–{high}")
+        words = len(value.split())
+        if not low <= words <= high:
+            errors.append(f"{key} dài {words} từ, cần {low}–{high} từ")
         if "\n" in value:
             errors.append(f"{key} phải nằm trên một dòng")
         texts[key] = value
@@ -377,8 +379,9 @@ def check_card(folder: Path, item: dict) -> tuple[list[str], list[str]]:
             errors.append(f"use_cases cần {USE_CASE_COUNT[0]}–{USE_CASE_COUNT[1]} mục, đang có {len(uses)}")
         for number, use in enumerate(uses, 1):
             use = use.strip()
-            if not USE_CASE_LIMITS[0] <= len(use) <= USE_CASE_LIMITS[1]:
-                errors.append(f"use_cases[{number}] dài {len(use)} ký tự, cần {USE_CASE_LIMITS[0]}–{USE_CASE_LIMITS[1]}")
+            words = len(use.split())
+            if not USE_CASE_LIMITS[0] <= words <= USE_CASE_LIMITS[1]:
+                errors.append(f"use_cases[{number}] dài {words} từ, cần {USE_CASE_LIMITS[0]}–{USE_CASE_LIMITS[1]} từ")
             texts[f"use_cases[{number}]"] = use
     refs = card.get("refs", [])
     if not isinstance(refs, list) or not all(isinstance(ref, str) for ref in refs):
@@ -428,8 +431,8 @@ def check_highlights(folder: Path, data: dict) -> list[str]:
             errors.append(f"highlights: mỗi dòng chỉ 1 emoji, ở đầu dòng: {shown}")
         if LINK_LIKE.search(line) or HTML_TAG.search(line) or MARKDOWN.search(line) or "`" in line or "*" in line:
             errors.append(f"highlights: chỉ dùng plain text (không link, không markdown): {shown}")
-        if len(line) > HIGHLIGHT_MAX_CHARS:
-            errors.append(f"highlights: dòng dài {len(line)} > {HIGHLIGHT_MAX_CHARS} ký tự: {shown}")
+        if len(rest.split()) > HIGHLIGHT_MAX_WORDS:
+            errors.append(f"highlights: câu dài {len(rest.split())} > {HIGHLIGHT_MAX_WORDS} từ: {shown}")
         unknown = unknown_numbers(rest, week, known)
         if unknown:
             errors.append(f"highlights: số {', '.join(unknown)} không có trong dữ liệu của tuần: {shown}")

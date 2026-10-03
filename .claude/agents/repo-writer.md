@@ -29,11 +29,11 @@ Card trả lời 3 câu hỏi: **repo này để làm gì, dùng vào việc gì
 | Trường | Yêu cầu |
 |---|---|
 | `repo` | Đúng `owner/repo` được giao |
-| `tagline` | 15–90 ký tự. Một câu **tự viết** nêu giá trị cốt lõi, không dịch nguyên mô tả GitHub, không lặp tên repo, không chấm cuối câu |
-| `summary` | 60–300 ký tự, 2–3 câu ngắn. Repo là gì, giải quyết vấn đề gì, điểm khác biệt hoặc điều làm nó đáng chú ý. Viết bằng lời của bạn và thêm ngữ cảnh |
-| `use_cases` | 2–3 mục, mỗi mục 10–110 ký tự (một dòng). Tình huống dùng cụ thể, mở đầu bằng động từ ("Dựng…", "Tự động…", "Chuyển…") |
-| `audience` | 20–160 ký tự. Ai nên dùng hoặc quan tâm (vai trò, bối cảnh). Có thể nói thêm ai chưa cần |
-| `notable` | Tuỳ chọn, ≤ 160 ký tự, `""` nếu không có. Một điểm đáng chú ý **có trong nguồn**: chạy local, license, tích hợp MCP, bản phát hành mới… Không đoán vì sao repo trending |
+| `tagline` | 1 dòng, 4–18 từ. Một câu **tự viết** nêu giá trị cốt lõi, không dịch nguyên mô tả GitHub, không lặp tên repo, không chấm cuối câu |
+| `summary` | 2–3 câu ngắn, tổng 15–60 từ. Repo là gì, giải quyết vấn đề gì, điểm khác biệt hoặc điều làm nó đáng chú ý. Viết bằng lời của bạn và thêm ngữ cảnh |
+| `use_cases` | 2–3 mục, mỗi mục 1 dòng, 3–22 từ. Tình huống dùng cụ thể, mở đầu bằng động từ ("Dựng…", "Tự động…", "Chuyển…") |
+| `audience` | 1–2 câu, 5–32 từ. Ai nên dùng hoặc quan tâm (vai trò, bối cảnh). Có thể nói thêm ai chưa cần |
+| `notable` | Tuỳ chọn, 1–2 câu, ≤ 32 từ, `""` nếu không có. Một điểm đáng chú ý **có trong nguồn**: chạy local, license, tích hợp MCP, bản phát hành mới… Không đoán vì sao repo trending |
 | `refs` | Các URL đã WebFetch (0–3), `[]` nếu không dùng |
 
 - **Giọng văn:** thân thiện, chuyên nghiệp, ngắn gọn, dễ scan. Không quảng cáo, không dùng từ phóng đại ("tuyệt vời", "cách mạng", "siêu").
