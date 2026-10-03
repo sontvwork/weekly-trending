@@ -510,6 +510,7 @@ def check_highlights(folder: Path, data: dict) -> list[str]:
         for item in data["repos"] if (folder / item["source"]).is_file()
     )
     known = number_keys(week)
+    names = {item["repo"].split("/")[-1].lower() for item in data["repos"]}
     for line in lines:
         head, _, rest = line.partition(" ")
         shown = repr(line[:60])
@@ -517,6 +518,11 @@ def check_highlights(folder: Path, data: dict) -> list[str]:
             errors.append(f"highlights: mỗi dòng mở đầu bằng đúng 1 emoji + dấu cách: {shown}")
         elif any(unicodedata.category(ch) == "So" for ch in rest):
             errors.append(f"highlights: mỗi dòng chỉ 1 emoji, ở đầu dòng: {shown}")
+        name, sep, body = rest.partition(": ")
+        if not sep or name.strip().lower() not in names or not body.strip():
+            errors.append(f"highlights: mỗi dòng có dạng '<emoji> <tên repo>: <câu>' (tên ngắn, sau dấu /): {shown}")
+        if STAT_NUMBER.search(rest):
+            errors.append(f"highlights: không nêu số sao/fork: {shown}")
         if LINK_LIKE.search(line) or HTML_TAG.search(line) or MARKDOWN.search(line) or "`" in line or "*" in line:
             errors.append(f"highlights: chỉ dùng plain text (không link, không markdown): {shown}")
         if len(rest.split()) > HIGHLIGHT_MAX_WORDS:
@@ -648,13 +654,14 @@ def page_url(day: str) -> str:
 
 
 def cmd_message(day: str) -> None:
-    """Tin Google Chat khi publish thành công: tiêu đề tuần + highlights (y hệt card trang chủ) + link."""
+    """Tin Google Chat khi publish thành công: tiêu đề (đậm) + dòng tuần (nghiêng) + highlights (y hệt card trang chủ) + link."""
     url = page_url(day)
     try:
         issue = render.load_issue(CONTENT / day)
     except render.IssueError as err:
         fail(str(err))
-    print(f"*{render.issue_title(issue)}*")
+    print(f"*Top {len(issue.repos)} GitHub Trending*")
+    print(f"_Week of: {issue.start:%d/%m/%Y} – {issue.day:%d/%m/%Y}_")
     for line in issue.highlights:
         print(line)
     print(f"🔗 {url}")

@@ -39,21 +39,25 @@ Chạy `python3 scripts/trending.py validate <DATE> --cards-only`.
 Đọc 10 card (dùng Read) và `content/<DATE>/trending.json`, rồi ghi `content/<DATE>/highlights.txt`.
 
 **Định dạng:**
-- 1–3 dòng; mỗi dòng gồm 1 emoji, một dấu cách, rồi 1 câu tiếng Việt ngắn (≤ 22 từ).
+- 1–3 dòng, dạng `<emoji> <tên repo>: <câu>`:
+  - 1 emoji hợp với repo, một dấu cách;
+  - tên ngắn của repo (phần sau dấu `/`, viết đúng như trên GitHub), dấu `:` rồi một dấu cách;
+  - 1 câu tiếng Việt ngắn (≤ 22 từ, nên khoảng 12–16 từ).
 - Plain text: không markdown, không link, không thêm emoji nào khác trong câu.
 
-**Nội dung:**
-- Mỗi dòng nói về một điểm nổi bật của tuần, xếp theo mức đáng chú ý. Ví dụ: repo dẫn đầu, repo có số sao tăng mạnh nhất, xu hướng chung (nhiều repo cùng về AI agent chẳng hạn), hoặc một repo bất ngờ đáng thử.
-- Gọi repo bằng tên ngắn (phần sau dấu `/`).
-- Được nêu số sao tăng trong tuần, miễn là chép đúng từ `trending.json` và viết theo dạng `13.855`. Không nêu số nào khác ngoài dữ liệu.
+**Nội dung và giọng văn:**
+- Mỗi dòng là một repo khác nhau, chọn những repo đáng chú ý nhất tuần (thường là các repo đầu bảng hoặc tăng sao mạnh), xếp theo mức đáng chú ý.
+- Câu nói thẳng repo **làm được gì / giúp được gì**, như đang giới thiệu nhanh cho một developer: cụ thể, giàu thông tin, gọn. Nên dùng cụm ngắn ngăn bởi dấu phẩy, kể ra tính năng chính hoặc điểm khác biệt (vd chạy offline, thay thế được công cụ trả phí nào, đứng đầu benchmark nào).
+- KHÔNG nêu số sao, sao tăng, fork, hạng; không viết kiểu "dẫn đầu tuần", "tăng mạnh nhất", "hút sự chú ý". Số liệu đã có trên trang.
+- Con số khác (vd số ngôn ngữ hỗ trợ) chỉ được dùng nếu có nguyên văn trong `sources/` của tuần.
 
 Các dòng này được dùng chung cho card trên trang danh sách, đầu trang tuần và tin nhắn Google Chat.
 
 Ví dụ (tên repo minh hoạ):
 ```
-🤖 acme-agent dẫn đầu tuần: quản lý cả đội AI agent như vận hành một công ty
-🧠 Bộ nhớ dài hạn cho agent tiếp tục hút sự chú ý với recallkit
-🎙️ voicebox mang nhân bản giọng nói chạy hoàn toàn trên máy cá nhân
+🤖 acme-agent: quản lý cả đội AI agent theo mục tiêu và ngân sách, như điều hành một công ty
+🎙️ voicebox: clone giọng, lồng tiếng, 600 ngôn ngữ, chạy offline, thay ElevenLabs
+🧠 recallkit: agent không chỉ nhớ mà còn học, đứng đầu benchmark trí nhớ dài hạn LongMemEval
 ```
 
 ## 5. Kiểm tra cuối

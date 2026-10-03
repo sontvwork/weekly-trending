@@ -222,13 +222,17 @@ class ValidateTest(unittest.TestCase):
 
     def test_highlights_rules(self) -> None:
         highlights = self.box.root / "content" / NEW / "highlights.txt"
-        highlights.write_text("Không có emoji ở đầu dòng\n🔥 Có **markdown** ở đây\n🚀 Tăng 99.999 sao trong tuần\n",
+        highlights.write_text("Không có emoji ở đầu dòng\n🔥 tool-1: có **markdown** ở đây\n🚀 tool-2: hỗ trợ 99.999 định dạng\n",
                               encoding="utf-8")
         self.assertInvalid("mở đầu bằng đúng 1 emoji", "chỉ dùng plain text", "số 99.999 không có")
 
-    def test_highlights_may_cite_week_numbers(self) -> None:
-        (self.box.root / "content" / NEW / "highlights.txt").write_text(
-            "🚀 tool-10 dẫn đầu với 1.000 sao mới trong tuần\n", encoding="utf-8")
+    def test_highlights_repo_prefix_and_no_stars(self) -> None:
+        highlights = self.box.root / "content" / NEW / "highlights.txt"
+        highlights.write_text("🚀 tool-10 dẫn đầu tuần với bộ lệnh gọn\n🧰 tool-99: không có trong tuần\n", encoding="utf-8")
+        self.assertInvalid("'<emoji> <tên repo>: <câu>'")
+        highlights.write_text("🚀 tool-10: thêm 1.000 sao mới trong tuần\n", encoding="utf-8")
+        self.assertInvalid("không nêu số sao/fork")
+        highlights.write_text("🚀 tool-10: chạy được trên Python 3.12\n", encoding="utf-8")
         self.assertEqual(self.box.run("validate", NEW).returncode, 0)
 
     def test_unexpected_file(self) -> None:
@@ -338,8 +342,9 @@ class BuildTest(unittest.TestCase):
     def test_message_and_link(self) -> None:
         self.assertEqual(self.box.run("build", NEW).returncode, 0)
         lines = self.box.run("message", NEW).stdout.splitlines()
-        self.assertEqual(lines[0], "*Top 10 GitHub Trending · 21/09 – 27/09/2026*")
-        self.assertEqual(lines[1], fakeissue.HIGHLIGHTS.splitlines()[0])
+        self.assertEqual(lines[0], "*Top 10 GitHub Trending*")
+        self.assertEqual(lines[1], "_Week of: 21/09/2026 – 27/09/2026_")
+        self.assertEqual(lines[2], fakeissue.HIGHLIGHTS.splitlines()[0])
         self.assertEqual(lines[-1], f"🔗 https://sontvwork.github.io/weekly-trending/{NEW}/")
 
 

@@ -19,7 +19,7 @@ CARD = {
     "notable": "Không cần cấu hình phức tạp, cài xong là dùng được.",
     "refs": [],
 }
-HIGHLIGHTS = "🤖 Công cụ tự động hoá cho developer chiếm ưu thế trong tuần\n🧰 tool-1 dẫn đầu nhờ bộ lệnh gọn nhẹ\n"
+HIGHLIGHTS = "🤖 tool-1: gom việc vặt của developer thành vài lệnh ngắn\n🧰 tool-2: bộ lệnh gọn nhẹ, cài xong là dùng\n"
 
 
 def make_issue(root: Path, day: str, count: int = 10) -> Path:
