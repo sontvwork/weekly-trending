@@ -1,3 +1,0 @@
-🤖 paperclip: quản lý cả đội AI agent theo mục tiêu và ngân sách, như điều hành một công ty
-🎙️ VoiceStudio: clone giọng, lồng tiếng, 646 ngôn ngữ, chạy offline, thay ElevenLabs
-🧠 hindsight: agent không chỉ nhớ mà còn học, đứng đầu benchmark trí nhớ dài hạn LongMemEval
