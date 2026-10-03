@@ -2,7 +2,7 @@
 
 Quy trình này dùng chung cho routine (`ROUTINE_PROMPT.md`, Bước 2) và cho lần chạy lại ở local (`bash scripts/dev.sh <DATE> write`).
 
-- **Đầu vào:** `content/<DATE>/trending.json` và `content/<DATE>/sources/`, do `trending.py crawl` tạo. KHÔNG crawl lại, KHÔNG sửa hai thứ này.
+- **Đầu vào:** `content/<DATE>/trending.json` và `content/<DATE>/sources/`, do `trending.py crawl` hoặc `trending.py import` tạo. KHÔNG crawl lại, KHÔNG sửa hai thứ này.
 - **Đầu ra:**
   - `content/<DATE>/cards/NN-owner__repo.json`: mỗi repo một file, do sub-agent `repo-writer` viết;
   - `content/<DATE>/highlights.txt`: bạn viết.

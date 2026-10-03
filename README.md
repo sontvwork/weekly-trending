@@ -6,8 +6,11 @@ Bản tin tiếng Việt hằng tuần về **top 10 repo trên [GitHub Trending
 - 📡 Feed: https://sontvwork.github.io/weekly-trending/feed.xml
 
 ```
-Claude Code Routine (19:00 tối Chủ nhật giờ VN = cron 0 12 * * 0 UTC, cloud, mạng Trusted)
+GitHub Actions Crawl (17:00 tối Chủ nhật giờ VN = cron 0 10 * * 0 UTC)
   → scripts/trending.py crawl: trang trending (HTML) + README (raw.githubusercontent.com) → content/DATE/
+  → đẩy content/DATE/ lên branch dữ liệu `trending-data` (bot, không đụng main)
+Claude Code Routine (19:00 tối Chủ nhật giờ VN = cron 0 12 * * 0 UTC, cloud, mạng Trusted)
+  → scripts/trending.py import: lấy content/DATE/ từ branch `trending-data` (proxy cloud chặn trang trending)
   → prompts/write.md: 10 sub-agent `repo-writer` viết card song song → highlights.txt → validate
   → scripts/publish.sh: xoá tuần quá 20 tuần → build site/ → guard → commit "weekly: DATE" → push main
       → GitHub Actions deploy site/ lên Pages → kiểm tra Pages khớp bản build → Google Chat
@@ -19,8 +22,8 @@ GitHub Actions watchdog 21:00 tối Chủ nhật giờ VN: chưa có bản tin t
 
 | Đường dẫn | Vai trò |
 |---|---|
-| `config/weekly.env` | Cấu hình không bí mật: URL Pages, `TOP_N`, `RETENTION_WEEKS`, `README_MAX_CHARS` |
-| `scripts/trending.py` | `crawl`, `tasks`, `validate`, `prune`, `build`, `link`, `message`, `verify-live` |
+| `config/weekly.env` | Cấu hình không bí mật: URL Pages, `TOP_N`, `RETENTION_WEEKS`, `README_MAX_CHARS`, `DATA_BRANCH` |
+| `scripts/trending.py` | `crawl`, `import`, `tasks`, `validate`, `prune`, `build`, `link`, `message`, `verify-live` |
 | `scripts/render.py` + `theme/` | Renderer và template: trang danh sách, trang tuần, `feed.xml`, `404.html`, light/dark |
 | `scripts/publish.sh` | Cách duy nhất để commit/push; lỗi ở bước nào cũng gửi Google Chat |
 | `scripts/guard.sh` | Hàng rào: chỉ cho thay đổi `content/DATE/` + `site/`, không xoá (trừ tuần quá hạn), không lộ secret |
@@ -32,6 +35,7 @@ GitHub Actions watchdog 21:00 tối Chủ nhật giờ VN: chưa có bản tin t
 | `content/YYYY-MM-DD/` | Dữ liệu tuần: `trending.json`, `sources/` (README đã crawl), `cards/`, `highlights.txt` |
 | `site/` | Output build, deploy lên Pages. **Không sửa tay** |
 | `ROUTINE_PROMPT.md` | Prompt để dán vào routine |
+| `.github/workflows/crawl.yml` | Crawl trên GitHub Actions → branch `trending-data`; lỗi thì báo Google Chat |
 | `tests/` | `python3 -m unittest discover -s tests`, `bash tests/test_guard.sh` |
 
 ## Setup từ đầu
@@ -46,7 +50,7 @@ GitHub Actions watchdog 21:00 tối Chủ nhật giờ VN: chưa có bản tin t
 2. Vào **Settings → Pages → Build and deployment → Source: GitHub Actions**. Sau đó vào **Actions → Deploy Pages → Run workflow** để deploy lần đầu. Lần push đầu tiên chạy trước khi Pages được bật nên sẽ fail; điều này bình thường.
 3. **Không** bật branch protection hay ruleset cho `main`. Nếu bật, routine sẽ bị từ chối push.
 4. Mọi commit trên `main` phải do chính bạn (`sontvwork`) author. Repo local đã đặt `user.email` là email noreply của `sontvwork`. Không merge PR của người khác vào `main`.
-5. Vào **Settings → Secrets and variables → Actions → New repository secret**, thêm `GCHAT_WEBHOOK_URL` = URL webhook. Workflow watchdog dùng secret này.
+5. Vào **Settings → Secrets and variables → Actions → New repository secret**, thêm `GCHAT_WEBHOOK_URL` = URL webhook. Workflow watchdog và crawl dùng secret này.
 
 ### 3. Quyền GitHub cho routine
 Cài [Claude GitHub App](https://github.com/apps/claude) cho repo, hoặc chạy `/web-setup` trong Claude Code CLI.
@@ -77,9 +81,10 @@ Cloud environment `weekly-trending`:
 Lịch đặt đúng giờ chẵn có thể chạy trễ vài phút. Ngày của bản tin luôn tính theo `Asia/Ho_Chi_Minh` nên không bị ảnh hưởng.
 
 ### 5. Chạy thử
-1. Trên trang routine, bấm **Run now** và nhập text `dry-run`. Routine sẽ chạy đủ crawl → viết → build → guard nhưng **không push**, và tin Google Chat chỉ được in ra. Mở session của run để đọc transcript. Lần chạy này đồng thời xác nhận cloud truy cập được trang trending.
-2. Bấm **Run now** không kèm text để publish thật. Bản tin sẽ mang ngày chạy, nhãn tuần là 7 ngày tính tới ngày đó, và tồn tại 20 tuần. Muốn bản tin đầu tiên rơi vào Chủ nhật thì cứ chờ lịch.
-3. Vào **Actions → Watchdog → Run workflow** để thử đường báo lỗi: nếu tuần đó chưa có bản tin, Google Chat sẽ nhận tin `watchdog`.
+1. Vào **Actions → Crawl → Run workflow**. Workflow sẽ tạo (hoặc cập nhật) branch `trending-data` chứa `content/<hôm nay>/`. Workflow cần quyền ghi (`permissions: contents: write` đã khai báo trong file); nếu push bị từ chối, vào **Settings → Actions → General → Workflow permissions** chọn **Read and write permissions**.
+2. Trên trang routine, bấm **Run now** và nhập text `dry-run`. Routine sẽ chạy đủ import → viết → build → guard nhưng **không push**, và tin Google Chat chỉ được in ra. Mở session của run để đọc transcript. `import` chỉ nhận dữ liệu của **hôm nay** (giờ VN), nên bước 1 phải chạy cùng ngày.
+3. Bấm **Run now** không kèm text để publish thật. Bản tin sẽ mang ngày chạy, nhãn tuần là 7 ngày tính tới ngày đó, và tồn tại 20 tuần. Muốn bản tin đầu tiên rơi vào Chủ nhật thì cứ chờ lịch.
+4. Vào **Actions → Watchdog → Run workflow** để thử đường báo lỗi: nếu tuần đó chưa có bản tin, Google Chat sẽ nhận tin `watchdog`.
 
 Lưu ý: chấm xanh trong danh sách run chỉ có nghĩa là session không gặp lỗi hạ tầng. Kết quả thật nằm trong transcript và tin Google Chat.
 
@@ -106,8 +111,9 @@ git checkout -- content/ site/ && git clean -fd content/ site/   # bỏ kết qu
 
 ## Rủi ro đã biết
 - **Trang trending không có API chính thức.** Nếu GitHub đổi HTML, crawl sẽ fail và báo Google Chat. Sửa regex ở đầu `scripts/trending.py` và fixture `tests/fixtures/trending-weekly.html`.
-- **Chưa kiểm chứng proxy cloud với trang trending.** Tài liệu chỉ nói proxy giới hạn REST API; `github.com` nằm trong danh sách Trusted. Lần **Run now** `dry-run` đầu tiên sẽ xác nhận.
+- **Proxy cloud chặn trang trending** (`HTTP 403` ở lần dry-run đầu). Vì vậy crawl chạy trên GitHub Actions lúc 17:00; routine `import` từ branch `trending-data`, và chỉ thử crawl trực tiếp khi import lỗi. Workflow Crawl lỗi → Google Chat báo bước `crawl-actions`; sửa xong bấm **Run workflow** lại trước 19:00 là kịp. Sau 19:00 thì chạy workflow rồi **Run now** routine.
+- **Không được để bot commit vào `main`.** Routine chỉ push được khi mọi commit trên `main` do `sontvwork` author, nên workflow Crawl chỉ ghi vào `trending-data`. Commit của routine chứa bản sao dữ liệu, do `sontvwork` author.
 - **WebFetch có thể sai.** Sub-agent được WebFetch thêm docs trên GitHub khi README sơ sài; nội dung trang được một model nhỏ tóm tắt nên có thể sai. Số liệu thống kê luôn do script chèn. Số trong phần chữ thì bị kiểm tra: không có trong dữ liệu đã crawl là lỗi (hoặc cảnh báo nếu card có `refs`).
 - **README bên thứ ba nằm trong repo public.** `content/*/sources/` lưu đoạn trích README (≤ 30.000 ký tự/repo) để chạy lại bước viết; phần này không deploy lên Pages.
 - **Routines đang ở research preview.** UI, giới hạn và quy tắc push có thể thay đổi. Routine tính vào hạn mức sử dụng của tài khoản.
-- **Cron của GitHub Actions (watchdog) có thể trễ** vài phút đến vài chục phút.
+- **Cron của GitHub Actions (crawl, watchdog) có thể trễ** vài phút đến vài chục phút; crawl chừa 2 tiếng trước routine.

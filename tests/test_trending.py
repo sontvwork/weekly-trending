@@ -84,6 +84,68 @@ class ParseTrendingTest(unittest.TestCase):
         self.assertTrue(text.startswith("ab\n\nc"))
 
 
+class ImportTest(unittest.TestCase):
+    """`import` lấy content/DATE/ từ branch dữ liệu của một origin cục bộ (repo bare trong thư mục tạm)."""
+
+    def setUp(self) -> None:
+        self.box = Sandbox()
+        self.origin = self.box.root / "origin.git"
+        self.git("init", "-q")
+        self.git("init", "-q", "--bare", str(self.origin))
+        self.git("remote", "add", "origin", str(self.origin))
+
+    def tearDown(self) -> None:
+        self.box.cleanup()
+
+    def git(self, *args: str, cwd: Path | None = None) -> str:
+        env = dict(os.environ, GIT_AUTHOR_NAME="t", GIT_AUTHOR_EMAIL="t@t", GIT_COMMITTER_NAME="t",
+                   GIT_COMMITTER_EMAIL="t@t")
+        return subprocess.run(["git", *args], cwd=cwd or self.box.root, env=env, check=True,
+                              capture_output=True, text=True).stdout
+
+    def push_data(self, day: str, extra: str = "") -> None:
+        """Đẩy content/<day>/{trending.json, sources/} (như workflow Crawl) lên branch trending-data của origin."""
+        work = self.box.root / "work"
+        fakeissue.make_issue(work, day)
+        shutil.rmtree(work / "content" / day / "cards")
+        (work / "content" / day / "highlights.txt").unlink()
+        if extra:
+            (work / "content" / day / extra).write_text("x", encoding="utf-8")
+        self.git("init", "-q", cwd=work)
+        self.git("add", "content", cwd=work)
+        self.git("commit", "-qm", f"crawl: {day}", cwd=work)
+        self.git("push", "-q", str(self.origin), "HEAD:refs/heads/trending-data", cwd=work)
+
+    def test_imports_issue(self) -> None:
+        self.push_data(NEW)
+        result = self.box.run("import", NEW, "--force")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        folder = self.box.root / "content" / NEW
+        self.assertEqual(len(list((folder / "sources").glob("*.md"))), 10)
+        self.assertTrue((folder / "cards").is_dir())
+        self.assertEqual(self.box.run("tasks", NEW).returncode, 0)
+
+    def test_requires_today_without_force(self) -> None:
+        self.push_data(NEW)
+        result = self.box.run("import", NEW)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("chỉ ghi được cho hôm nay", result.stderr)
+
+    def test_missing_branch_or_date(self) -> None:
+        result = self.box.run("import", NEW, "--force")
+        self.assertIn("không lấy được branch trending-data", result.stderr)
+        self.push_data(OLD)
+        result = self.box.run("import", NEW, "--force")
+        self.assertIn(f"chưa có content/{NEW}/", result.stderr)
+        self.assertFalse((self.box.root / "content" / NEW).exists())
+
+    def test_rejects_unexpected_file(self) -> None:
+        self.push_data(NEW, extra="notes.txt")
+        result = self.box.run("import", NEW, "--force")
+        self.assertIn("file lạ", result.stderr)
+        self.assertFalse((self.box.root / "content" / NEW).exists())
+
+
 class ValidateTest(unittest.TestCase):
     def setUp(self) -> None:
         self.box = Sandbox()

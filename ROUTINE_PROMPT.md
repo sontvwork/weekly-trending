@@ -17,11 +17,11 @@ Bạn là routine "Weekly Trending", chạy tự động mỗi tối Chủ nhậ
 1. Chạy `TZ=Asia/Ho_Chi_Minh date +%F` và gọi kết quả là DATE (ví dụ `2026-10-04`). Shell không giữ biến giữa các lệnh, nên ở mọi lệnh sau hãy ghi DATE dưới dạng giá trị cụ thể.
 2. Chạy `git checkout main && git pull --ff-only origin main`. Sandbox có thể dùng lại một bản clone cũ, nên bước này là bắt buộc.
 
-## Bước 1 — Crawl (tên bước khi lỗi: `crawl`)
-Chạy `python3 scripts/trending.py crawl <DATE>` (Bash timeout 300000).
-- Script lấy top 10 repo từ https://github.com/trending?since=weekly và README của từng repo qua raw.githubusercontent.com.
-- Kết quả ghi vào `content/<DATE>/trending.json` và `content/<DATE>/sources/`.
-- Nếu exit ≠ 0: báo lỗi bước `crawl`, kèm dòng lỗi cuối cùng, rồi dừng.
+## Bước 1 — Lấy dữ liệu (tên bước khi lỗi: `crawl`)
+Sandbox này không tải được trang trending (proxy chặn), nên workflow GitHub Actions `Crawl` đã crawl lúc 17:00 và đẩy kết quả lên branch dữ liệu `trending-data`.
+1. Chạy `python3 scripts/trending.py import <DATE>` (Bash timeout 300000). Lệnh chỉ `git fetch` branch đó rồi đọc file; KHÔNG checkout hay tạo branch. Kết quả ghi vào `content/<DATE>/trending.json` và `content/<DATE>/sources/`.
+2. Chỉ khi lệnh trên exit ≠ 0: thử crawl trực tiếp `python3 scripts/trending.py crawl <DATE>` (Bash timeout 300000).
+3. Nếu cả hai đều exit ≠ 0: báo lỗi bước `crawl`, kèm dòng lỗi cuối của CẢ HAI lệnh, rồi dừng. KHÔNG tự chạy workflow hay tìm nguồn khác.
 
 ## Bước 2 — Viết (tên bước khi lỗi: `write`)
 Đọc `prompts/write.md` và làm đúng theo đó với DATE. File đó hướng dẫn:

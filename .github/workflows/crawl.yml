@@ -1,0 +1,57 @@
+name: Crawl
+
+# Proxy GitHub của sandbox cloud chặn https://github.com/trending (HTTP 403), nên routine không tự crawl được.
+# Workflow này crawl trước giờ routine rồi đẩy content/<DATE>/{trending.json, sources/} lên branch dữ liệu
+# DATA_BRANCH (config/weekly.env). Routine 19:00 chạy `trending.py import <DATE>` để lấy về.
+# Bot KHÔNG commit vào main: mọi commit trên main phải do sontvwork author (routine bị từ chối push nếu khác).
+on:
+  schedule:
+    - cron: "0 10 * * 0" # 17:00 Chủ nhật giờ VN — cron Actions có thể trễ vài chục phút, chừa 2 tiếng trước routine
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: crawl
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Crawl trang trending + README
+        run: |
+          DATE=$(TZ=Asia/Ho_Chi_Minh date +%F)
+          echo "DATE=$DATE" >> "$GITHUB_ENV"
+          python3 scripts/trending.py crawl "$DATE"
+      - name: Đẩy lên branch dữ liệu
+        env:
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898099+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898099+github-actions[bot]@users.noreply.github.com
+        run: |
+          BRANCH=$(sed -n 's/^DATA_BRANCH="\(.*\)"$/\1/p' config/weekly.env)
+          [ -n "$BRANCH" ] || { echo "config/weekly.env thiếu DATA_BRANCH" >&2; exit 1; }
+          git fetch --quiet origin "+refs/heads/$BRANCH:refs/remotes/origin/$BRANCH" || true
+          # Index riêng, rỗng → tree của commit chỉ chứa content/<DATE>/ (tuần cũ vẫn còn trong lịch sử branch).
+          export GIT_INDEX_FILE="$RUNNER_TEMP/data-index"
+          git add -f "content/$DATE"
+          tree=$(git write-tree)
+          parent=$(git rev-parse -q --verify "refs/remotes/origin/$BRANCH" || true)
+          if [ -n "$parent" ] && [ "$(git rev-parse "$parent^{tree}")" = "$tree" ]; then
+            echo "branch $BRANCH đã có đúng dữ liệu này"
+            exit 0
+          fi
+          commit=$(git commit-tree "$tree" ${parent:+-p "$parent"} -m "crawl: $DATE")
+          git push origin "$commit:refs/heads/$BRANCH"
+          echo "OK: content/$DATE/ → branch $BRANCH ($commit)"
+      - name: Báo lỗi Google Chat
+        if: failure()
+        env:
+          GCHAT_WEBHOOK_URL: ${{ secrets.GCHAT_WEBHOOK_URL }}
+        run: |
+          DATE="${DATE:-$(TZ=Asia/Ho_Chi_Minh date +%F)}"
+          bash scripts/notify.sh failure "$DATE" crawl-actions \
+            "Workflow Crawl (GitHub Actions) lỗi — routine 19:00 sẽ không có dữ liệu. Xem tab Actions, sửa rồi Run workflow lại trước giờ routine." || true

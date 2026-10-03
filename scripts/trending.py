@@ -2,6 +2,8 @@
 """Pipeline Weekly Trending — bản tin tiếng Việt về Top 10 GitHub Trending tuần (chỉ stdlib, Python ≥ 3.9).
 
   trending.py crawl       DATE [--force]       trang trending + README → content/DATE/{trending.json, sources/}
+  trending.py import      DATE [--force]       lấy content/DATE/{trending.json, sources/} do workflow Crawl (GitHub
+                                               Actions) đã đẩy lên branch DATA_BRANCH — dùng trên cloud
   trending.py tasks       DATE                 việc cho sub-agent repo-writer: "NN|owner/repo|SOURCE|CARD"
   trending.py validate    DATE [--cards-only]  kiểm tra card + highlights (gồm luật chống bịa số)
   trending.py prune       DATE                 xoá content/<D>/, site/<D>/ có D < DATE − (RETENTION_WEEKS×7 − 1)
@@ -13,6 +15,7 @@
 
 Số liệu chỉ lấy từ GitHub: HTML trang trending (hạng, mô tả, ngôn ngữ, sao, fork, sao trong tuần) và README qua
 raw.githubusercontent.com. Không dùng REST API vì proxy GitHub của cloud chỉ cho API vào repo gắn với session.
+Proxy đó cũng chặn github.com/trending (HTTP 403), nên trên cloud bước crawl chạy ở GitHub Actions và routine `import`.
 """
 
 from __future__ import annotations
@@ -24,6 +27,7 @@ import os
 import posixpath
 import re
 import shutil
+import subprocess
 import sys
 import tempfile
 import time
@@ -243,10 +247,23 @@ def source_text(item: dict, readme: tuple[str, str] | None, fetched_at: str, lim
     return "\n".join(lines).rstrip() + "\n"
 
 
-def cmd_crawl(day: str, force: bool) -> None:
+def require_today(command: str, day: str, force: bool) -> None:
     if parse_day(day) != today_vn() and not force:
-        fail(f"crawl chỉ ghi được cho hôm nay ({today_vn()}, giờ VN) — trang trending không có dữ liệu quá khứ. "
-             f"Dùng --force nếu thật sự muốn ghi dữ liệu hôm nay vào {day}.")
+        fail(f"{command} chỉ ghi được cho hôm nay ({today_vn()}, giờ VN) — trang trending không có dữ liệu quá khứ. "
+             f"Dùng --force nếu thật sự muốn ghi vào {day}.")
+
+
+def install_issue(tmp: Path, day: str) -> None:
+    """Thay content/DATE/ bằng thư mục tạm `tmp` (cùng ổ đĩa) một lần: lỗi giữa chừng không để lại dữ liệu dở."""
+    target = CONTENT / day
+    if target.exists():
+        shutil.rmtree(target)
+    CONTENT.mkdir(exist_ok=True)
+    os.replace(tmp, target)
+
+
+def cmd_crawl(day: str, force: bool) -> None:
+    require_today("crawl", day, force)
     top_n, limit, url = config_int("TOP_N"), config_int("README_MAX_CHARS"), config_value("TRENDING_URL")
     try:
         page = http_get(url)
@@ -280,14 +297,70 @@ def cmd_crawl(day: str, force: bool) -> None:
                   f"README: {item['readme_path'] or 'không có'}")
         data = {"date": day, "source_url": url, "fetched_at": fetched_at, "repos": repos}
         (tmp / "trending.json").write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        target = CONTENT / day
-        if target.exists():
-            shutil.rmtree(target)
-        CONTENT.mkdir(exist_ok=True)
-        os.replace(tmp, target)
+        install_issue(tmp, day)
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     print(f"OK: content/{day}/ — {len(repos)} repo, lấy lúc {fetched_at}")
+
+
+def git(*args: str) -> bytes:
+    result = subprocess.run(["git", *args], cwd=ROOT, capture_output=True)
+    if result.returncode != 0:
+        detail = result.stderr.decode("utf-8", errors="replace").strip().splitlines()
+        raise FetchError(f"git {args[0]}: {detail[-1] if detail else f'exit {result.returncode}'}")
+    return result.stdout
+
+
+def cmd_import(day: str, force: bool) -> None:
+    """content/DATE/{trending.json, sources/} từ branch DATA_BRANCH (do workflow Crawl trên GitHub Actions đẩy lên).
+
+    Chỉ fetch vào remote-tracking ref rồi đọc blob — không checkout, không tạo branch local. Chỉ nhận đúng các file
+    mà `crawl` sinh ra; trending.json phải hợp lệ, đúng DATE, đủ TOP_N repo và khớp danh sách sources/.
+    """
+    require_today("import", day, force)
+    branch = config_value("DATA_BRANCH")
+    ref = f"refs/remotes/origin/{branch}"
+    try:
+        git("fetch", "--quiet", "origin", f"+refs/heads/{branch}:{ref}")
+        listing = git("ls-tree", "-r", "--name-only", ref, "--", f"content/{day}/").decode("utf-8").splitlines()
+    except FetchError as err:
+        fail(f"không lấy được branch {branch}: {err} — workflow Crawl (GitHub Actions) đã chạy chưa?")
+    if not listing:
+        fail(f"branch {branch} chưa có content/{day}/ — workflow Crawl (GitHub Actions) hôm nay chưa chạy hoặc đã lỗi")
+    prefix = f"content/{day}/"
+    names = [path[len(prefix):] for path in listing]
+    unexpected = [n for n in names if n != "trending.json" and not re.fullmatch(r"sources/[\w.-]+\.md", n)]
+    if unexpected:
+        fail(f"branch {branch}: file lạ trong content/{day}/: {', '.join(unexpected)}")
+
+    CACHE.mkdir(exist_ok=True)
+    tmp = Path(tempfile.mkdtemp(prefix=f"import-{day}-", dir=CACHE))
+    os.chmod(tmp, 0o755)  # mkdtemp tạo 0700
+    staged = tmp / day  # render.load_trending đòi tên thư mục = DATE
+    try:
+        (staged / "sources").mkdir(parents=True)
+        (staged / "cards").mkdir()
+        for name in names:
+            try:
+                (staged / name).write_bytes(git("cat-file", "blob", f"{ref}:{prefix}{name}"))
+            except FetchError as err:
+                fail(f"không đọc được {prefix}{name} từ branch {branch}: {err}")
+        try:
+            data = render.load_trending(staged)
+        except render.IssueError as err:
+            fail(f"branch {branch}: {err}")
+        top_n = config_int("TOP_N")
+        if len(data["repos"]) != top_n:
+            fail(f"branch {branch}: trending.json có {len(data['repos'])} repo, cần TOP_N={top_n}")
+        sources = {item["source"] for item in data["repos"]}
+        if sources != {n for n in names if n.startswith("sources/")}:
+            fail(f"branch {branch}: sources/ không khớp danh sách repo trong trending.json")
+        install_issue(staged, day)
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+    for item in data["repos"]:
+        print(f"  #{item['rank']:02d} {item['repo']:<45} ★ {item['stars']:>7} (+{item['stars_week']} tuần)")
+    print(f"OK: content/{day}/ — {len(data['repos'])} repo từ branch {branch}, lấy lúc {data.get('fetched_at')}")
 
 
 # ---------------------------------------------------------------- tasks / validate
@@ -600,10 +673,10 @@ def cmd_verify_live(day: str, base: str, timeout: int) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("command", choices=["crawl", "tasks", "validate", "prune", "build", "link", "message",
+    parser.add_argument("command", choices=["crawl", "import", "tasks", "validate", "prune", "build", "link", "message",
                                             "verify-live"])
     parser.add_argument("date", nargs="?", help="YYYY-MM-DD (chỉ `build` được bỏ trống)")
-    parser.add_argument("--force", action="store_true", help="crawl: cho phép DATE khác hôm nay")
+    parser.add_argument("--force", action="store_true", help="crawl/import: cho phép DATE khác hôm nay")
     parser.add_argument("--cards-only", action="store_true", help="validate: bỏ qua highlights.txt")
     parser.add_argument("--base", default="", help="verify-live: URL gốc của site (mặc định PAGES_BASE_URL)")
     parser.add_argument("--timeout", type=int, default=420, help="verify-live: số giây tối đa")
@@ -614,6 +687,8 @@ def main() -> None:
     day = parse_day(args.date or "").isoformat()
     if args.command == "crawl":
         cmd_crawl(day, args.force)
+    elif args.command == "import":
+        cmd_import(day, args.force)
     elif args.command == "tasks":
         cmd_tasks(day)
     elif args.command == "validate":
