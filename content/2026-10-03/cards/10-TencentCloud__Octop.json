@@ -1,0 +1,13 @@
+{
+  "repo": "TencentCloud/Octop",
+  "tagline": "Trợ lý AI tự host cho cả nhóm, mỗi người có đội agent riêng",
+  "summary": "Nền tảng trợ lý AI mã nguồn mở chạy trong một process duy nhất, gồm web dashboard, CLI, kênh chat IM và cron. Hỗ trợ nhiều người dùng, mỗi người có nhiều agent chuyên biệt. Dữ liệu, workspace và credential nằm trong `~/.octop/` trên máy bạn.",
+  "use_cases": [
+    "Nối agent vào Feishu, DingTalk, WeCom, Telegram hay Discord để nhận việc trong nhóm chat",
+    "Giao việc code cho OpenCode hoặc Claude Code qua ACP ngay từ IDE hoặc terminal",
+    "Đặt lịch cron bằng ngôn ngữ tự nhiên, dựng knowledge base RAG trên tài liệu riêng"
+  ],
+  "audience": "Dev và team nhỏ muốn tự host trợ lý AI đa người dùng, giữ dữ liệu nội bộ. Người chỉ cần chatbot đơn giản thì chưa cần.",
+  "notable": "License MIT, cài bằng `pip install octop` hoặc Docker, có desktop client, hỗ trợ OpenAI-compatible API và Ollama.",
+  "refs": []
+}

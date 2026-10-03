@@ -1,0 +1,13 @@
+{
+  "repo": "pbakaus/impeccable",
+  "tagline": "Bộ skill giúp AI coding agent thiết kế giao diện bớt rập khuôn",
+  "summary": "Skill thiết kế cho AI coding agent, gồm 24 lệnh dạng `/impeccable <command>` như `audit`, `critique`, `polish`. Kèm 61 rule detector chạy không cần LLM để bắt các dấu hiệu giao diện AI hay mắc: font Inter, gradient tím-xanh, card lồng card.",
+  "use_cases": [
+    "Chạy `/impeccable polish` để rà soát lần cuối trước khi ship một trang",
+    "Quét `src/` hoặc một URL bằng `npx impeccable detect` trong CI",
+    "Lặp thiết kế phần tử ngay trên trình duyệt bằng chế độ `live`"
+  ],
+  "audience": "Dev frontend và indie hacker dùng Claude Code, Cursor, Codex hay Gemini CLI để dựng UI. Ai không dùng AI agent vẫn dùng được phần CLI detector.",
+  "notable": "Cài bằng `npx impeccable install`, hỗ trợ nhiều công cụ agent. Detector chạy không cần API key. License Apache 2.0.",
+  "refs": []
+}

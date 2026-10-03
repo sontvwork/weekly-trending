@@ -1,0 +1,13 @@
+{
+  "repo": "vercel/next.js",
+  "tagline": "Framework React để dựng ứng dụng web full-stack với toolchain Rust build nhanh",
+  "summary": "Next.js mở rộng các tính năng mới nhất của React để bạn dựng ứng dụng web full-stack trong một framework. Công cụ build JavaScript viết bằng Rust giúp quá trình build nhanh hơn.",
+  "use_cases": [
+    "Dựng website hoặc ứng dụng web full-stack trên nền React",
+    "Học Next.js qua khoá Learn Next.js và tài liệu chính thức",
+    "Tham khảo các site thực tế trong Next.js Showcase"
+  ],
+  "audience": "Dev frontend và full-stack đang dùng hoặc muốn dùng React cho sản phẩm web. Người chưa quen React nên học React trước.",
+  "notable": "Có khoá học chính thức và tài liệu đầy đủ tại nextjs.org.",
+  "refs": ["https://raw.githubusercontent.com/vercel/next.js/HEAD/packages/next/README.md"]
+}

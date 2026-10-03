@@ -1,0 +1,3 @@
+🤖 paperclip dẫn đầu tuần với 12.825 sao mới, quản lý cả đội AI agent như vận hành công ty
+🎙️ VoiceStudio tăng mạnh nhất tuần với 16.475 sao, thay thế ElevenLabs chạy hoàn toàn trên máy
+🧠 Bộ nhớ dài hạn cho agent tiếp tục hút sự chú ý: hindsight thêm 16.183 sao trong tuần

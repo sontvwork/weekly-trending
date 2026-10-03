@@ -1,0 +1,13 @@
+{
+  "repo": "heygen-com/hyperframes",
+  "tagline": "Viết video bằng HTML, để AI agent tự dựng và render ra MP4",
+  "summary": "Framework mã nguồn mở biến HTML, CSS, media và animation có thể seek thành video MP4 mang tính xác định. Renderer duyệt từng frame bằng headless Chrome rồi encode bằng FFmpeg, nên cùng đầu vào luôn cho cùng video. Đi kèm skill cho các coding agent.",
+  "use_cases": [
+    "Dựng video giới thiệu sản phẩm từ một prompt cho Claude Code hoặc Codex",
+    "Biến pull request thành video giải thích có diff, lời dẫn và phụ đề",
+    "Tự động render motion graphic, biểu đồ động trong pipeline CI"
+  ],
+  "audience": "Dev và đội marketing muốn tự động hoá làm video bằng code hoặc agent. Ai đang dùng Remotion cũng có thể cân nhắc vì repo có skill chuyển từ Remotion sang.",
+  "notable": "License Apache 2.0, không phí theo lượt render. Cần Node.js 22+ và FFmpeg; có thể render local, Docker hoặc AWS Lambda.",
+  "refs": []
+}
