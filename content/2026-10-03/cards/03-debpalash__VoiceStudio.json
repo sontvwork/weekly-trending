@@ -1,0 +1,13 @@
+{
+  "repo": "debpalash/VoiceStudio",
+  "tagline": "🎙️ Phòng thu giọng nói trọn bộ chạy ngay trên máy bạn, thay ElevenLabs",
+  "summary": "Thuê phòng thu cho mỗi lần lồng tiếng hay đọc sách nói vừa đắt vừa phải gửi file cho người lạ. VoiceStudio là phòng thu đặt ngay trong máy bạn: nhân bản giọng, thiết kế giọng mới, lồng tiếng video, dictation, phiên âm và làm audiobook, hỗ trợ 646 ngôn ngữ. Các tác vụ chạy local trên phần cứng của bạn.",
+  "use_cases": [
+    "🎬 Lồng tiếng cho video, lời thoại khớp thời gian với hình",
+    "📚 Biến truyện hoặc tài liệu thành audiobook, chạy hàng loạt một lượt",
+    "🤖 Cho coding agent gọi giọng nói qua API local hoặc MCP"
+  ],
+  "audience": "Người làm nội dung, video, podcast hay audiobook muốn tạo giọng nói AI mà không phụ thuộc dịch vụ trả phí trên cloud.",
+  "notable": "Giấy phép AGPL-3.0, mỗi model có license riêng nên cần xem kỹ trước khi dùng thương mại. Máy không có GPU vẫn chạy được nhưng chậm hơn.",
+  "refs": []
+}

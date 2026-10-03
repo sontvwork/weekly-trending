@@ -1,0 +1,13 @@
+{
+  "repo": "alirezarezvani/claude-skills",
+  "tagline": "🧰 Thư viện kỹ năng dựng sẵn để coding agent làm được cả việc ngoài code",
+  "summary": "Coding agent giống nhân viên mới giỏi code nhưng chưa biết quy trình công ty: chưa biết review kiến trúc, audit bảo mật hay làm SEO cho đúng bài bản. Repo này là tủ cẩm nang dựng sẵn: mỗi skill gồm hướng dẫn SKILL.md, script Python và tài liệu tham khảo, cắm vào là agent làm theo.",
+  "use_cases": [
+    "🏗️ Bảo agent review kiến trúc microservices và chỉ ra rủi ro scale",
+    "📣 Viết bài blog chuẩn SEO bằng skill content-creator",
+    "🔒 Quét skill lạ bằng skill-security-auditor trước khi cài, tránh mã độc"
+  ],
+  "audience": "Người dùng coding agent muốn nó làm được việc chuyên môn như DevOps, marketing, product, compliance hay tư vấn quản trị mà không phải tự viết prompt từ đầu.",
+  "notable": "Một repo dùng được cho 13 coding agent như Claude Code, Codex, Gemini CLI, Cursor. Các tool Python chỉ dùng thư viện chuẩn, license MIT.",
+  "refs": []
+}

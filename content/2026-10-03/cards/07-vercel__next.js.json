@@ -1,0 +1,13 @@
+{
+  "repo": "vercel/next.js",
+  "tagline": "🏗️ Biến React thành bộ khung đủ đồ để dựng cả ứng dụng web full-stack",
+  "summary": "React một mình giống như có cái bếp tốt nhưng phải tự mua tủ, bàn, dụng cụ. Next.js lắp sẵn phần còn lại để bạn dựng cả ứng dụng web full-stack, frontend lẫn backend, trong một framework, bám theo các tính năng React mới nhất.",
+  "use_cases": [
+    "🌐 Dựng cả giao diện lẫn phần backend của một ứng dụng web trong cùng một dự án",
+    "⚡ Build nhanh nhờ bộ công cụ JavaScript viết bằng Rust",
+    "🚀 Thử các tính năng React mới nhất mà không phải tự ghép cấu hình"
+  ],
+  "audience": "Lập trình viên React muốn làm ứng dụng web hoàn chỉnh, từ người mới bắt đầu đến đội kỹ sư ở công ty lớn.",
+  "notable": "README trong repo chỉ trỏ tới packages/next/README.md; tài liệu đầy đủ nằm trên trang web chính thức của dự án.",
+  "refs": ["https://raw.githubusercontent.com/vercel/next.js/HEAD/packages/next/README.md"]
+}

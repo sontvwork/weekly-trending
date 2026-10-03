@@ -1,0 +1,13 @@
+{
+  "repo": "paperclipai/paperclip",
+  "tagline": "🏢 Biến một đám AI agent rời rạc thành công ty có sếp, ngân sách và sổ sách",
+  "summary": "Nếu mỗi coding agent là một nhân viên, thì mở 20 tab Claude Code cũng như thuê 20 người mà không có công ty: không ai biết ai đang làm gì. Paperclip là phần \"công ty\" đó: sơ đồ tổ chức, ticket, ngân sách và duyệt việc cho agent. Bạn đặt mục tiêu, agent làm, bạn chỉ việc kiểm tra kết quả.",
+  "use_cases": [
+    "🗂️ Gom Claude Code, Codex, Cursor về một bảng việc, khỏi lạc tab, khởi động lại vẫn giữ phiên",
+    "💸 Đặt ngân sách cho từng agent, tự tạm dừng khi chạm ngưỡng để vòng lặp lỗi không đốt hết quota",
+    "⏰ Lên lịch việc lặp lại như báo cáo hay hỗ trợ khách, sáng ra chỉ việc xem kết quả"
+  ],
+  "audience": "Người đang chạy nhiều AI agent song song, muốn chúng làm việc tự động nhưng vẫn kiểm soát được chi phí và chất lượng.",
+  "notable": "Mã nguồn mở license MIT, tự host, không cần tài khoản Paperclip. Không phải framework dựng agent, chỉ điều phối agent có sẵn.",
+  "refs": []
+}

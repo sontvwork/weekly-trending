@@ -1,0 +1,13 @@
+{
+  "repo": "TencentCloud/Octop",
+  "tagline": "🐙 Dựng cả đội trợ lý AI riêng cho gia đình hay nhóm nhỏ, chạy ngay trên máy bạn",
+  "summary": "Thuê một trợ lý chung cho cả nhà thì ai cũng lo lộ chuyện riêng, còn mỗi người một công cụ thì rối. Octop là văn phòng AI tự host: mỗi người có đội chuyên gia (agent) riêng, chat qua web, Feishu, Telegram, Discord và nhiều kênh IM khác. Dữ liệu, hội thoại và khoá truy cập nằm trong thư mục trên máy bạn.",
+  "use_cases": [
+    "👨‍👩‍👧 Một tài khoản admin, cả nhà dùng chung, mỗi thành viên có chuyên gia và kho kiến thức riêng",
+    "⏰ Hẹn giờ bằng ngôn ngữ tự nhiên để agent tự báo cáo hoặc chạy việc mỗi ngày",
+    "🧑‍💻 Giao việc code cho OpenCode hay Claude Code qua ACP, ngay từ cuộc chat"
+  ],
+  "audience": "Người muốn có trợ lý AI tự host cho cá nhân, gia đình hoặc nhóm nhỏ, cần nhiều agent song song mà vẫn giữ dữ liệu trên máy mình.",
+  "notable": "Giấy phép MIT. Công cụ rủi ro và lệnh shell cần được duyệt, thông tin nhạy cảm được che trước khi rời workspace. AgentTeams vẫn đang ở bản Beta.",
+  "refs": []
+}
