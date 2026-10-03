@@ -1,0 +1,13 @@
+{
+  "repo": "TencentCloud/Octop",
+  "tagline": "🐙 Cả đội trợ lý AI riêng chạy trên máy bạn, chat qua Telegram hay Feishu đều được",
+  "summary": "Thuê một trợ lý đa năng thì khó, nhưng có cả đội chuyên gia, mỗi người một việc, thì dễ hơn nhiều. Octop cho bạn dựng đội đó trên chính máy mình: mỗi expert có workspace, provider và lịch cron riêng, nhiều người dùng chung một hệ thống. Chat, CLI, IM và cron đều chạy trong một tiến trình `octop run`, dữ liệu nằm trong `~/.octop/`.",
+  "use_cases": [
+    "📅 Giao một agent riêng viết báo cáo tuần, ghi chú và nhắc lịch, trí nhớ giữ nguyên theo workspace",
+    "💬 Nối Telegram, Discord, Feishu, DingTalk hay WeCom để giao việc cho agent ngay trong nhóm chat",
+    "🧑‍💻 Giao việc code cho Claude Code hay OpenCode qua ACP, có chốt duyệt quyền trước khi chạy"
+  ],
+  "audience": "Gia đình, nhóm nhỏ và cá nhân muốn có trợ lý AI nhiều người dùng, nhiều agent, tự host và giữ dữ liệu trong máy mình.",
+  "notable": "Giấy phép MIT. Cài bằng một dòng lệnh curl hoặc `pip install octop`, có cả Docker và app desktop.",
+  "refs": []
+}

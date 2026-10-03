@@ -1,0 +1,13 @@
+{
+  "repo": "pbakaus/impeccable",
+  "tagline": "🎨 Dạy AI coding agent thiết kế giao diện không còn trông như hàng đại trà",
+  "summary": "Nhờ AI dựng giao diện mà không dặn gì, ra toàn font Inter, gradient tím-xanh, thẻ lồng trong thẻ, như mọi quán dùng chung một công thức. Impeccable là cuốn sổ phong cách cho agent: 24 lệnh như `polish`, `audit`, `critique`, cùng 61 luật kiểm tra tự động để bắt những dấu hiệu \"AI làm\".",
+  "use_cases": [
+    "✨ Gõ `/impeccable polish checkout` để rà lần cuối trước khi ship",
+    "🔍 Quét cả thư mục hoặc một URL bằng `npx impeccable detect`, không cần LLM hay API key",
+    "🖌️ Thử nhiều biến thể của một phần tử ngay trên trình duyệt thay vì sửa tay từng lần"
+  ],
+  "audience": "Người dùng coding agent như Claude Code, Cursor, Codex để dựng frontend và muốn giao diện có gu riêng, không na ná nhau.",
+  "notable": "Cài bằng `npx impeccable install`, hỗ trợ nhiều công cụ agent, có hook kiểm tra khi agent sửa file UI. License Apache 2.0.",
+  "refs": []
+}

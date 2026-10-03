@@ -1,0 +1,13 @@
+{
+  "repo": "paperclipai/paperclip",
+  "tagline": "🏢 Biến một đống agent rời rạc thành công ty có sếp, ngân sách và việc rõ ràng",
+  "summary": "Mở 20 tab Claude Code cùng lúc thì chẳng ai biết con nào đang làm gì, giống một văn phòng không có quản lý. Paperclip là phần quản lý đó: bạn đặt mục tiêu, thuê agent vào các vai trò trong sơ đồ tổ chức, rồi theo dõi việc, chi phí và duyệt kết quả từ một dashboard.",
+  "use_cases": [
+    "🗂️ Giao việc cho agent như tạo ticket, phiên làm việc vẫn còn sau khi khởi động lại máy",
+    "💰 Đặt ngân sách cho từng agent, tự tạm dừng trước khi vòng lặp lỗi đốt hết token",
+    "⏰ Lên lịch việc lặp lại như báo cáo hay hỗ trợ khách, sáng ra chỉ việc xem kết quả"
+  ],
+  "audience": "Người chạy nhiều coding agent song song, muốn agent làm việc tự động liên tục nhưng vẫn kiểm soát được chi phí và duyệt được kết quả.",
+  "notable": "Mã nguồn mở license MIT, tự host, chạy thử bằng một dòng `npx paperclipai@latest onboard --yes`. Dùng được với Claude Code, Codex, Cursor, Gemini CLI.",
+  "refs": []
+}

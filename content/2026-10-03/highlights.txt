@@ -1,0 +1,3 @@
+🏢 paperclip: quản lý cả đội coding agent như một công ty, có sơ đồ vai trò, ngân sách và dashboard duyệt việc
+🧠 hindsight: trí nhớ cho agent biết đúc kết niềm tin từ sự kiện, gắn vào bằng 2 dòng code hoặc MCP
+🎧 VoiceStudio: phòng thu giọng nói AI chạy local, nhân bản giọng, lồng tiếng video, làm sách nói, thay ElevenLabs

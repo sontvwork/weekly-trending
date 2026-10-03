@@ -1,0 +1,13 @@
+{
+  "repo": "flutter/flutter",
+  "tagline": "📱 Viết một lần, ra app đẹp và mượt trên mobile, web lẫn desktop",
+  "summary": "Làm app cho iOS, Android, web rồi desktop thường như phải mở bốn quán riêng, mỗi quán một đầu bếp. Flutter là SDK của Google cho phép bạn nấu từ một codebase duy nhất, kiểm soát từng pixel trên màn hình. Sửa code xong, hot reload cho thấy kết quả ngay mà không mất trạng thái app.",
+  "use_cases": [
+    "🚀 Ra app iOS và Android từ cùng một codebase, khỏi nuôi hai đội riêng",
+    "⚡ Chỉnh giao diện và thấy kết quả tức thì nhờ hot reload, không phải chạy lại app",
+    "🎨 Dựng giao diện đúng thiết kế của designer, có sẵn widget Cupertino và Material"
+  ],
+  "audience": "Người muốn làm app chạy trên nhiều nền tảng mà không viết lại cho từng nền tảng, và những ai coi trọng giao diện mượt, đúng thiết kế.",
+  "notable": "Miễn phí, mã nguồn mở, có plugin cho Visual Studio Code và IntelliJ / Android Studio, cùng hàng chục nghìn package.",
+  "refs": []
+}

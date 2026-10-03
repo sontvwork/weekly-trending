@@ -1,0 +1,13 @@
+{
+  "repo": "debpalash/VoiceStudio",
+  "tagline": "🎧 Phòng thu giọng nói AI chạy ngay trên máy bạn, thay thế ElevenLabs",
+  "summary": "Thuê phòng thu và diễn viên lồng tiếng cho mỗi video thì vừa tốn kém vừa mất công. VoiceStudio gom cả phòng thu vào một ứng dụng desktop: nhân bản giọng, thiết kế giọng mới, lồng tiếng video, chép lời và làm sách nói. Các tác vụ chạy trên phần cứng của bạn.",
+  "use_cases": [
+    "🎬 Lồng tiếng cho video với giọng đọc khớp thời gian, khỏi thuê phòng thu",
+    "📚 Biến truyện hoặc tài liệu thành sách nói, chạy hàng loạt nhiều file",
+    "🔌 Cho AI agent gọi giọng nói qua API local hoặc MCP"
+  ],
+  "audience": "Người làm video, podcast, sách nói và nhà phát triển cần giọng nói AI mà không muốn gửi dữ liệu lên dịch vụ đám mây.",
+  "notable": "Cài một dòng lệnh `curl` trên macOS và Linux, giấy phép AGPL-3.0. Mỗi model có license riêng, cần xem trước khi dùng thương mại.",
+  "refs": []
+}
