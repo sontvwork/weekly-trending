@@ -1,0 +1,13 @@
+{
+  "repo": "debpalash/VoiceStudio",
+  "tagline": "Xưởng thu âm AI chạy trên máy bạn, từ nhân bản giọng đến lồng tiếng video",
+  "summary": "Làm giọng đọc bằng dịch vụ đám mây giống thuê phòng thu theo giờ: tiện nhưng mỗi lần đều tốn tiền và phải gửi dữ liệu đi. VoiceStudio là phòng thu đặt ngay trên máy bạn. Nó nhân bản hoặc thiết kế giọng nói, lồng tiếng video, chép lời và làm audiobook, hỗ trợ 646 ngôn ngữ.",
+  "use_cases": [
+    "🎬 Lồng tiếng video bằng giọng đã nhân bản, lời khớp thời gian",
+    "📚 Biến truyện hoặc tài liệu thành audiobook, chạy hàng loạt không cần canh",
+    "🔌 Cho coding agent gọi giọng nói qua API local hoặc MCP"
+  ],
+  "audience": "Người làm video, podcast, audiobook hoặc ứng dụng có giọng nói, muốn tự chủ dữ liệu thay vì phụ thuộc dịch vụ đám mây trả phí.",
+  "notable": "Giấy phép AGPL-3.0, mỗi model có license riêng cần xem trước khi dùng thương mại. Máy không có GPU vẫn chạy được nhưng chậm hơn.",
+  "refs": []
+}

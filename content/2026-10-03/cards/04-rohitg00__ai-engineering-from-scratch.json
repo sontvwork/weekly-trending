@@ -1,0 +1,13 @@
+{
+  "repo": "rohitg00/ai-engineering-from-scratch",
+  "tagline": "Học AI từ toán nền tảng đến agent, mỗi bài để lại một công cụ dùng được",
+  "summary": "Học AI qua video lẻ tẻ giống như ghép bản đồ từ những mảnh giấy rời: bạn làm được chatbot nhưng không giải thích nổi loss curve. Repo này là một giáo trình gồm 523 bài trong 20 phase, đi từ đại số tuyến tính tới agent. Mỗi thuật toán được tự code từ đầu rồi mới chạy lại bằng thư viện thật.",
+  "use_cases": [
+    "🧠 Tự viết backprop, tokenizer, attention, agent loop để hiểu thứ PyTorch đang làm bên dưới",
+    "🎓 Cài skill tutor vào coding agent, làm bài kiểm tra xếp trình rồi học từng bài mỗi buổi",
+    "🧰 Học xong nhận về prompt, skill, agent hoặc MCP server dán thẳng vào công việc hằng ngày"
+  ],
+  "audience": "Người biết code và muốn hiểu AI thực sự hoạt động ra sao, thay vì chỉ gọi API. Cũng hợp người ôn thi chứng chỉ Claude hoặc MCP.",
+  "notable": "Miễn phí, license MIT, có thể đọc trên web không cần clone. Bài viết bằng Python, TypeScript, Rust, Julia; trang bài học ngoài tiếng Anh là bản dịch máy.",
+  "refs": []
+}

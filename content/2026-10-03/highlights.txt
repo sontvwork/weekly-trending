@@ -1,0 +1,3 @@
+🏢 paperclip: điều phối cả đội AI agent như một công ty, có sếp, ngân sách và sổ sách
+🧠 hindsight: bộ nhớ cho agent biết rút kinh nghiệm theo thời gian, không chỉ nhớ lại hội thoại
+🎙️ VoiceStudio: xưởng thu âm AI chạy cục bộ, nhân bản giọng nói, lồng tiếng video

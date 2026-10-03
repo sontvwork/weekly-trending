@@ -1,0 +1,13 @@
+{
+  "repo": "vectorize-io/hindsight",
+  "tagline": "Bộ nhớ giúp agent rút kinh nghiệm qua thời gian, không chỉ nhớ lại hội thoại",
+  "summary": "Chatbot thông thường giống người mất trí nhớ ngắn hạn: mỗi buổi mới lại phải giới thiệu từ đầu. Hindsight cho agent một cuốn sổ riêng: nó ghi lại sự kiện, gom thành niềm tin có dẫn chứng, và chỉnh lại khi có thông tin mới thay vì chỉ lưu nguyên lịch sử chat.",
+  "use_cases": [
+    "🧑‍💻 Cho coding agent nhớ kiến trúc, quy ước và việc đang dở của từng repo, khỏi giải thích lại mỗi phiên",
+    "💬 Cá nhân hóa chatbot theo từng người dùng, mỗi người một bank riêng, không lẫn sang nhau",
+    "🔌 Thêm trí nhớ cho agent đang chạy bằng vài dòng code hoặc qua MCP endpoint có sẵn"
+  ],
+  "audience": "Người xây agent hoặc chatbot cần nhớ lâu dài, học từ phản hồi, và người dùng coding agent muốn nó nhớ dự án giữa các phiên.",
+  "notable": "Giấy phép MIT, chạy được với LLM local như ollama. README tự nhận có thể là quá tay nếu chỉ làm workflow đơn giản kiểu n8n.",
+  "refs": []
+}

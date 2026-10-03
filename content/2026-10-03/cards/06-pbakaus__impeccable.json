@@ -1,0 +1,13 @@
+{
+  "repo": "pbakaus/impeccable",
+  "tagline": "Dạy AI coding agent thiết kế giao diện không còn lộ vẻ máy làm",
+  "summary": "Nhờ AI dựng giao diện, project nào cũng ra cùng một kiểu: font Inter, gradient tím xanh, card lồng card, như cả nhóm họa sĩ cùng chép một mẫu. Impeccable là cuốn cẩm nang thiết kế cho agent, gồm 24 lệnh như `audit`, `polish`, `critique` và 61 luật bắt lỗi thiết kế kiểu AI. Phần luật chạy bằng CLI, không cần LLM hay API key.",
+  "use_cases": [
+    "🔍 Quét thư mục hoặc URL bằng `npx impeccable detect` để bắt lỗi thiết kế ngay trong CI",
+    "✨ Gõ `/impeccable polish` để đánh bóng lần cuối một màn hình trước khi ship",
+    "🎨 Thử nhiều biến thể của một phần tử ngay trên trình duyệt thay vì sửa tay từng lần"
+  ],
+  "audience": "Người dựng giao diện cùng coding agent và thấy sản phẩm ra nhìn na ná nhau, muốn có thêm một lớp kiểm tra thiết kế.",
+  "notable": "Chạy với nhiều công cụ như Claude Code, Cursor, Codex CLI. Live mode chỉ dùng trên checkout local và có thể chạy một script trong package.json.",
+  "refs": []
+}
