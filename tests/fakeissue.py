@@ -11,10 +11,10 @@ import sys
 from pathlib import Path
 
 CARD = {
-    "tagline": "Công cụ dòng lệnh giúp tự động hoá các việc lặp đi lặp lại",
+    "tagline": "🛠️ Công cụ dòng lệnh giúp tự động hoá các việc lặp đi lặp lại",
     "summary": "Repo giả dùng cho kiểm thử: một công cụ dòng lệnh nhỏ gọn giúp developer gom các thao tác "
                "lặp lại trong dự án thành vài lệnh ngắn, chạy được trên Python 3.12.",
-    "use_cases": ["Tự động chạy kiểm tra trước khi commit", "Gom các script rời rạc thành một lệnh `tool run`"],
+    "use_cases": ["⚙️ Tự động chạy kiểm tra trước khi commit", "📦 Gom các script rời rạc thành một lệnh `tool run`"],
     "audience": "Developer muốn tiết kiệm thời gian cho việc vặt hằng ngày trong dự án.",
     "notable": "Không cần cấu hình phức tạp, cài xong là dùng được.",
     "refs": [],

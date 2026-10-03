@@ -1,13 +1,13 @@
 {
   "repo": "paperclipai/paperclip",
-  "tagline": "Điều phối cả đội AI agent như một công ty, có org chart và ngân sách",
-  "summary": "Server Node.js kèm giao diện React, giúp quản lý nhiều agent (Claude Code, Codex, Cursor, Gemini CLI, OpenClaw...) từ một dashboard. Trông như task manager nhưng có thêm org chart, ngân sách, phê duyệt và mục tiêu chung. Paperclip không phải framework để xây agent mà để vận hành chúng.",
+  "tagline": "🏢 Biến đống AI agent thành một công ty thật, bạn làm sếp",
+  "summary": "Tưởng tượng mỗi AI agent là một nhân viên: có chức danh, có sếp, có ngân sách riêng. Paperclip là cái công ty đó. Bạn đặt mục tiêu, tuyển agent (Claude Code, Codex, Cursor, Gemini CLI...), rồi ngồi duyệt kế hoạch và xem cả đội làm việc trên một dashboard.",
   "use_cases": [
-    "Gom nhiều terminal Claude Code rời rạc về một nơi có ticket và lịch sử",
-    "Đặt ngân sách và cảnh báo để chặn agent chạy lặp đốt token",
-    "Lập routine chạy theo lịch hoặc webhook cho việc định kỳ như báo cáo, hỗ trợ khách hàng"
+    "🧑‍💼 Dựng đội CEO, CTO, dev, marketer toàn bot, giao việc theo org chart như công ty thật",
+    "💸 Cấp ngân sách cho từng agent, chạm trần là tự dừng, không lo hoá đơn token",
+    "⏰ Cho agent chạy theo lịch hoặc webhook, sáng ra chỉ việc duyệt kết quả"
   ],
-  "audience": "Dev, founder hoặc team đang chạy nhiều coding agent song song và cần theo dõi, kiểm soát chi phí. Người mới dùng một agent đơn lẻ chưa cần ngay.",
-  "notable": "Self-host, giấy phép MIT, không cần tài khoản. Cài nhanh bằng `npx paperclipai@latest onboard --yes`, Postgres nhúng tự tạo khi chạy local.",
+  "audience": "Người dùng nhiều coding agent song song và muốn làm sếp thay vì bảo mẫu.",
+  "notable": "Mã nguồn mở, giấy phép MIT, tự host. Thử ngay bằng một dòng: `npx paperclipai@latest onboard --yes`",
   "refs": []
 }

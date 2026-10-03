@@ -176,6 +176,12 @@ class ValidateTest(unittest.TestCase):
                            use_cases=["Run checks before commits", "Bundle scripts into one command"])
         self.assertInvalid("tiếng Việt có dấu")
 
+    def test_lead_emoji(self) -> None:
+        self.box.edit_card(NEW, tagline="Công cụ dòng lệnh giúp tự động hoá các việc lặp đi lặp lại",
+                           use_cases=["Tự động chạy kiểm tra trước khi commit", "🧪 Chạy thử trước khi 🚀 phát hành"])
+        self.assertInvalid("tagline phải mở đầu bằng đúng 1 emoji", "use_cases[1] phải mở đầu bằng đúng 1 emoji",
+                           "use_cases[2]: không dùng emoji")
+
     def test_url_and_markdown(self) -> None:
         self.box.edit_card(NEW, notable="Xem thêm tại https://example.com nhé")
         self.box.edit_card(NEW, 2, notable="Hỗ trợ **rất** nhiều định dạng")

@@ -66,8 +66,9 @@ TAG = re.compile(r"<[^>]+>")
 CARD_KEYS = {"repo", "tagline", "summary", "use_cases", "audience", "notable", "refs"}
 CARD_REQUIRED = {"repo", "tagline", "summary", "use_cases", "audience"}
 # Độ dài tính bằng SỐ TỪ (tách theo khoảng trắng), khớp với cách prompt mô tả — LLM không đếm được ký tự.
-TEXT_LIMITS = {"tagline": (4, 18), "summary": (15, 60), "audience": (5, 32), "notable": (0, 32)}
+TEXT_LIMITS = {"tagline": (4, 18), "summary": (15, 70), "audience": (5, 32), "notable": (0, 32)}
 USE_CASE_LIMITS = (3, 22)
+LEAD_EMOJI_FIELDS = ("tagline",)  # cùng use_cases: mở đầu bằng đúng 1 emoji, chỉ ở đầu; các trường còn lại không emoji
 USE_CASE_COUNT = (2, 3)
 MAX_REFS = 3
 HIGHLIGHT_LINES = (1, 3)
@@ -408,6 +409,14 @@ def text_problems(label: str, text: str) -> list[str]:
     return problems
 
 
+def split_lead_emoji(text: str) -> tuple[str, str]:
+    """Tách emoji mở đầu ("🧑‍💼 Dựng…" → ("🧑‍💼", "Dựng…")); không có thì emoji = ""."""
+    head, _, rest = text.partition(" ")
+    ok = head and any(unicodedata.category(ch) == "So" for ch in head) and all(
+        unicodedata.category(ch) == "So" or ch in "\u200d\ufe0f" for ch in head)
+    return (head, rest.strip()) if ok else ("", text)
+
+
 def check_card(folder: Path, item: dict) -> tuple[list[str], list[str]]:
     """(lỗi, cảnh báo) của card một repo."""
     path = folder / item["card"]
@@ -438,6 +447,10 @@ def check_card(folder: Path, item: dict) -> tuple[list[str], list[str]]:
         value = value.strip()
         if key == "notable" and not value:
             continue
+        if key in LEAD_EMOJI_FIELDS:
+            emoji, value = split_lead_emoji(value)
+            if not emoji:
+                errors.append(f"{key} phải mở đầu bằng đúng 1 emoji rồi dấu cách")
         words = len(value.split())
         if not low <= words <= high:
             errors.append(f"{key} dài {words} từ, cần {low}–{high} từ")
@@ -451,7 +464,9 @@ def check_card(folder: Path, item: dict) -> tuple[list[str], list[str]]:
         if not USE_CASE_COUNT[0] <= len(uses) <= USE_CASE_COUNT[1]:
             errors.append(f"use_cases cần {USE_CASE_COUNT[0]}–{USE_CASE_COUNT[1]} mục, đang có {len(uses)}")
         for number, use in enumerate(uses, 1):
-            use = use.strip()
+            emoji, use = split_lead_emoji(use.strip())
+            if not emoji:
+                errors.append(f"use_cases[{number}] phải mở đầu bằng đúng 1 emoji rồi dấu cách")
             words = len(use.split())
             if not USE_CASE_LIMITS[0] <= words <= USE_CASE_LIMITS[1]:
                 errors.append(f"use_cases[{number}] dài {words} từ, cần {USE_CASE_LIMITS[0]}–{USE_CASE_LIMITS[1]} từ")
