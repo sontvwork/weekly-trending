@@ -1,6 +1,6 @@
 {
   "repo": "paperclipai/paperclip",
-  "tagline": "🏢 Biến một đám AI agent rời rạc thành công ty có sếp, ngân sách và sổ sách",
+  "tagline": "Biến một đám AI agent rời rạc thành công ty có sếp, ngân sách và sổ sách",
   "summary": "Nếu mỗi coding agent là một nhân viên, thì mở 20 tab Claude Code cũng như thuê 20 người mà không có công ty: không ai biết ai đang làm gì. Paperclip là phần \"công ty\" đó: sơ đồ tổ chức, ticket, ngân sách và duyệt việc cho agent. Bạn đặt mục tiêu, agent làm, bạn chỉ việc kiểm tra kết quả.",
   "use_cases": [
     "🗂️ Gom Claude Code, Codex, Cursor về một bảng việc, khỏi lạc tab, khởi động lại vẫn giữ phiên",

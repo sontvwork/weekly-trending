@@ -1,6 +1,6 @@
 {
   "repo": "rohitg00/ai-engineering-from-scratch",
-  "tagline": "🎓 Học AI bằng cách tự tay dựng lại từng thứ, từ backprop đến agent",
+  "tagline": "Học AI bằng cách tự tay dựng lại từng thứ, từ backprop đến agent",
   "summary": "Học AI qua video ngắn giống như xem người khác nấu ăn: xem xong vẫn chưa biết tự nấu. Khoá học này kéo bạn vào bếp: 523 bài, 20 phase, dựng backprop, tokenizer, attention, agent loop từ toán thô rồi mới dùng PyTorch. Bài nào cũng kết bằng một thứ dùng lại được như prompt, skill, agent hoặc MCP server.",
   "use_cases": [
     "🧠 Hiểu vì sao chatbot của mình chạy như vậy, thay vì chỉ gọi API cho xong",

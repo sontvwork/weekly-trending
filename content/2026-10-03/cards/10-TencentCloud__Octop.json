@@ -1,6 +1,6 @@
 {
   "repo": "TencentCloud/Octop",
-  "tagline": "🐙 Dựng cả đội trợ lý AI riêng cho gia đình hay nhóm nhỏ, chạy ngay trên máy bạn",
+  "tagline": "Dựng cả đội trợ lý AI riêng cho gia đình hay nhóm nhỏ, chạy ngay trên máy bạn",
   "summary": "Thuê một trợ lý chung cho cả nhà thì ai cũng lo lộ chuyện riêng, còn mỗi người một công cụ thì rối. Octop là văn phòng AI tự host: mỗi người có đội chuyên gia (agent) riêng, chat qua web, Feishu, Telegram, Discord và nhiều kênh IM khác. Dữ liệu, hội thoại và khoá truy cập nằm trong thư mục trên máy bạn.",
   "use_cases": [
     "👨‍👩‍👧 Một tài khoản admin, cả nhà dùng chung, mỗi thành viên có chuyên gia và kho kiến thức riêng",

@@ -1,6 +1,6 @@
 {
   "repo": "debpalash/VoiceStudio",
-  "tagline": "🎙️ Phòng thu giọng nói trọn bộ chạy ngay trên máy bạn, thay ElevenLabs",
+  "tagline": "Phòng thu giọng nói trọn bộ chạy ngay trên máy bạn, thay ElevenLabs",
   "summary": "Thuê phòng thu cho mỗi lần lồng tiếng hay đọc sách nói vừa đắt vừa phải gửi file cho người lạ. VoiceStudio là phòng thu đặt ngay trong máy bạn: nhân bản giọng, thiết kế giọng mới, lồng tiếng video, dictation, phiên âm và làm audiobook, hỗ trợ 646 ngôn ngữ. Các tác vụ chạy local trên phần cứng của bạn.",
   "use_cases": [
     "🎬 Lồng tiếng cho video, lời thoại khớp thời gian với hình",

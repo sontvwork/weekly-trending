@@ -1,6 +1,6 @@
 {
   "repo": "alirezarezvani/claude-skills",
-  "tagline": "🧰 Thư viện kỹ năng dựng sẵn để coding agent làm được cả việc ngoài code",
+  "tagline": "Thư viện kỹ năng dựng sẵn để coding agent làm được cả việc ngoài code",
   "summary": "Coding agent giống nhân viên mới giỏi code nhưng chưa biết quy trình công ty: chưa biết review kiến trúc, audit bảo mật hay làm SEO cho đúng bài bản. Repo này là tủ cẩm nang dựng sẵn: mỗi skill gồm hướng dẫn SKILL.md, script Python và tài liệu tham khảo, cắm vào là agent làm theo.",
   "use_cases": [
     "🏗️ Bảo agent review kiến trúc microservices và chỉ ra rủi ro scale",

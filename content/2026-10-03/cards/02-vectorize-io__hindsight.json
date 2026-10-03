@@ -1,6 +1,6 @@
 {
   "repo": "vectorize-io/hindsight",
-  "tagline": "🧠 Bộ nhớ giúp agent học hỏi dần theo thời gian, không chỉ nhớ lại lịch sử chat",
+  "tagline": "Bộ nhớ giúp agent học hỏi dần theo thời gian, không chỉ nhớ lại lịch sử chat",
   "summary": "Chatbot thường như người mất trí nhớ ngắn hạn: mỗi phiên lại làm quen từ đầu. Hindsight cho agent một cuốn sổ tay biết tự tổng hợp: lưu sự kiện, gộp thành nhận định có bằng chứng, rồi sửa lại khi có thông tin mới. Agent nhờ đó học dần thay vì chỉ lục lại lịch sử.",
   "use_cases": [
     "👤 Cá nhân hoá chatbot: mỗi người dùng một bộ nhớ riêng, không lẫn sang người khác",

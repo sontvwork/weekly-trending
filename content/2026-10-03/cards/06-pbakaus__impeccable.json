@@ -1,6 +1,6 @@
 {
   "repo": "pbakaus/impeccable",
-  "tagline": "🎨 Dạy coding agent thiết kế giao diện không còn sặc mùi AI",
+  "tagline": "Dạy coding agent thiết kế giao diện không còn sặc mùi AI",
   "summary": "Nhờ AI dựng giao diện, bạn hay nhận về những thứ na ná nhau: font Inter, gradient tím-xanh, thẻ lồng trong thẻ. Impeccable giống một art director ngồi cạnh agent: cho nó bộ lệnh như `audit`, `polish`, `critique` và danh sách lỗi thiết kế cần tránh. Agent sửa theo đó thay vì đoán mò.",
   "use_cases": [
     "🔍 Quét thư mục hoặc URL bằng `npx impeccable detect` để bắt lỗi thiết kế, không cần API key",

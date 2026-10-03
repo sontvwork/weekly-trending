@@ -1,6 +1,6 @@
 {
   "repo": "heygen-com/hyperframes",
-  "tagline": "🎬 Viết HTML như làm trang web, ra video MP4 mà AI agent cũng tự dựng được",
+  "tagline": "Viết HTML như làm trang web, ra video MP4 mà AI agent cũng tự dựng được",
   "summary": "Dựng video bằng timeline kéo thả thì rất khó giao cho AI làm hộ. HyperFrames cho bạn mô tả video bằng HTML, thêm vài thuộc tính `data-*` để đặt thời điểm và lớp, rồi render ra MP4. Cùng một đầu vào luôn cho ra cùng một video.",
   "use_cases": [
     "🚀 Bảo Claude Code làm video giới thiệu sản phẩm 10 giây có nhạc nền và tiêu đề hiện dần",
