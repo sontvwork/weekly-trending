@@ -5,10 +5,10 @@
 - URL: https://github.com/TencentCloud/Octop
 - Mô tả trên GitHub: A smarter, self-hosted AI assistant — multi-user, multi-agent.
 - Ngôn ngữ chính: Python
-- Tổng sao: 6452
+- Tổng sao: 6480
 - Sao tăng trong tuần: 1425
-- Fork: 795
-- Lấy lúc (UTC): 2026-10-03T07:47:24Z
+- Fork: 797
+- Lấy lúc (UTC): 2026-10-03T09:54:38Z
 - README: README.md (28059 ký tự)
 
 ======== README (nguyên văn) ========

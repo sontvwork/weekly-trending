@@ -5,10 +5,10 @@
 - URL: https://github.com/rohitg00/ai-engineering-from-scratch
 - Mô tả trên GitHub: Learn it. Build it. Ship it for others.
 - Ngôn ngữ chính: Python
-- Tổng sao: 62762
+- Tổng sao: 62783
 - Sao tăng trong tuần: 5600
-- Fork: 10728
-- Lấy lúc (UTC): 2026-10-03T07:47:24Z
+- Fork: 10732
+- Lấy lúc (UTC): 2026-10-03T09:54:38Z
 - README: README.md (107656 ký tự, đã cắt còn 30000)
 
 ======== README (nguyên văn) ========

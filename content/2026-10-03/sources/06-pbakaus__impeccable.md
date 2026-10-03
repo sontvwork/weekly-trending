@@ -5,10 +5,10 @@
 - URL: https://github.com/pbakaus/impeccable
 - Mô tả trên GitHub: The design language that makes your AI harness better at design.
 - Ngôn ngữ chính: JavaScript
-- Tổng sao: 74516
+- Tổng sao: 74573
 - Sao tăng trong tuần: 3124
-- Fork: 4489
-- Lấy lúc (UTC): 2026-10-03T07:47:24Z
+- Fork: 4491
+- Lấy lúc (UTC): 2026-10-03T09:54:38Z
 - README: README.md (26925 ký tự)
 
 ======== README (nguyên văn) ========

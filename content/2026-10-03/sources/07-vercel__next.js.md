@@ -5,10 +5,10 @@
 - URL: https://github.com/vercel/next.js
 - Mô tả trên GitHub: The React Framework
 - Ngôn ngữ chính: JavaScript
-- Tổng sao: 143028
+- Tổng sao: 143032
 - Sao tăng trong tuần: 658
-- Fork: 33713
-- Lấy lúc (UTC): 2026-10-03T07:47:24Z
+- Fork: 33717
+- Lấy lúc (UTC): 2026-10-03T09:54:38Z
 - README: readme.md (23 ký tự)
 
 ======== README (nguyên văn) ========

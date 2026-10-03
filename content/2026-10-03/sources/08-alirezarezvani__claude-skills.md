@@ -5,10 +5,10 @@
 - URL: https://github.com/alirezarezvani/claude-skills
 - Mô tả trên GitHub: 380 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 380+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.
 - Ngôn ngữ chính: Python
-- Tổng sao: 27365
+- Tổng sao: 27380
 - Sao tăng trong tuần: 832
-- Fork: 3856
-- Lấy lúc (UTC): 2026-10-03T07:47:24Z
+- Fork: 3857
+- Lấy lúc (UTC): 2026-10-03T09:54:38Z
 - README: README.md (25995 ký tự)
 
 ======== README (nguyên văn) ========
