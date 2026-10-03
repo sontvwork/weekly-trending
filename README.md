@@ -9,7 +9,7 @@ Bản tin tiếng Việt hằng tuần về **top 10 repo trên [GitHub Trending
 GitHub Actions Crawl (17:00 tối Chủ nhật giờ VN = cron 0 10 * * 0 UTC)
   → scripts/trending.py crawl: trang trending (HTML) + README (raw.githubusercontent.com) → content/DATE/
   → đẩy content/DATE/ lên branch dữ liệu `trending-data` (bot, không đụng main)
-Claude Code Routine (19:00 tối Chủ nhật giờ VN = cron 0 12 * * 0 UTC, cloud, mạng Trusted)
+Claude Code Routine (19:00 tối Chủ nhật giờ VN = cron 0 12 * * 0 UTC, cloud, mạng Custom = Trusted + sontvwork.github.io)
   → scripts/trending.py import: lấy content/DATE/ từ branch `trending-data` (proxy cloud chặn trang trending)
   → prompts/write.md: 10 sub-agent `repo-writer` viết card song song → highlights.txt → validate
   → scripts/publish.sh: xoá tuần quá 20 tuần → build site/ → guard → commit "weekly: DATE" → push main
@@ -68,7 +68,8 @@ Làm tại [claude.ai/code/routines](https://claude.ai/code/routines) → **New 
 | Connectors | **Bỏ hết**: routine không cần connector nào |
 
 Cloud environment `weekly-trending`:
-- **Network access: Trusted** (mặc định). Danh sách này đã có `github.com`, `raw.githubusercontent.com` và `*.googleapis.com` (Google Chat), nên không cần Full.
+- **Network access: Custom**: giữ danh sách Trusted mặc định và thêm `sontvwork.github.io`. Danh sách Trusted đã có `github.com`, `raw.githubusercontent.com` và `*.googleapis.com` (Google Chat), nhưng **không có `*.github.io`**. Thiếu domain này thì bước `verify-live` của `publish.sh` không tải được trang Pages, chờ hết 420s rồi báo lỗi `deploy` dù site đã lên. Không cần Full.
+  Kiểm tra: trong session của routine, chạy `curl -sI https://sontvwork.github.io/weekly-trending/` và phải nhận `HTTP/2 200` (`000` nghĩa là domain vẫn bị chặn).
 - **Environment variables**:
   ```
   GCHAT_WEBHOOK_URL=<url webhook>
