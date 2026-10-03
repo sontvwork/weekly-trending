@@ -220,25 +220,6 @@ code {
 }
 
 /* ---------- Trang tuần ---------- */
-.highlights {
-  margin-bottom: 24px;
-  padding: 18px 22px;
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--accent);
-  border-radius: var(--radius);
-  background: var(--surface);
-  box-shadow: var(--shadow);
-}
-.highlights h2 {
-  margin: 0 0 8px;
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.highlights ul { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; }
-
 .repo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(470px, 100%), 1fr));
@@ -375,7 +356,6 @@ footer a { color: inherit; }
   .issue-date span { font-size: 11px; }
   .issue-head h3 { font-size: 16px; }
   .issue .more { margin-left: 0; }
-  .highlights { padding: 14px 16px; }
   .repo { padding: 16px; }
   .repo-head { gap: 12px; }
   .rank { width: 32px; height: 32px; border-radius: 10px; font-size: 15px; }

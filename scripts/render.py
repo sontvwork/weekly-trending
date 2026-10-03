@@ -325,7 +325,6 @@ def render_site(issues: list[Issue], theme_dir: Path, *, base_url: str, retentio
             week=esc(week_label(issue)),
             count=len(issue.repos),
             fetched=f" · số liệu GitHub lúc {esc(fetched)} (giờ VN)" if fetched else "",
-            highlights=highlight_items(issue),
             cards="".join(repo_card(repo) for repo in issue.repos),
             prev_link=nav(older, f"← Tuần {esc(week_label(older))}" if older else "", "prev"),
             next_link=nav(newer, f"Tuần {esc(week_label(newer))} →" if newer else "", "next"),
