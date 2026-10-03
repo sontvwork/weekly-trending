@@ -103,6 +103,7 @@ code {
 .logo { width: 34px; height: 34px; border-radius: 9px; }
 .title { font-size: 34px; }
 .tagline { margin: 8px 0 0; color: var(--muted); }
+.fetched-at { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
 .back { display: inline-block; margin-bottom: 10px; font-size: 14px; font-weight: 600; text-decoration: none; }
 .back:hover { text-decoration: underline; }
 

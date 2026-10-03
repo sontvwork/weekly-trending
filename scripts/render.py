@@ -324,7 +324,7 @@ def render_site(issues: list[Issue], theme_dir: Path, *, base_url: str, retentio
             url=esc(f"{base}/{issue.href}"),
             week=esc(week_label(issue)),
             count=len(issue.repos),
-            fetched=f" · số liệu GitHub lúc {esc(fetched)} (giờ VN)" if fetched else "",
+            fetched=f'<p class="fetched-at">{esc(fetched)} (VNT)</p>' if fetched else "",
             cards="".join(repo_card(repo) for repo in issue.repos),
             prev_link=nav(older, f"← Tuần {esc(week_label(older))}" if older else "", "prev"),
             next_link=nav(newer, f"Tuần {esc(week_label(newer))} →" if newer else "", "next"),
@@ -333,7 +333,7 @@ def render_site(issues: list[Issue], theme_dir: Path, *, base_url: str, retentio
     latest = issues[0] if issues else None
     distinct = len({repo.name for issue in issues for repo in issue.repos})
     stats = "".join(f'<div class="stat"><b>{value}</b><span>{label}</span></div>' for value, label in [
-        (len(issues), f"bản tin · giữ {retention_weeks} tuần"),
+        (len(issues), "bản tin"),
         (distinct, "repo khác nhau"),
         (f"{latest.day:%d/%m}" if latest else "—", "số mới nhất"),
     ])

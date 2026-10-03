@@ -177,9 +177,9 @@ class ValidateTest(unittest.TestCase):
         self.assertInvalid("tiếng Việt có dấu")
 
     def test_lead_emoji(self) -> None:
-        self.box.edit_card(NEW, tagline="Công cụ dòng lệnh giúp tự động hoá các việc lặp đi lặp lại",
+        self.box.edit_card(NEW, tagline="🛠️ Công cụ dòng lệnh giúp tự động hoá các việc lặp đi lặp lại",
                            use_cases=["Tự động chạy kiểm tra trước khi commit", "🧪 Chạy thử trước khi 🚀 phát hành"])
-        self.assertInvalid("tagline phải mở đầu bằng đúng 1 emoji", "use_cases[1] phải mở đầu bằng đúng 1 emoji",
+        self.assertInvalid("tagline: không dùng emoji", "use_cases[1] phải mở đầu bằng đúng 1 emoji",
                            "use_cases[2]: không dùng emoji")
 
     def test_url_and_markdown(self) -> None:

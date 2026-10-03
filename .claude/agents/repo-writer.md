@@ -29,7 +29,7 @@ Card trả lời 3 câu hỏi: **repo này giải quyết vấn đề gì, dùng
 | Trường | Yêu cầu |
 |---|---|
 | `repo` | Đúng `owner/repo` được giao |
-| `tagline` | 1 dòng, 4–18 từ, **mở đầu bằng đúng 1 emoji** rồi dấu cách. Một câu **tự viết** nêu giá trị cốt lõi, không dịch nguyên mô tả GitHub, không lặp tên repo, không chấm cuối câu |
+| `tagline` | 1 dòng, 4–18 từ, **không emoji**. Một câu **tự viết** nêu giá trị cốt lõi, không dịch nguyên mô tả GitHub, không lặp tên repo, không chấm cuối câu |
 | `summary` | 2–3 câu, tổng 15–70 từ, **không emoji**. Mở bằng một hình ảnh/phép so sánh đời thường để người đọc hiểu ngay vấn đề, rồi mới nói repo giải quyết nó thế nào |
 | `use_cases` | 2–3 mục, mỗi mục 1 dòng, 3–22 từ, **mỗi mục mở đầu bằng đúng 1 emoji** rồi dấu cách (emoji khác nhau, hợp nghĩa). Tình huống cụ thể, nói thẳng việc bạn làm được hoặc nỗi đau được bỏ đi |
 | `audience` | 1–2 câu, 5–32 từ, không emoji. Gọi chung theo hành vi hoặc nhu cầu ("Người dùng nhiều coding agent song song"). Chỉ liệt kê vai trò khi repo thật sự dành riêng cho một nhóm (vd thư viện chỉ dành cho dev iOS) |
@@ -42,7 +42,7 @@ Tưởng tượng bạn đang kể cho một người bạn làm nghề khác ng
 - **Dùng một phép ẩn dụ đời thường** (công ty, nhân viên, nhà bếp, thư viện…) nếu nó làm ý rõ hơn. Ẩn dụ chỉ để giải thích, **không được thêm tính năng không có trong nguồn**. Repo mà ẩn dụ gượng ép (thư viện nhỏ, danh sách link) thì nói thẳng, đừng cố.
 - **Cụ thể thay vì tính từ.** Thay "mạnh mẽ, linh hoạt" bằng một cảnh cụ thể ("sáng ra chỉ việc duyệt kết quả"). Dùng "bạn", câu ngắn, giọng tự nhiên.
 - **Tạo "wow" bằng sự thật trong nguồn**: một nỗi đau người đọc nhận ra ngay, một lời hứa rõ ràng của repo, một điểm lạ. Không từ phóng đại ("tuyệt vời", "cách mạng", "siêu"), không câu view, không khẳng định repo "hot" hay "cả cộng đồng đang dùng".
-- **Emoji:** chỉ ở đầu `tagline` và đầu mỗi `use_case`, đúng 1 emoji mỗi chỗ. Các trường còn lại không emoji (các tiêu đề mục đã có emoji sẵn).
+- **Emoji:** chỉ ở đầu mỗi `use_case`, đúng 1 emoji mỗi chỗ. Các trường còn lại (kể cả `tagline`) không emoji (các tiêu đề mục đã có emoji sẵn).
 - **Thuật ngữ:** giữ nguyên tên riêng, tên sản phẩm và thuật ngữ quen thuộc (agent, RAG, CLI, framework, benchmark…).
 - **README không phải tiếng Anh** (tiếng Trung chẳng hạn): vẫn viết tiếng Việt.
 - **Repo dạng khoá học, tài liệu, danh sách tổng hợp:** nói học hoặc tra cứu được gì; use case là cách tận dụng nội dung đó.
@@ -59,7 +59,7 @@ Nguồn tóm tắt: thư viện Python chuyển PDF/DOCX/PPTX/HTML sang Markdown
 ```json
 {
   "repo": "acme/docparse",
-  "tagline": "📄 Dịch mọi tài liệu lộn xộn thành thứ mà LLM đọc một lần là hiểu",
+  "tagline": "Dịch mọi tài liệu lộn xộn thành thứ mà LLM đọc một lần là hiểu",
   "summary": "Đưa cho LLM một file PDF cũng như đưa cho người ta bản photo nghiêng, mờ, mất bảng biểu. docparse là người chép lại cẩn thận: biến PDF, Word, slide thành Markdown sạch, giữ nguyên tiêu đề, bảng và danh sách. Tất cả chạy trên máy bạn, không gửi tài liệu đi đâu.",
   "use_cases": [
     "🧹 Dọn sạch kho tài liệu nội bộ trước khi dựng RAG, khỏi lo AI đọc sai bảng",

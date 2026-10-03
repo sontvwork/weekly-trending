@@ -68,7 +68,7 @@ CARD_REQUIRED = {"repo", "tagline", "summary", "use_cases", "audience"}
 # Độ dài tính bằng SỐ TỪ (tách theo khoảng trắng), khớp với cách prompt mô tả — LLM không đếm được ký tự.
 TEXT_LIMITS = {"tagline": (4, 18), "summary": (15, 70), "audience": (5, 32), "notable": (0, 32)}
 USE_CASE_LIMITS = (3, 22)
-LEAD_EMOJI_FIELDS = ("tagline",)  # cùng use_cases: mở đầu bằng đúng 1 emoji, chỉ ở đầu; các trường còn lại không emoji
+LEAD_EMOJI_FIELDS = ()  # trường trong TEXT_LIMITS bắt buộc mở đầu bằng 1 emoji; use_cases xử lý riêng
 USE_CASE_COUNT = (2, 3)
 MAX_REFS = 3
 HIGHLIGHT_LINES = (1, 3)
