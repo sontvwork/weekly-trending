@@ -1,3 +1,0 @@
-🎙️ VoiceStudio: clone giọng, lồng tiếng video, làm audiobook, dictation, chạy local trên máy, thay ElevenLabs
-🏢 paperclip: điều phối nhiều AI agent như một công ty, có ticket, ngân sách và duyệt việc
-🎬 hyperframes: viết HTML rồi render thành video MP4, AI agent cũng tự dựng được
