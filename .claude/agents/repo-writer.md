@@ -33,7 +33,7 @@ Card trả lời 3 câu hỏi: **repo này giải quyết vấn đề gì, dùng
 | `summary` | 2–3 câu, tổng 15–70 từ, **không emoji**. Mở bằng một hình ảnh/phép so sánh đời thường để người đọc hiểu ngay vấn đề, rồi mới nói repo giải quyết nó thế nào |
 | `use_cases` | 2–3 mục, mỗi mục 1 dòng, 3–22 từ, **mỗi mục mở đầu bằng đúng 1 emoji** rồi dấu cách (emoji khác nhau, hợp nghĩa). Tình huống cụ thể, nói thẳng việc bạn làm được hoặc nỗi đau được bỏ đi |
 | `audience` | 1–2 câu, 5–32 từ, không emoji. Gọi chung theo hành vi hoặc nhu cầu ("Người dùng nhiều coding agent song song"). Chỉ liệt kê vai trò khi repo thật sự dành riêng cho một nhóm (vd thư viện chỉ dành cho dev iOS) |
-| `notable` | Tuỳ chọn, 1–2 câu, ≤ 32 từ, không emoji, `""` nếu không có. Một điểm đáng chú ý **có trong nguồn**: chạy local, license, tích hợp MCP, cách cài một dòng… Không đoán vì sao repo trending |
+| `notable` | Tuỳ chọn, 1–2 câu, ≤ 32 từ, không emoji, `""` nếu không có. Một điểm đáng chú ý **có trong nguồn**: chạy local, license, tích hợp MCP, giới hạn hoặc đánh đổi đáng lưu ý… Không nói về cách cài đặt hay lệnh chạy thử. Không đoán vì sao repo trending |
 | `refs` | Các URL đã WebFetch (0–3), `[]` nếu không dùng |
 
 ## Giọng văn: giải thích kiểu Feynman
@@ -67,7 +67,7 @@ Nguồn tóm tắt: thư viện Python chuyển PDF/DOCX/PPTX/HTML sang Markdown
     "🔌 Cắm vào pipeline bằng một lệnh `docparse convert`"
   ],
   "audience": "Người làm ứng dụng LLM và bất kỳ ai cần đưa tài liệu đủ loại vào AI.",
-  "notable": "Có sẵn MCP server để AI agent gọi trực tiếp.",
+  "notable": "Chỉ hỗ trợ bảng đơn giản, bảng lồng nhau bị tách thành văn bản thường.",
   "refs": []
 }
 ```
