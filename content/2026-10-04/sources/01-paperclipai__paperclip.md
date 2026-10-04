@@ -5,10 +5,10 @@
 - URL: https://github.com/paperclipai/paperclip
 - Mô tả trên GitHub: The open-source app everyone uses to manage agents at work
 - Ngôn ngữ chính: TypeScript
-- Tổng sao: 96464
-- Sao tăng trong tuần: 12825
-- Fork: 16337
-- Lấy lúc (UTC): 2026-10-03T09:54:38Z
+- Tổng sao: 97003
+- Sao tăng trong tuần: 10722
+- Fork: 16414
+- Lấy lúc (UTC): 2026-10-04T15:07:22Z
 - README: README.md (33696 ký tự, đã cắt còn 30000)
 
 ======== README (nguyên văn) ========

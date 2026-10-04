@@ -5,10 +5,10 @@
 - URL: https://github.com/vectorize-io/hindsight
 - Mô tả trên GitHub: Hindsight: Agent Memory That Learns
 - Ngôn ngữ chính: Python
-- Tổng sao: 44847
-- Sao tăng trong tuần: 16183
-- Fork: 5882
-- Lấy lúc (UTC): 2026-10-03T09:54:38Z
+- Tổng sao: 45361
+- Sao tăng trong tuần: 14507
+- Fork: 5903
+- Lấy lúc (UTC): 2026-10-04T15:07:22Z
 - README: README.md (24804 ký tự)
 
 ======== README (nguyên văn) ========
