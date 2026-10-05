@@ -18,8 +18,10 @@ Bạn là routine "Weekly Trending", chạy tự động mỗi tối Chủ nhậ
 2. Chạy `git checkout main && git pull --ff-only origin main`. Sandbox có thể dùng lại một bản clone cũ, nên bước này là bắt buộc.
 
 ## Bước 1 — Lấy dữ liệu (tên bước khi lỗi: `crawl`)
-Sandbox này không tải được trang trending (proxy chặn), nên workflow GitHub Actions `Crawl` đã crawl lúc 17:00 và đẩy kết quả lên branch dữ liệu `trending-data`.
-1. Chạy `python3 scripts/trending.py import <DATE>` (Bash timeout 300000). Lệnh chỉ `git fetch` branch đó rồi đọc file; KHÔNG checkout hay tạo branch. Kết quả ghi vào `content/<DATE>/trending.json` và `content/<DATE>/sources/`.
+Bối cảnh: sandbox này không tải được trang trending (proxy chặn). Vì vậy dữ liệu được một workflow GitHub Actions (`Crawl`) crawl sẵn trong ngày, rồi đẩy lên branch `trending-data`.
+
+Việc của bạn:
+1. Chạy `python3 scripts/trending.py import <DATE>` (Bash timeout 300000) để lấy dữ liệu từ branch đó.
 2. Chỉ khi lệnh trên exit ≠ 0: thử crawl trực tiếp `python3 scripts/trending.py crawl <DATE>` (Bash timeout 300000).
 3. Nếu cả hai đều exit ≠ 0: báo lỗi bước `crawl`, kèm dòng lỗi cuối của CẢ HAI lệnh, rồi dừng. KHÔNG tự chạy workflow hay tìm nguồn khác.
 

@@ -6,7 +6,9 @@ name: Crawl
 # Bot KHÔNG commit vào main: mọi commit trên main phải do sontvwork author (routine bị từ chối push nếu khác).
 on:
   schedule:
-    - cron: "0 10 * * 0" # 17:00 Chủ nhật giờ VN — cron Actions có thể trễ vài chục phút, chừa 2 tiếng trước routine
+    # 08:49, 11:49, 14:49, 17:49 Chủ nhật giờ VN. Cron Actions có thể trễ nhiều giờ (04/10/2026: hẹn 17:00, chạy 22:07),
+    # nên crawl nhiều lần trong ngày: chỉ cần một lần chạy trước routine 19:00. Lần sau ghi đè bằng dữ liệu mới hơn.
+    - cron: "49 1,4,7,10 * * 0"
   workflow_dispatch:
 
 permissions:
