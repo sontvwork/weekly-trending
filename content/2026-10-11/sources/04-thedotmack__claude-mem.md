@@ -5,10 +5,10 @@
 - URL: https://github.com/thedotmack/claude-mem
 - Mô tả trên GitHub: Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More
 - Ngôn ngữ chính: TypeScript
-- Tổng sao: 99399
+- Tổng sao: 99598
 - Sao tăng trong tuần: 4035
-- Fork: 8714
-- Lấy lúc (UTC): 2026-10-11T07:51:55Z
+- Fork: 8733
+- Lấy lúc (UTC): 2026-10-11T16:26:02Z
 - README: README.md (19550 ký tự)
 
 ======== README (nguyên văn) ========

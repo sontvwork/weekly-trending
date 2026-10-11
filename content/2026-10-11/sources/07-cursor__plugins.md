@@ -5,10 +5,10 @@
 - URL: https://github.com/cursor/plugins
 - Mô tả trên GitHub: Cursor plugin specification and official plugins
 - Ngôn ngữ chính: TypeScript
-- Tổng sao: 10797
+- Tổng sao: 10856
 - Sao tăng trong tuần: 1110
-- Fork: 1027
-- Lấy lúc (UTC): 2026-10-11T07:51:55Z
+- Fork: 1035
+- Lấy lúc (UTC): 2026-10-11T16:26:02Z
 - README: README.md (14371 ký tự)
 
 ======== README (nguyên văn) ========
