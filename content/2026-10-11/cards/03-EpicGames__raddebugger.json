@@ -1,0 +1,13 @@
+{
+  "repo": "EpicGames/raddebugger",
+  "tagline": "Debugger đồ họa native cho Windows, kèm linker riêng cho dự án khổng lồ",
+  "summary": "Debug một chương trình C/C++ lớn mà công cụ cứ ì ạch thì như soi lỗi qua kính mờ. RAD Debugger là debugger đồ họa chạy native, theo dõi nhiều process cùng lúc, đọc debug info PDB của bạn. Đi kèm RAD Linker, trình link tối ưu cho file thực thi khổng lồ.",
+  "use_cases": [
+    "🐞 Debug ứng dụng native trên Windows x64 bằng giao diện đồ họa, theo dõi nhiều process cùng lúc",
+    "⚡ Rút ngắn vòng compile-debug của dự án lớn bằng linker tương thích cú pháp MSVC",
+    "🔬 Chuyển PDB sang định dạng RDI và xuất bản dump dạng text bằng `radbin`"
+  ],
+  "audience": "Lập trình viên C/C++ làm dự án native lớn trên Windows, cần debugger nhanh và linker không làm chậm vòng build.",
+  "notable": "Đang ở giai đoạn ALPHA, hiện chỉ debug local trên Windows x64 với PDB; hỗ trợ Linux và DWARF nằm trong kế hoạch.",
+  "refs": []
+}

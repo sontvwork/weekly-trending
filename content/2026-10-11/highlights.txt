@@ -1,0 +1,3 @@
+🎮 AnyPS5: chạy thẳng file thực thi PS5 trên Linux và Windows, chuyển sang định dạng gốc, không cần giả lập
+🧠 claude-mem: cho coding agent trí nhớ dài hạn, tự tóm tắt phiên và nạp lại vào phiên sau
+🎬 hyperframes: viết video bằng HTML, agent dựng và xuất MP4, cùng đầu vào luôn ra cùng kết quả

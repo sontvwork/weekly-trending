@@ -1,0 +1,13 @@
+{
+  "repo": "mvschwarz/openrig",
+  "tagline": "Biến đám phiên terminal của coding agent thành một đội có vai trò rõ ràng",
+  "summary": "Chạy nhiều coding agent cùng lúc giống như có nhân viên mà không có phòng ban: mỗi người một cửa sổ, chẳng ai biết ai đang làm gì. OpenRig gom Claude Code và Codex thành một đội khai báo bằng YAML, mỗi agent có vai trò và địa chỉ riêng, khởi động bằng một lệnh.",
+  "use_cases": [
+    "👥 Giao một thay đổi cho agent builder, để agent reviewer khác kiểm tra rồi mới đến tay bạn",
+    "💾 Tắt máy xong dựng lại nguyên đội từ snapshot bằng `rig up`, khỏi setup lại từ đầu",
+    "🔎 Gom các phiên tmux đang chạy rời rạc vào một bảng TUI để thấy agent nào đang làm gì"
+  ],
+  "audience": "Người dùng nhiều coding agent song song và muốn chúng phối hợp như một đội thay vì một đống terminal.",
+  "notable": "Khi chạy, nó ghi hook và cài đặt tin cậy vào cấu hình Claude Code và Codex của bạn, nên nên sao lưu trước. Cần tmux, chưa hỗ trợ Windows gốc.",
+  "refs": []
+}

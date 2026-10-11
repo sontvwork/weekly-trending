@@ -1,0 +1,13 @@
+{
+  "repo": "mattpocock/skills",
+  "tagline": "Bộ skill nhỏ cho coding agent để làm kỹ thuật thật, không phải vibe coding",
+  "summary": "Giao việc cho một dev mới mà không hỏi lại thì kiểu gì cũng ra thứ bạn không muốn. Coding agent cũng vậy. Bộ skill này là những thói quen kỹ thuật của tác giả, đóng gói thành lệnh như `/grill-me` (agent hỏi bạn tới nơi tới chốn trước khi code), `/tdd` và `/diagnosing-bugs`, mỗi skill nhỏ để bạn tự sửa theo ý.",
+  "use_cases": [
+    "🔥 Để agent phỏng vấn bạn về kế hoạch trước khi viết code, khỏi làm ra thứ sai ý",
+    "🧪 Bắt agent viết test fail trước rồi mới sửa, nhờ đó code có phản hồi liên tục",
+    "🧭 Lập danh sách thuật ngữ chung của dự án để agent bớt nói dài dòng"
+  ],
+  "audience": "Người dùng Claude Code, Codex hay coding agent khác hằng ngày, muốn giữ quyền kiểm soát quy trình thay vì giao hết cho một framework có sẵn.",
+  "notable": "Hoạt động với mọi model. Tác giả nói rõ skill kiến trúc chỉ là khảo sát tìm ứng viên, không tự gỡ rối codebase cũ.",
+  "refs": []
+}

@@ -1,0 +1,13 @@
+{
+  "repo": "thedotmack/claude-mem",
+  "tagline": "Cho coding agent trí nhớ dài hạn để phiên mới khỏi bắt đầu từ số không",
+  "summary": "Làm việc với agent mỗi phiên mới giống như thuê một người bị mất trí nhớ: bạn phải kể lại dự án từ đầu. claude-mem ghi lại những gì agent làm trong phiên, nén thành tóm tắt bằng AI, rồi tự nhét phần liên quan vào các phiên sau.",
+  "use_cases": [
+    "🧠 Mở phiên mới là agent đã nhớ quyết định và bug đã sửa từ hôm trước",
+    "🔍 Hỏi lại lịch sử dự án bằng ngôn ngữ tự nhiên, ví dụ tìm lỗi authentication cũ",
+    "🔒 Gắn thẻ `<private>` để nội dung nhạy cảm không bị lưu vào bộ nhớ"
+  ],
+  "audience": "Người dùng coding agent hằng ngày, đặc biệt Claude Code, Codex, Gemini hay OpenCode, và mệt vì phải giải thích lại bối cảnh mỗi phiên.",
+  "notable": "Có web viewer xem luồng bộ nhớ theo thời gian thực, giấy phép Apache 2.0. Cài đặt có bước đăng nhập tuỳ chọn để dùng dịch vụ observer trực tuyến.",
+  "refs": []
+}
