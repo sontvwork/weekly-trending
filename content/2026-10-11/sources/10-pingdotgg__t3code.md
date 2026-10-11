@@ -5,11 +5,11 @@
 - URL: https://github.com/pingdotgg/t3code
 - Mô tả trên GitHub: (không có)
 - Ngôn ngữ chính: TypeScript
-- Tổng sao: 24982
-- Sao tăng trong tuần: 975
-- Fork: 6482
-- Lấy lúc (UTC): 2026-10-04T15:07:22Z
-- README: README.md (4539 ký tự)
+- Tổng sao: 26865
+- Sao tăng trong tuần: 2367
+- Fork: 7049
+- Lấy lúc (UTC): 2026-10-11T07:51:55Z
+- README: README.md (4701 ký tự)
 
 ======== README (nguyên văn) ========
 
@@ -63,6 +63,12 @@ Install the latest version of the desktop app from [GitHub Releases](https://git
 winget install T3Tools.T3Code
 ```
 
+#### Windows (`scoop`)
+
+```bash
+scoop install extras/t3code
+```
+
 #### macOS (Homebrew)
 
 ```bash
@@ -109,6 +115,7 @@ Full docs live in [docs/](./docs). There's no docs site yet.
 - [Project settings](./docs/user/project-settings.md)
 - [Appearance preferences](./docs/user/appearance.md)
 - [Remote access from a phone or another machine](./docs/user/remote-access.md)
+- [Connect Claude Code, Codex, ChatGPT and other agents over MCP](./docs/user/outside-agents.md)
 - [Keeping app and server in sync](./docs/user/updating.md)
 - [Source control integrations](./docs/user/source-control.md)
 - Multiple accounts: [Codex](./docs/user/providers-codex.md) · [Claude](./docs/user/providers-claude.md)
