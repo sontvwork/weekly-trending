@@ -5,10 +5,10 @@
 - URL: https://github.com/storytold/artcraft
 - Mô tả trên GitHub: ArtCraft is an intentional crafting engine for artists, designers, and filmmakers
 - Ngôn ngữ chính: Rust
-- Tổng sao: 32009
+- Tổng sao: 32245
 - Sao tăng trong tuần: 18479
-- Fork: 5071
-- Lấy lúc (UTC): 2026-10-18T06:38:08Z
+- Fork: 5110
+- Lấy lúc (UTC): 2026-10-18T12:11:41Z
 - README: README.md (14376 ký tự)
 
 ======== README (nguyên văn) ========

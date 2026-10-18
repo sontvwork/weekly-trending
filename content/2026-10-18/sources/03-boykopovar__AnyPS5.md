@@ -5,10 +5,10 @@
 - URL: https://github.com/boykopovar/AnyPS5
 - Mô tả trên GitHub: Tool for automatic PS5 executables porting to Linux and Windows
 - Ngôn ngữ chính: C++
-- Tổng sao: 42089
+- Tổng sao: 42481
 - Sao tăng trong tuần: 16250
-- Fork: 3814
-- Lấy lúc (UTC): 2026-10-18T06:38:08Z
+- Fork: 3850
+- Lấy lúc (UTC): 2026-10-18T12:11:41Z
 - README: README.md (2973 ký tự)
 
 ======== README (nguyên văn) ========

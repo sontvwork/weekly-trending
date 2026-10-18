@@ -5,10 +5,10 @@
 - URL: https://github.com/morluto/rea
 - Mô tả trên GitHub: Reverse engineer anything with agents, from app behavior down to native binaries.
 - Ngôn ngữ chính: TypeScript
-- Tổng sao: 311359
+- Tổng sao: 315189
 - Sao tăng trong tuần: 239923
-- Fork: 78874
-- Lấy lúc (UTC): 2026-10-18T06:38:08Z
+- Fork: 79894
+- Lấy lúc (UTC): 2026-10-18T12:11:41Z
 - README: README.md (22541 ký tự)
 
 ======== README (nguyên văn) ========
