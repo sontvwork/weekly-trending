@@ -1,0 +1,13 @@
+{
+  "repo": "boykopovar/AnyPS5",
+  "tagline": "Chuyển file thực thi PS5 sang Linux và Windows mà không cần giả lập",
+  "summary": "Mang một cuốn sách viết cho máy này sang máy khác, bạn thường phải thuê người dịch ngồi cạnh đọc to từng trang. AnyPS5 thì dịch hẳn cuốn sách sang định dạng gốc của hệ điều hành đích, kèm bản cài đặt các thư viện hệ thống PS5 để liên kết động. Không có giả lập, không có tiến trình runtime riêng.",
+  "use_cases": [
+    "🔄 Đổi file thực thi PS5 sang định dạng gốc của Linux hoặc Windows",
+    "🌐 Thử chuyển đổi ngay trên trình duyệt, file vẫn nằm trên máy bạn",
+    "🎮 Chơi thử bằng tay cầm SDL hoặc bàn phím và chuột cấu hình qua `anyps5-input.ini`"
+  ],
+  "audience": "Người quan tâm đến tương thích ngược, bảo tồn game và nghiên cứu cách chạy phần mềm console trên PC.",
+  "notable": "Dự án còn đang phát triển: tiến độ thư viện và shader được theo dõi công khai, gặp trạng thái chưa hỗ trợ sẽ báo lỗi và dừng. Giấy phép GPL v2.",
+  "refs": []
+}

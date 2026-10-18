@@ -1,0 +1,13 @@
+{
+  "repo": "heygen-com/hyperframes",
+  "tagline": "Viết trang HTML, agent dựng thành video MP4 cho bạn",
+  "summary": "Làm video thường như bắt đầu lại với một phần mềm dựng phim khó nhờ AI giúp. HyperFrames cho bạn dựng video bằng chính HTML và CSS, thứ mà coding agent vốn viết rất quen. Bạn gắn thuộc tính thời gian vào từng phần tử, xem thử trên trình duyệt, rồi render ra MP4. Cùng một đầu vào luôn ra cùng một video.",
+  "use_cases": [
+    "🚀 Nhờ agent dựng video giới thiệu sản phẩm từ một câu prompt",
+    "🔀 Biến một pull request thành video giải thích có code diff, lời dẫn và phụ đề",
+    "📈 Tự động xuất biểu đồ động hoặc motion graphic trong pipeline CI, không cần mở phần mềm dựng"
+  ],
+  "audience": "Người dùng coding agent muốn tạo video bằng lời nhắc, và dev web muốn làm video bằng HTML thay vì học phần mềm dựng phim.",
+  "notable": "Giấy phép Apache 2.0, không tính phí theo lượt render. Có thể render local hoặc trên AWS Lambda, cần Node.js 22+ và FFmpeg.",
+  "refs": []
+}

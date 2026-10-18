@@ -1,0 +1,3 @@
+🔍 rea: cho agent mổ xẻ app không có mã nguồn và chỉ ra bằng chứng cho từng kết luận
+🎬 artcraft: dựng cảnh trước rồi mới tạo ảnh, video AI, không phải ngồi đoán prompt
+🎮 AnyPS5: chuyển file thực thi PS5 sang Linux và Windows mà không cần giả lập

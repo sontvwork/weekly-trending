@@ -1,0 +1,13 @@
+{
+  "repo": "storytold/artcraft",
+  "tagline": "Dựng cảnh trước rồi mới tạo ảnh, video AI, thay vì ngồi đoán prompt",
+  "summary": "Tạo ảnh AI bằng prompt giống gọi món qua điện thoại: ra món gì cũng phải chờ may rủi. ArtCraft cho bạn vào bếp: bày cảnh 2D hoặc 3D, đặt dáng nhân vật, chọn góc máy, rồi mới cho model sinh ảnh hoặc video. Bạn chọn được model phù hợp với việc đang làm.",
+  "use_cases": [
+    "🎬 Lên nhiều shot trong cùng một căn phòng mà bối cảnh không bị đổi giữa các lần tạo",
+    "🧍 Đặt dáng cho nhân vật bằng hình nộm 3D, giữ đúng tư thế và vị trí khi sinh ảnh",
+    "🖌️ Vẽ mask, inpaint để chỉ sửa đúng chỗ cần đổi trong ảnh rồi biến ảnh thành video"
+  ],
+  "audience": "Người làm hình ảnh, thiết kế, phim cần kiểm soát bố cục và nhân vật khi dùng AI, thay vì chỉ gõ prompt.",
+  "notable": "Có bản cho Windows và macOS, Linux cần tự build từ source. License kép MIT hoặc Apache-2.0.",
+  "refs": []
+}

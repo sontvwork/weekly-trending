@@ -1,0 +1,13 @@
+{
+  "repo": "mattpocock/skills",
+  "tagline": "Bộ skill nhỏ giúp coding agent hỏi kỹ, viết test và giữ code gọn",
+  "summary": "Giao việc cho một dev mới mà không giải thích kỹ thì bạn sẽ nhận về thứ mình không muốn. Coding agent cũng vậy. Repo này gom các skill tác giả dùng hằng ngày: agent phỏng vấn bạn trước khi làm, dùng chung bảng thuật ngữ của dự án, viết test trước rồi mới code. Mỗi skill nhỏ, dễ sửa, chạy với model nào cũng được.",
+  "use_cases": [
+    "🔥 Gõ `/grill-me` để agent hỏi dồn từng nhánh thiết kế, khỏi cảnh code xong mới thấy hiểu sai ý",
+    "🧪 Dùng `/tdd` để agent làm theo vòng red-green-refactor, có phản hồi liên tục thay vì code mò",
+    "🏗️ Chạy `/improve-codebase-architecture` định kỳ để tìm chỗ nên gom lại cho code bớt rối"
+  ],
+  "audience": "Người dùng coding agent hằng ngày, muốn tự kiểm soát quy trình thay vì để một framework quy trình quyết định hết.",
+  "notable": "Trên codebase cũ, công cụ kiến trúc chỉ liệt kê ứng viên cải thiện, không tự gỡ rối giúp bạn. Hỗ trợ Claude Code, Codex, Copilot, Gemini CLI.",
+  "refs": []
+}

@@ -1,0 +1,13 @@
+{
+  "repo": "mksglu/context-mode",
+  "tagline": "Giữ context window của coding agent không bị dữ liệu thô nuốt sạch",
+  "summary": "Bắt agent đọc nguyên một bản snapshot hay một loạt issue cũng như đổ cả thùng giấy lên bàn làm việc: chẳng mấy chốc hết chỗ để nghĩ. context-mode giữ dữ liệu thô trong sandbox, chỉ đưa kết quả cô đọng vào context, và ghi lại tiến độ phiên vào SQLite để agent không quên mình đang làm gì sau khi compact.",
+  "use_cases": [
+    "🧯 Chạy phiên code dài mà context không cạn sau vài chục phút gọi tool",
+    "🧠 Sau khi hội thoại bị compact, agent vẫn nhớ file đang sửa và việc đang dở",
+    "📈 Xem agent tiết kiệm được bao nhiêu context qua lệnh `ctx stats`"
+  ],
+  "audience": "Người dùng coding agent cho phiên làm việc dài, hay gọi nhiều MCP tool và hay vấp tình trạng agent quên việc sau khi compact.",
+  "notable": "Hỗ trợ nhiều nền tảng như Claude Code, Gemini CLI, Cursor, OpenCode. License ELv2, không phải license mã nguồn mở thông thường.",
+  "refs": []
+}
