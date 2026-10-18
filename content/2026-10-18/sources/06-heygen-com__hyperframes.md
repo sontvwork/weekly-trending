@@ -5,10 +5,10 @@
 - URL: https://github.com/heygen-com/hyperframes
 - Mô tả trên GitHub: Write HTML. Render video. Built for agents.
 - Ngôn ngữ chính: TypeScript
-- Tổng sao: 60736
-- Sao tăng trong tuần: 4081
-- Fork: 5433
-- Lấy lúc (UTC): 2026-10-11T16:26:02Z
+- Tổng sao: 66141
+- Sao tăng trong tuần: 5639
+- Fork: 5975
+- Lấy lúc (UTC): 2026-10-18T06:38:08Z
 - README: README.md (28879 ký tự)
 
 ======== README (nguyên văn) ========
