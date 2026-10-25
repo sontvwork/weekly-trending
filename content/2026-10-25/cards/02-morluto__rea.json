@@ -1,0 +1,13 @@
+{
+  "repo": "morluto/rea",
+  "tagline": "Cho agent mổ xẻ một app có sẵn để hiểu tính năng nó hoạt động ra sao",
+  "summary": "Thấy một tính năng hay trong app người khác mà không có mã nguồn thì chỉ biết đứng nhìn chiếc hộp đóng kín. REA là bộ dụng cụ mở hộp cho agent: nó đọc binary, app Electron, .NET hay website, rồi trả về phát hiện kèm bằng chứng. Agent dựa vào đó để giải thích cơ chế, thậm chí viết bản tương tự cho dự án của bạn.",
+  "use_cases": [
+    "🔍 Hỏi agent app Notes tìm kiếm thế nào, nhận lại lời giải thích kèm bằng chứng",
+    "🧩 Lần theo đường đi của clipboard trong app Electron, từ giao diện tới tiến trình chính",
+    "🛠️ Dựng lại một đoạn tính toán từ binary cũ thành code C rồi kiểm thử"
+  ],
+  "audience": "Người dùng coding agent muốn hiểu hoặc học theo cách một phần mềm đóng hoạt động, và dev làm nghiên cứu, bảo tồn hay tương thích phần mềm.",
+  "notable": "Phân tích chạy local, kết quả nêu cả giới hạn. Phân tích native cần Hopper, Ghidra hoặc IDA, giấy phép MIT, chỉ dùng cho phần mềm hợp pháp được phép phân tích.",
+  "refs": []
+}

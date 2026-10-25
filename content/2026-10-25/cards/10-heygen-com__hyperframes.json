@@ -1,0 +1,13 @@
+{
+  "repo": "heygen-com/hyperframes",
+  "tagline": "Viết một trang HTML, để agent dựng nó thành video MP4",
+  "summary": "Làm video thường giống đứng trong phòng dựng với một timeline phức tạp mà AI khó chạm vào. HyperFrames cho video thành một trang HTML quen thuộc: bạn gắn thời điểm bắt đầu, thời lượng, track, rồi nó quay từng khung trong Chrome headless và ghép bằng FFmpeg. Cùng đầu vào luôn ra cùng video.",
+  "use_cases": [
+    "🎬 Nhờ Claude Code hay Codex làm video giới thiệu sản phẩm chỉ bằng một câu lệnh",
+    "📊 Biến dữ liệu thành biểu đồ, bản đồ chuyển động mà không cần phần mềm dựng",
+    "🤖 Cho pipeline tự động xuất video có caption, overlay, nhạc nền, và render lại ra kết quả y hệt trong CI"
+  ],
+  "audience": "Người muốn để coding agent hoặc script tự làm video thay vì ngồi dựng tay, đặc biệt ai đã quen viết HTML, CSS.",
+  "notable": "Giấy phép Apache 2.0, render local hoặc Docker, không tính phí mỗi lần render. Cần Node.js 22+ và FFmpeg.",
+  "refs": []
+}

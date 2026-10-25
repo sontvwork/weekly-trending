@@ -5,8 +5,17 @@
   <subtitle>Bản tin tiếng Việt về các repo nổi bật nhất trên GitHub mỗi tuần: để làm gì, ai nên dùng, use case.</subtitle>
   <link rel="self" type="application/atom+xml" href="https://sontvwork.github.io/weekly-trending/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sontvwork.github.io/weekly-trending/"/>
-  <updated>2026-10-18T12:00:00Z</updated>
+  <updated>2026-10-25T12:00:00Z</updated>
   <author><name>Weekly Trending</name></author>
+  <entry>
+    <id>https://sontvwork.github.io/weekly-trending/2026-10-25/</id>
+    <title>Top 10 GitHub Trending · 19/10 – 25/10/2026</title>
+    <link rel="alternate" type="text/html" href="https://sontvwork.github.io/weekly-trending/2026-10-25/"/>
+    <published>2026-10-25T12:00:00Z</published>
+    <updated>2026-10-25T12:00:00Z</updated>
+    <summary type="text">🛡️ security-audit-skill: biến coding agent thành đội kiểm toán bảo mật, agent riêng săn lỗi và kiểm chứng, loại báo động giả · 🔬 rea: cho agent mổ xẻ binary, app Electron, .NET hay website để giải thích cơ chế, kèm bằng chứng · 🌳 orca: chạy nhiều coding agent song song, mỗi agent một git worktree riêng, so kết quả rồi merge</summary>
+    <content type="html">&lt;p&gt;🛡️ security-audit-skill: biến coding agent thành đội kiểm toán bảo mật, agent riêng săn lỗi và kiểm chứng, loại báo động giả&lt;br&gt;🔬 rea: cho agent mổ xẻ binary, app Electron, .NET hay website để giải thích cơ chế, kèm bằng chứng&lt;br&gt;🌳 orca: chạy nhiều coding agent song song, mỗi agent một git worktree riêng, so kết quả rồi merge&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/cloudflare/security-audit-skill&quot;&gt;cloudflare/security-audit-skill&lt;/a&gt; — Biến coding agent thành đội kiểm toán bảo mật tự cãi nhau để loại báo động giả&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/morluto/rea&quot;&gt;morluto/rea&lt;/a&gt; — Cho agent mổ xẻ một app có sẵn để hiểu tính năng nó hoạt động ra sao&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/anthropics/claude-plugins-official&quot;&gt;anthropics/claude-plugins-official&lt;/a&gt; — Cửa hàng ứng dụng chính thức để mở rộng Claude Code bằng plugin&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/ruvnet/ruflo&quot;&gt;ruvnet/ruflo&lt;/a&gt; — Biến một Claude Code đơn lẻ thành cả đội agent biết phối hợp và nhớ việc&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/stablyai/orca&quot;&gt;stablyai/orca&lt;/a&gt; — Một bảng điều khiển để chạy nhiều coding agent song song mà không giẫm chân nhau&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/anomalyco/opencode&quot;&gt;anomalyco/opencode&lt;/a&gt; — Trợ lý lập trình AI mã nguồn mở, ngồi ngay trong terminal của bạn&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/cursor/plugins&quot;&gt;cursor/plugins&lt;/a&gt; — Kho plugin chính thức để dạy agent của Cursor làm thêm nhiều việc&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/android/skills&quot;&gt;android/skills&lt;/a&gt; — Bộ cẩm nang từ đội Android để AI agent code Android đúng bài&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/anthropics/knowledge-work-plugins&quot;&gt;anthropics/knowledge-work-plugins&lt;/a&gt; — Biến Claude thành đồng nghiệp chuyên đúng vai trò của bạn, từ sales tới legal&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/heygen-com/hyperframes&quot;&gt;heygen-com/hyperframes&lt;/a&gt; — Viết một trang HTML, để agent dựng nó thành video MP4&lt;/li&gt;&lt;/ol&gt;</content>
+  </entry>
   <entry>
     <id>https://sontvwork.github.io/weekly-trending/2026-10-18/</id>
     <title>Top 10 GitHub Trending · 12/10 – 18/10/2026</title>

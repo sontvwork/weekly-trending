@@ -1,0 +1,13 @@
+{
+  "repo": "android/skills",
+  "tagline": "Bộ cẩm nang từ đội Android để AI agent code Android đúng bài",
+  "summary": "Giao việc cho một lập trình viên giỏi nhưng chưa đọc tài liệu mới nhất thì kiểu gì cũng làm sai vài chỗ. Android skills là các file SKILL.md do đội Android soạn, tập trung vào những tình huống mà đánh giá cho thấy LLM còn làm yếu. Agent cài vào là tự tra đúng hướng dẫn chuẩn của developer.android.com.",
+  "use_cases": [
+    "📱 Nhờ agent làm UI edge-to-edge mà không phải tự dán tài liệu vào prompt",
+    "🔌 Cài một lần cho Claude Code, Codex hoặc Gemini, agent tự kích hoạt skill khi thấy việc liên quan",
+    "🔄 Cập nhật cả bộ hoặc từng skill bằng `android skills update`"
+  ],
+  "audience": "Người dùng coding agent để làm app Android và muốn agent bám sát hướng dẫn chính thức thay vì đoán mò.",
+  "notable": "Chủ yếu nhắm vào các việc LLM làm chưa tốt, không lặp lại thứ như Compose cơ bản. Giấy phép Apache 2.0, hiện chưa nhận đóng góp công khai.",
+  "refs": []
+}

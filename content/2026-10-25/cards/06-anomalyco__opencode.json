@@ -1,0 +1,13 @@
+{
+  "repo": "anomalyco/opencode",
+  "tagline": "Trợ lý lập trình AI mã nguồn mở, ngồi ngay trong terminal của bạn",
+  "summary": "Giao việc cho một đồng nghiệp mới thì bạn muốn họ đọc hiểu code trước rồi mới sửa. OpenCode là coding agent mã nguồn mở có sẵn hai chế độ để bạn đổi bằng phím `Tab`: build được toàn quyền làm việc, plan chỉ đọc và phân tích. Ngoài terminal, nó còn có bản desktop (beta).",
+  "use_cases": [
+    "🔍 Dùng chế độ plan để khám phá codebase lạ mà không sợ nó tự sửa file",
+    "🛠️ Chuyển sang build để agent trực tiếp viết và sửa code cho việc đang làm",
+    "🧭 Gọi `@general` để nhờ subagent tìm kiếm và xử lý tác vụ nhiều bước"
+  ],
+  "audience": "Người muốn có coding agent mã nguồn mở, làm việc trong terminal hoặc app desktop, và kiểm soát được lúc nào agent được phép sửa code.",
+  "notable": "Chế độ plan mặc định từ chối sửa file và hỏi quyền trước khi chạy lệnh bash. Bản desktop vẫn đang ở giai đoạn beta.",
+  "refs": []
+}

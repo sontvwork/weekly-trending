@@ -1,0 +1,13 @@
+{
+  "repo": "stablyai/orca",
+  "tagline": "Một bảng điều khiển để chạy nhiều coding agent song song mà không giẫm chân nhau",
+  "summary": "Chạy nhiều coding agent cùng lúc giống như cho năm đầu bếp nấu chung một cái bếp: ai cũng sửa đè lên file của người kia. Orca cho mỗi agent một git worktree riêng, gom tất cả vào một cửa sổ để bạn theo dõi, so kết quả rồi merge bản tốt nhất.",
+  "use_cases": [
+    "🔀 Giao một prompt cho nhiều agent, so kết quả rồi chọn bản đáng merge",
+    "📱 Đi cà phê vẫn nhận thông báo khi agent xong việc và nhắn tiếp từ điện thoại",
+    "💬 Ghi chú thẳng lên từng dòng diff của AI rồi gửi lại cho agent sửa"
+  ],
+  "audience": "Người dùng nhiều coding agent song song, mỗi agent dùng gói đăng ký riêng của mình, và muốn quản lý tất cả ở một nơi.",
+  "notable": "Chạy với mọi agent dạng CLI, có bản desktop và mobile companion, license MIT. Có thu thập dữ liệu dùng ẩn danh, README hướng dẫn cách tắt.",
+  "refs": []
+}

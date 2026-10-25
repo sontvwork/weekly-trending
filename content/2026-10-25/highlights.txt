@@ -1,0 +1,3 @@
+🛡️ security-audit-skill: biến coding agent thành đội kiểm toán bảo mật, agent riêng săn lỗi và kiểm chứng, loại báo động giả
+🔬 rea: cho agent mổ xẻ binary, app Electron, .NET hay website để giải thích cơ chế, kèm bằng chứng
+🌳 orca: chạy nhiều coding agent song song, mỗi agent một git worktree riêng, so kết quả rồi merge

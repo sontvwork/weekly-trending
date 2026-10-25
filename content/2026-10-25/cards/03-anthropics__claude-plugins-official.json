@@ -1,0 +1,13 @@
+{
+  "repo": "anthropics/claude-plugins-official",
+  "tagline": "Cửa hàng ứng dụng chính thức để mở rộng Claude Code bằng plugin",
+  "summary": "Điện thoại mới chưa có app thì chỉ dùng được một nửa. Đây là danh mục plugin do Anthropic quản lý cho Claude Code: bạn duyệt trong `/plugin` rồi cài thêm lệnh slash, agent, skill hoặc MCP server chỉ bằng một lệnh. Có cả plugin của Anthropic lẫn của đối tác và cộng đồng.",
+  "use_cases": [
+    "🔍 Tìm plugin có sẵn ngay trong Claude Code thay vì tự lục GitHub",
+    "🧩 Cài `/plugin install {plugin-name}@claude-plugins-official` để thêm skill hay MCP server vào công cụ",
+    "📦 Đóng gói plugin của bạn và gửi form xin đưa vào danh mục chính thức"
+  ],
+  "audience": "Người dùng Claude Code muốn mở rộng khả năng bằng plugin có sẵn, và dev muốn phát hành plugin của mình.",
+  "notable": "Anthropic nhắc phải tin tưởng plugin trước khi cài, vì không kiểm soát hay đảm bảo nội dung plugin sẽ không thay đổi. Mỗi plugin có license riêng.",
+  "refs": []
+}
