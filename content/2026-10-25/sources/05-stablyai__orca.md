@@ -5,10 +5,10 @@
 - URL: https://github.com/stablyai/orca
 - Mô tả trên GitHub: Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.
 - Ngôn ngữ chính: TypeScript
-- Tổng sao: 105134
+- Tổng sao: 105350
 - Sao tăng trong tuần: 9828
-- Fork: 6639
-- Lấy lúc (UTC): 2026-10-25T06:56:53Z
+- Fork: 6656
+- Lấy lúc (UTC): 2026-10-25T12:46:52Z
 - README: README.md (17388 ký tự)
 
 ======== README (nguyên văn) ========
