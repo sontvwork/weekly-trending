@@ -214,8 +214,6 @@ def repo_card(repo: Repo) -> str:
     summary = card_list(card, "summary")  # card cũ (trước 2026-10-25) có summary là một chuỗi
     summary_html = (f'<ul class="uses">{"".join(f"<li>{inline(line)}</li>" for line in summary)}</ul>' if summary
                     else f'<p>{inline(card_text(card, "summary"))}</p>')
-    notable = card_text(card, "notable")
-    notable_html = f'<p class="notable"><b>📝 Ghi chú</b><span>{inline(notable)}</span></p>' if notable else ""
     return (
         f'<article class="repo{" is-top" if repo.rank <= 3 else ""}" id="hang-{repo.rank}">'
         f'<header class="repo-head"><span class="rank" title="Hạng {repo.rank} trên GitHub Trending tuần">{repo.rank}</span>'
@@ -226,8 +224,7 @@ def repo_card(repo: Repo) -> str:
         f'<div class="repo-body">'
         f'<section><h3>📖 Là gì</h3>{summary_html}</section>'
         f'<section><h3>🛠️ Use case</h3><ul class="uses">{uses}</ul></section>'
-        f'<section><h3>👥 Ai nên dùng</h3><p>{inline(card_text(card, "audience"))}</p></section>'
-        f"{notable_html}</div></article>"
+        f"</div></article>"
     )
 
 
@@ -289,7 +286,7 @@ def feed_xml(issues: list[Issue], base: str) -> str:
         '<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="vi">\n'
         f"  <id>{esc(base)}/</id>\n"
         "  <title>Weekly Trending · Top GitHub Trending mỗi tuần</title>\n"
-        "  <subtitle>Bản tin tiếng Việt về các repo nổi bật nhất trên GitHub mỗi tuần: để làm gì, ai nên dùng, use case.</subtitle>\n"
+        "  <subtitle>Bản tin tiếng Việt về các repo nổi bật nhất trên GitHub mỗi tuần: để làm gì, use case.</subtitle>\n"
         f'  <link rel="self" type="application/atom+xml" href="{esc(base)}/feed.xml"/>\n'
         f'  <link rel="alternate" type="text/html" href="{esc(base)}/"/>\n'
         f"  <updated>{updated}</updated>\n"

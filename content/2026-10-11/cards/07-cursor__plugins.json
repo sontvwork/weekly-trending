@@ -12,7 +12,5 @@
     "📬 Cần agent tra email, lịch, CRM hay ticket ngay trong editor: cắm plugin tương ứng thay vì chuyển tab",
     "🧱 Muốn tự làm plugin cho đội mình: xem plugin mẫu và dùng `create-plugin` để dựng khung"
   ],
-  "audience": "Người dùng Cursor muốn nối agent với công cụ hằng ngày hoặc đóng gói quy trình làm việc của đội thành plugin dùng lại được.",
-  "notable": "Gồm cả plugin do tác giả cộng đồng đóng góp, và giấy phép MIT.",
   "refs": []
 }

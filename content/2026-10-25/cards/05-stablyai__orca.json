@@ -12,7 +12,5 @@
     "☕ Giao việc xong muốn rời bàn: điện thoại báo khi agent xong, bạn nhắn tiếp từ xa",
     "🖥️ Máy cá nhân yếu: chạy agent trên máy chủ mạnh qua SSH mà vẫn sửa file, dùng git và terminal như thường"
   ],
-  "audience": "Người dùng nhiều coding agent song song, mỗi agent dùng gói đăng ký riêng của mình, và muốn quản lý tất cả ở một nơi.",
-  "notable": "Chạy với mọi agent dạng CLI, có bản desktop và mobile companion, license MIT. Có thu thập dữ liệu dùng ẩn danh, README hướng dẫn cách tắt.",
   "refs": []
 }

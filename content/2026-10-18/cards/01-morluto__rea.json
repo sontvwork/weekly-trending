@@ -12,7 +12,5 @@
     "📦 Có app Electron không mã nguồn: lần theo module và IPC để hiểu nó làm gì",
     "🕹️ Muốn dựng lại phép tính trong chương trình cũ: đọc pseudocode, assembly rồi viết lại bằng C"
   ],
-  "audience": "Người dùng coding agent muốn hiểu cách một ứng dụng hoạt động mà không có mã nguồn, từ nghiên cứu, học tập đến bảo tồn phần mềm.",
-  "notable": "Phân tích chạy local. Phân tích native cần Hopper, Ghidra hoặc IDA; chỉ dùng cho phần mềm bạn được phép phân tích hợp pháp.",
   "refs": []
 }

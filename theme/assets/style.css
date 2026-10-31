@@ -297,15 +297,6 @@ code {
 .repo-body p { margin: 0; }
 .uses { display: grid; gap: 4px; margin: 0; padding-left: 20px; }
 .uses li::marker { color: var(--accent-ink); }
-.notable { padding: 10px 14px; border-radius: 12px; background: var(--accent-soft); }
-.notable b {
-  display: block;
-  margin-bottom: 2px;
-  color: var(--accent-ink);
-  font-size: 12px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-}
 
 /* ---------- Trạng thái rỗng, 404 ---------- */
 .empty {

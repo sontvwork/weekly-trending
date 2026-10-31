@@ -12,7 +12,7 @@ Tin nhắn giao việc có 3 dòng: `Hạng NN: owner/repo`, `SOURCE: <file ngu�
 
 1. Đọc hết SOURCE bằng Read (metadata lấy từ trang trending + README nguyên văn, có thể đã bị cắt bớt).
 2. Với `use_cases`, phải trả lời được câu hỏi: "Tình huống nào thì repo này hữu ích", đừng diễn đạt lại tagline hay danh sách tính năng.
-3. Nếu README trống, quá sơ sài, hoặc không đủ để trả lời "để làm gì / use case / ai nên dùng", bạn được gọi WebFetch **tối đa 3 lần**, và **chỉ vào chính repo đó**:
+3. Nếu README trống, quá sơ sài, hoặc không đủ để trả lời "để làm gì / use case", bạn được gọi WebFetch **tối đa 3 lần**, và **chỉ vào chính repo đó**:
    - `https://github.com/<owner>/<repo>/...` (thư mục docs, wiki, releases), hoặc
    - `https://raw.githubusercontent.com/<owner>/<repo>/HEAD/<đường dẫn file>` (file docs mà README nhắc tới).
 
@@ -25,7 +25,7 @@ Tin nhắn giao việc có 3 dòng: `Hạng NN: owner/repo`, `SOURCE: <file ngu�
 - Chỉ ghi đúng file CARD được giao. Không WebFetch ra ngoài GitHub.
 
 ## Nội dung card (viết tiếng Việt)
-Card trả lời 3 câu hỏi: **repo này giải quyết vấn đề gì, dùng vào việc gì (use case), ai nên dùng.** Mục tiêu là người đọc lướt 20 giây xong nghĩ "ồ, công cụ này hay đấy". **Ngắn gọn vẫn là ưu tiên số một**: chọn ý đắt nhất, đừng cố dùng hết giới hạn.
+Card trả lời 2 câu hỏi: **repo này giải quyết vấn đề gì, dùng vào tình huống nào (use case).** Mục tiêu là người đọc lướt 20 giây xong nghĩ "ồ, công cụ này hay đấy". **Ngắn gọn vẫn là ưu tiên số một**: chọn ý đắt nhất, đừng cố dùng hết giới hạn.
 
 | Trường | Yêu cầu |
 |---|---|
@@ -33,8 +33,6 @@ Card trả lời 3 câu hỏi: **repo này giải quyết vấn đề gì, dùng
 | `tagline` | 1 dòng, 4–18 từ, **không emoji**. Một câu **tự viết** nêu giá trị cốt lõi, không dịch nguyên mô tả GitHub, không lặp tên repo, không chấm cuối câu |
 | `summary` | 2–5 dòng (mảng chuỗi), mỗi dòng 8–30 từ, **mỗi dòng mở đầu bằng đúng 1 emoji** rồi dấu cách (emoji khác nhau, hợp nghĩa). Trả lời "repo này **là gì** và **khác biệt / đáng tin ở điểm nào**". Dòng đầu là **một câu định nghĩa** theo mẫu: *"Một [loại sản phẩm] giúp [người/agent dùng nó] [làm việc gì, nói bằng ngôn ngữ đời thường] mà [điều kiện hay lợi thế chính]."* Nêu 2–4 công cụ/nền tảng mà repo hỗ trợ nếu nguồn có liệt kê (vd các coding agent), gom trong ngoặc đơn; **không** liệt kê danh sách định dạng, ngôn ngữ, loại file hay công nghệ nội bộ trong dòng này. Các dòng sau là điểm khác biệt hay lời hứa nổi bật. **Không** nêu tình huống sử dụng (việc của `use_cases`), không kể quy trình từng bước, không liệt kê tính năng cho đủ |
 | `use_cases` | 1–3 mục (số mục tuỳ nguồn, **không cố nặn cho đủ**; 2 ý tốt hơn 3 ý có một ý gượng), mỗi mục 1 dòng, 3–22 từ, **mỗi mục mở đầu bằng đúng 1 emoji** rồi dấu cách (emoji khác nhau, hợp nghĩa). Mỗi mục trả lời: **"trong tình huống nào thì repo này hữu ích?"**: nêu bối cảnh người dùng đang gặp rồi việc repo giúp làm ("Đến kỳ…: …", "Mới tiếp cận…: …"). Không liệt kê tính năng hay cơ chế bên trong |
-| `audience` | 1–2 câu, 5–32 từ, không emoji. Gọi chung theo hành vi hoặc nhu cầu ("Người dùng nhiều coding agent song song"). Chỉ liệt kê vai trò khi repo thật sự dành riêng cho một nhóm (vd thư viện chỉ dành cho dev iOS) |
-| `notable` | Tuỳ chọn, 1–2 câu, ≤ 32 từ, không emoji, `""` nếu không có. Một điểm đáng chú ý **có trong nguồn**: chạy local, license, tích hợp MCP, giới hạn hoặc đánh đổi đáng lưu ý… Không nói về cách cài đặt hay lệnh chạy thử. Không đoán vì sao repo trending |
 | `refs` | Các URL đã WebFetch (0–3), `[]` nếu không dùng |
 
 ## Giọng văn: giải thích kiểu Feynman
@@ -70,9 +68,7 @@ Nguồn tóm tắt: thư viện Python chuyển PDF/DOCX/PPTX/HTML sang Markdown
     "🧹 Sắp dựng RAG trên kho tài liệu nội bộ: dọn sạch trước, khỏi lo AI đọc sai bảng",
     "📊 Cần phân tích số liệu nằm trong báo cáo PDF: kéo bảng ra thành Markdown rồi xử lý tiếp"
   ],
-  "audience": "Người làm ứng dụng LLM và bất kỳ ai cần đưa tài liệu đủ loại vào AI.",
-  "notable": "Chỉ hỗ trợ bảng đơn giản, bảng lồng nhau bị tách thành văn bản thường.",
   "refs": []
 }
 ```
-Điểm cần học từ ví dụ: tagline nói giá trị chứ không nói công nghệ; summary mở bằng một câu định nghĩa dễ hiểu (không liệt kê định dạng hay công nghệ), các dòng sau nói điểm khác biệt (mỗi dòng một ý, không nêu tình huống dùng); use case là tình huống cụ thể (bối cảnh rồi mới tới việc repo giúp làm), chỉ giữ ý thật sự có, ở đây 2 ý là đủ; audience gọi theo nhu cầu, không liệt kê chức danh.
+Điểm cần học từ ví dụ: tagline nói giá trị chứ không nói công nghệ; summary mở bằng một câu định nghĩa dễ hiểu (không liệt kê định dạng hay công nghệ), các dòng sau nói điểm khác biệt (mỗi dòng một ý, không nêu tình huống dùng); use case là tình huống cụ thể (bối cảnh rồi mới tới việc repo giúp làm), chỉ giữ ý thật sự có, ở đây 2 ý là đủ.

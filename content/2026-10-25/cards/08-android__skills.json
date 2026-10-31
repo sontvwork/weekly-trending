@@ -11,7 +11,5 @@
     "🧭 Agent hay viết code Android lỗi thời hoặc sai chuẩn: nạp skill để nó bám tài liệu từ developer.android.com",
     "⌚ Làm app Wear OS hay tối ưu bằng R8: cài đúng skill cần dùng cho dự án"
   ],
-  "audience": "Người dùng coding agent để làm app Android và muốn agent bám sát hướng dẫn chính thức thay vì đoán mò.",
-  "notable": "Chủ yếu nhắm vào các việc LLM làm chưa tốt, không lặp lại thứ như Compose cơ bản. Giấy phép Apache 2.0, hiện chưa nhận đóng góp công khai.",
   "refs": []
 }

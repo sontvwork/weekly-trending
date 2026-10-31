@@ -11,7 +11,5 @@
     "🧩 Phải hiểu app Electron hay binary không có mã nguồn: lần theo module và lời gọi để biết nó làm gì",
     "🎮 Muốn tái dựng logic của game hay phần mềm cũ: đối chiếu mã tái tạo với kết quả gốc"
   ],
-  "audience": "Người dùng coding agent muốn hiểu hoặc học theo cách một phần mềm đóng hoạt động, và dev làm nghiên cứu, bảo tồn hay tương thích phần mềm.",
-  "notable": "Phân tích chạy local, kết quả nêu cả giới hạn. Phân tích native cần Hopper, Ghidra hoặc IDA, giấy phép MIT, chỉ dùng cho phần mềm hợp pháp được phép phân tích.",
   "refs": []
 }

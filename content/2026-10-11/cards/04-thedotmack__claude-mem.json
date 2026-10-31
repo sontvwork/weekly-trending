@@ -12,7 +12,5 @@
     "🐞 Nhớ mang máng đã sửa một lỗi xác thực từ tuần trước: hỏi agent để tìm lại đúng chỗ",
     "🔀 Dùng xen kẽ nhiều coding agent: gom lịch sử làm việc về một nơi để dùng chung"
   ],
-  "audience": "Người dùng coding agent hằng ngày, đặc biệt Claude Code, Codex, Gemini hay OpenCode, và mệt vì phải giải thích lại bối cảnh mỗi phiên.",
-  "notable": "Có web viewer xem luồng bộ nhớ theo thời gian thực, giấy phép Apache 2.0. Cài đặt có bước đăng nhập tuỳ chọn để dùng dịch vụ observer trực tuyến.",
   "refs": []
 }

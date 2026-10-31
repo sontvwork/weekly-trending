@@ -11,7 +11,5 @@
     "📝 Đang viết blog hay tài liệu cần sơ đồ kiến trúc đẹp: mô tả cho agent là có file xuất bản được",
     "🧩 Đã có sơ đồ Mermaid, draw.io hoặc Excalidraw nhìn lệch tông: nhờ agent vẽ lại cho đồng bộ"
   ],
-  "audience": "Người hay dùng coding agent và cần sơ đồ để đăng blog, tài liệu hay slide, muốn nhìn có gu mà không phải kéo thả thủ công.",
-  "notable": "Tác giả tự nêu nhược điểm: chất lượng phụ thuộc model, cùng prompt có thể ra bố cục khác, và kết quả không phải định dạng nguồn để diff.",
   "refs": []
 }

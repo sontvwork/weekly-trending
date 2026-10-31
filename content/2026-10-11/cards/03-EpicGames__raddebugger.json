@@ -11,7 +11,5 @@
     "🧩 Ứng dụng gồm nhiều process phối hợp với nhau: gắn debug cùng lúc, khỏi mở nhiều cửa sổ debugger",
     "⏱️ Dự án C/C++ cực lớn mà mỗi lần link rồi debug đều chậm: thử RAD Linker để rút ngắn vòng lặp compile-debug"
   ],
-  "audience": "Lập trình viên C/C++ làm dự án native lớn trên Windows, cần debugger nhanh và linker không làm chậm vòng build.",
-  "notable": "Đang ở giai đoạn ALPHA, hiện chỉ debug local trên Windows x64 với PDB; hỗ trợ Linux và DWARF nằm trong kế hoạch.",
   "refs": []
 }

@@ -10,7 +10,5 @@
     "🔧 Có một thay đổi cần làm trong repo: giao agent xây, agent khác review đúng bản đó rồi mới tới bạn",
     "🧩 Đang mở nhiều phiên Claude Code và Codex lộn xộn: gom thành một đội để theo dõi, nhắn tin, khôi phục"
   ],
-  "audience": "Người dùng nhiều coding agent song song và muốn chúng phối hợp như một đội thay vì một đống terminal.",
-  "notable": "Khi chạy, nó ghi hook và cài đặt tin cậy vào cấu hình Claude Code và Codex của bạn, nên nên sao lưu trước. Cần tmux, chưa hỗ trợ Windows gốc.",
   "refs": []
 }

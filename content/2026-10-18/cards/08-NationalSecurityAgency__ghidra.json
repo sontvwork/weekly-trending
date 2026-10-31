@@ -11,7 +11,5 @@
     "🧪 Cần tự động hoá việc phân tích hàng loạt file: viết script chạy không cần giao diện",
     "🛠️ Muốn xây công cụ phân tích riêng: làm extension trên nền framework có sẵn"
   ],
-  "audience": "Người làm bảo mật, phân tích mã độc và bất kỳ ai cần hiểu phần mềm đã biên dịch khi không có mã nguồn.",
-  "notable": "README cảnh báo một số phiên bản Ghidra có lỗ hổng bảo mật đã biết, nên cần đọc Security Advisories trước khi dùng. Chạy được trên Windows, macOS và Linux.",
   "refs": []
 }

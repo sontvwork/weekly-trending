@@ -12,7 +12,5 @@
     "📝 Đã rõ cần đổi gì: chuyển sang build để agent trực tiếp sửa code và chạy lệnh",
     "🔎 Cần lần theo nhiều bước qua nhiều file: giao cho `@general` đi tìm rồi báo lại"
   ],
-  "audience": "Người muốn có coding agent mã nguồn mở, làm việc trong terminal hoặc app desktop, và kiểm soát được lúc nào agent được phép sửa code.",
-  "notable": "Chế độ plan mặc định từ chối sửa file và hỏi quyền trước khi chạy lệnh bash. Bản desktop vẫn đang ở giai đoạn beta.",
   "refs": []
 }

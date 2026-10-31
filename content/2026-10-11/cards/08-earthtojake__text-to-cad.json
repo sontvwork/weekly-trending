@@ -12,7 +12,5 @@
     "📐 Chuẩn bị gửi xưởng gia công: xuất bản vẽ kỹ thuật và soát lỗi thiết kế trước khi tốn tiền sản xuất",
     "🤖 Làm robot hay mô phỏng: nhờ agent viết file mô tả robot thay vì tự gõ tay"
   ],
-  "audience": "Người dùng coding agent muốn thiết kế chi tiết cơ khí, in 3D hoặc đặt gia công mà không phải thành thạo phần mềm CAD.",
-  "notable": "Mặc định gửi thống kê dùng và báo cáo lỗi ẩn danh, không kèm file, đường dẫn hay prompt. Tắt được bằng `uvx cadgen telemetry off`.",
   "refs": []
 }

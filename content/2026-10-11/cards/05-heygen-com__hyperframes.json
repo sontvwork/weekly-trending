@@ -12,7 +12,5 @@
     "🔀 Vừa merge một pull request lớn: biến nó thành video giải thích thay đổi, có narration và phụ đề",
     "⚙️ Cần sinh hàng loạt video tự động từ dữ liệu: render lặp lại được trong pipeline nội dung"
   ],
-  "audience": "Người dùng coding agent muốn làm video bằng lời nhắc, và dev web muốn dựng video bằng HTML/CSS quen thuộc thay vì phần mềm dựng phim.",
-  "notable": "Giấy phép Apache 2.0, không tính phí theo lượt render. Render chạy local hoặc Docker, cần Node.js 22+ và FFmpeg.",
   "refs": []
 }

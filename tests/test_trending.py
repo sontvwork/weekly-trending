@@ -172,7 +172,6 @@ class ValidateTest(unittest.TestCase):
 
     def test_english_card(self) -> None:
         self.box.edit_card(NEW, tagline="A command line tool for chores", summary=["🧰 This is a command line tool " * 4, "⚡ Another line of English text here ok"],
-                           audience="Developers who like automation", notable="",
                            use_cases=["Run checks before commits", "Bundle scripts into one command"])
         self.assertInvalid("tiếng Việt có dấu")
 
@@ -183,33 +182,33 @@ class ValidateTest(unittest.TestCase):
                            "use_cases[2]: không dùng emoji")
 
     def test_url_and_markdown(self) -> None:
-        self.box.edit_card(NEW, notable="Xem thêm tại https://example.com nhé")
-        self.box.edit_card(NEW, 2, notable="Hỗ trợ **rất** nhiều định dạng")
+        self.box.edit_card(NEW, use_cases=["📌 Xem thêm tại https://example.com nhé"])
+        self.box.edit_card(NEW, 2, use_cases=["📌 Hỗ trợ **rất** nhiều định dạng"])
         self.assertInvalid("không được có URL", "không dùng markdown")
 
     def test_html_only_outside_code(self) -> None:
-        self.box.edit_card(NEW, notable="Dùng lệnh `tool add <path>` để thêm thư mục mới")
+        self.box.edit_card(NEW, use_cases=["📌 Dùng lệnh `tool add <path>` để thêm thư mục mới"])
         self.assertEqual(self.box.run("validate", NEW).returncode, 0)
-        self.box.edit_card(NEW, notable="Hiển thị <b>đậm</b> trong giao diện dòng lệnh")
+        self.box.edit_card(NEW, use_cases=["📌 Hiển thị <b>đậm</b> trong giao diện dòng lệnh"])
         self.assertInvalid("không được có URL, HTML")
 
     def test_star_numbers_forbidden(self) -> None:
-        self.box.edit_card(NEW, notable="Đã vượt mốc 1.000 sao chỉ sau vài ngày")
+        self.box.edit_card(NEW, use_cases=["📌 Đã vượt mốc 1.000 sao chỉ sau vài ngày"])
         self.assertInvalid("không ghi số sao/fork")
 
     def test_unknown_number_is_error_without_refs(self) -> None:
-        self.box.edit_card(NEW, notable="Hỗ trợ tới 42 ngôn ngữ lập trình khác nhau")
+        self.box.edit_card(NEW, use_cases=["📌 Hỗ trợ tới 42 ngôn ngữ lập trình khác nhau"])
         self.assertInvalid("số 42 không có trong dữ liệu")
 
     def test_unknown_number_is_warning_with_refs(self) -> None:
-        self.box.edit_card(NEW, notable="Hỗ trợ tới 42 ngôn ngữ lập trình khác nhau",
+        self.box.edit_card(NEW, use_cases=["📌 Hỗ trợ tới 42 ngôn ngữ lập trình khác nhau"],
                            refs=["https://github.com/owner1/tool-1/blob/main/docs/langs.md"])
         result = self.box.run("validate", NEW)
         self.assertEqual(result.returncode, 0, result.stdout)
         self.assertIn("cảnh báo", result.stdout)
 
     def test_known_number_formats(self) -> None:
-        self.box.edit_card(NEW, notable="Chạy tốt trên Python 3.12 mà không cần cài thêm gì")
+        self.box.edit_card(NEW, use_cases=["📌 Chạy tốt trên Python 3.12 mà không cần cài thêm gì"])
         self.assertEqual(self.box.run("validate", NEW).returncode, 0)
 
     def test_refs_must_point_to_same_repo(self) -> None:

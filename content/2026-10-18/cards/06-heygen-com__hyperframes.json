@@ -12,7 +12,5 @@
     "🔀 Vừa merge một pull request lớn: biến PR thành video giải thích thay đổi cho cả team",
     "🤖 Cần sản xuất hàng loạt video có đồ họa, chữ chạy, biểu đồ: dựng thành quy trình tự động"
   ],
-  "audience": "Người dùng coding agent muốn tạo video bằng lời nhắc, và dev web muốn làm video bằng HTML thay vì học phần mềm dựng phim.",
-  "notable": "Giấy phép Apache 2.0, không tính phí theo lượt render. Có thể render local hoặc trên AWS Lambda, cần Node.js 22+ và FFmpeg.",
   "refs": []
 }

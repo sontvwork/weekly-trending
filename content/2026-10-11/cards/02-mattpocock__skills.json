@@ -11,7 +11,5 @@
     "🐛 Agent viết code mãi vẫn lỗi: dùng `/tdd` hoặc `/diagnosing-bugs` để nó có phản hồi thật",
     "🏗️ Codebase do agent viết khó sửa dần: chạy `/improve-codebase-architecture` định kỳ để tìm chỗ cần gọn lại"
   ],
-  "audience": "Người dùng Claude Code, Codex hay coding agent khác hằng ngày, muốn giữ quyền kiểm soát quy trình thay vì giao hết cho một framework có sẵn.",
-  "notable": "Hoạt động với mọi model. Tác giả nói rõ skill kiến trúc chỉ là khảo sát tìm ứng viên, không tự gỡ rối codebase cũ.",
   "refs": []
 }

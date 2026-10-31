@@ -15,8 +15,6 @@ CARD = {
     "summary": ["🧰 Công cụ dòng lệnh nhỏ gọn giúp developer gom các thao tác lặp lại trong dự án thành vài lệnh ngắn",
                 "⚡ Cài xong là chạy được, không cần cấu hình phức tạp trên Python 3.12"],
     "use_cases": ["⚙️ Tự động chạy kiểm tra trước khi commit", "📦 Gom các script rời rạc thành một lệnh `tool run`"],
-    "audience": "Developer muốn tiết kiệm thời gian cho việc vặt hằng ngày trong dự án.",
-    "notable": "Không cần cấu hình phức tạp, cài xong là dùng được.",
     "refs": [],
 }
 HIGHLIGHTS = "🤖 tool-1: gom việc vặt của developer thành vài lệnh ngắn\n🧰 tool-2: bộ lệnh gọn nhẹ, cài xong là dùng\n"

@@ -11,7 +11,5 @@
     "🛠️ Định đóng gói skill hay MCP của mình cho người khác dùng: xem plugin mẫu và cấu trúc chuẩn để làm theo",
     "📮 Có plugin muốn đưa lên danh mục chính thức: gửi qua form đăng ký để được xét duyệt"
   ],
-  "audience": "Người dùng Claude Code muốn mở rộng khả năng bằng plugin có sẵn, và dev muốn phát hành plugin của mình.",
-  "notable": "Anthropic nhắc phải tin tưởng plugin trước khi cài, vì không kiểm soát hay đảm bảo nội dung plugin sẽ không thay đổi. Mỗi plugin có license riêng.",
   "refs": []
 }

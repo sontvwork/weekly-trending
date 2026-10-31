@@ -1,6 +1,6 @@
 # Weekly Trending
 
-Bản tin tiếng Việt hằng tuần về **top 10 repo trên [GitHub Trending](https://github.com/trending?since=weekly)**. Mỗi repo có tóm tắt "để làm gì, ai nên dùng, use case" và số liệu lấy nguyên từ GitHub.
+Bản tin tiếng Việt hằng tuần về **top 10 repo trên [GitHub Trending](https://github.com/trending?since=weekly)**. Mỗi repo có tóm tắt "để làm gì, use case" và số liệu lấy nguyên từ GitHub.
 
 - 🌐 Trang: https://sontvwork.github.io/weekly-trending/
 - 📡 Feed: https://sontvwork.github.io/weekly-trending/feed.xml

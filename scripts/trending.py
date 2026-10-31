@@ -63,10 +63,10 @@ STARS_WEEK = re.compile(r"(?<![\d,])(\d[\d,]*)\s+stars?\s+this\s+week", re.I)
 TAG = re.compile(r"<[^>]+>")
 
 # --- luật validate (giữ khớp với .claude/agents/repo-writer.md và prompts/write.md) ---
-CARD_KEYS = {"repo", "tagline", "summary", "use_cases", "audience", "notable", "refs"}
-CARD_REQUIRED = {"repo", "tagline", "summary", "use_cases", "audience"}
+CARD_KEYS = {"repo", "tagline", "summary", "use_cases", "refs"}
+CARD_REQUIRED = {"repo", "tagline", "summary", "use_cases"}
 # Độ dài tính bằng SỐ TỪ (tách theo khoảng trắng), khớp với cách prompt mô tả — LLM không đếm được ký tự.
-TEXT_LIMITS = {"tagline": (4, 18), "audience": (5, 32), "notable": (0, 32)}
+TEXT_LIMITS = {"tagline": (4, 18)}
 USE_CASE_LIMITS = (3, 22)
 SUMMARY_LIMITS = (8, 30)  # từ mỗi dòng của summary; mỗi dòng mở đầu bằng 1 emoji như use_cases
 SUMMARY_COUNT = (2, 5)
@@ -441,14 +441,11 @@ def check_card(folder: Path, item: dict) -> tuple[list[str], list[str]]:
 
     texts: dict[str, str] = {}
     for key, (low, high) in TEXT_LIMITS.items():
-        value = card.get(key, "" if key == "notable" else None)
+        value = card.get(key)
         if not isinstance(value, str):
-            if key in card or key != "notable":
-                errors.append(f"{key} phải là chuỗi")
+            errors.append(f"{key} phải là chuỗi")
             continue
         value = value.strip()
-        if key == "notable" and not value:
-            continue
         if key in LEAD_EMOJI_FIELDS:
             emoji, value = split_lead_emoji(value)
             if not emoji:

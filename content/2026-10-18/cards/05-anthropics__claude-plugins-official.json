@@ -10,7 +10,5 @@
     "🔎 Muốn Claude Code làm thêm việc mới: mở `/plugin` rồi Discover để duyệt và cài thay vì tự cấu hình",
     "🛠️ Đang tự viết plugin: xem plugin mẫu làm chuẩn, rồi gửi form để được đưa vào danh mục"
   ],
-  "audience": "Người dùng Claude Code muốn mở rộng khả năng bằng plugin đáng tin hơn, và người viết plugin muốn có chỗ phát hành chính thức.",
-  "notable": "Anthropic nói rõ không kiểm soát nội dung bên trong plugin và không đảm bảo plugin không thay đổi, nên hãy tin tưởng plugin trước khi cài.",
   "refs": []
 }

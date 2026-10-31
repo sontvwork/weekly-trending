@@ -12,7 +12,5 @@
     "🧾 Muốn PR hay tài liệu dễ hiểu hơn: biến chúng thành video có chú thích, giọng đọc và phụ đề",
     "🏭 Cần sản xuất hàng loạt video cho pipeline nội dung: render tự động, kết quả lặp lại được"
   ],
-  "audience": "Người muốn để coding agent hoặc script tự làm video thay vì ngồi dựng tay, đặc biệt ai đã quen viết HTML, CSS.",
-  "notable": "Giấy phép Apache 2.0, render local hoặc Docker, không tính phí mỗi lần render. Cần Node.js 22+ và FFmpeg.",
   "refs": []
 }

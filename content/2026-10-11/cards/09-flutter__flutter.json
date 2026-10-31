@@ -12,7 +12,5 @@
     "🖌️ Designer muốn giao diện đúng ý mà không bị framework gò bó: tự vẽ và làm animation từng chi tiết",
     "🧩 Đã có sẵn code native: nối vào app Flutter qua FFI thay vì viết lại từ đầu"
   ],
-  "audience": "Người muốn làm app đa nền tảng với một codebase duy nhất và giao diện tự do, kể cả nhóm nhỏ ít người.",
-  "notable": "Miễn phí, mã nguồn mở. Gọi được code native qua FFI hoặc platform channels. Công cụ flutter có thể tải tài nguyên từ máy chủ Google, gồm cả Dart SDK.",
   "refs": []
 }

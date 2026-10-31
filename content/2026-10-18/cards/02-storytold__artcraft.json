@@ -11,7 +11,5 @@
     "🧍 Cần nhân vật giữ đúng dáng qua nhiều khung hình: dùng hình nộm tạo dáng để dẫn đường cho AI",
     "🖌️ Ảnh AI đúng ý nhưng sai một chỗ: khoanh vùng bằng mask rồi chỉ sửa đúng chỗ đó"
   ],
-  "audience": "Người làm hình ảnh, thiết kế, phim cần kiểm soát bố cục và nhân vật khi dùng AI, thay vì chỉ gõ prompt.",
-  "notable": "Có bản cho Windows và macOS, Linux cần tự build từ source. License kép MIT hoặc Apache-2.0.",
   "refs": []
 }

@@ -12,7 +12,5 @@
     "🔍 Agent chạy lâu mà khó biết đang làm gì: mở console xem log, kết quả, chi phí từng lượt chạy",
     "🤝 Hai nhóm muốn chia sẻ tín hiệu mà không lộ dữ liệu khách hàng: dùng federation để lọc PII trước khi gửi"
   ],
-  "audience": "Người dùng Claude Code hoặc Codex hằng ngày muốn chạy nhiều agent song song, có trí nhớ dài hạn và kiểm soát được chi phí.",
-  "notable": "Các mod chạy với quyền tài khoản, không có sandbox, nên cần đọc code trước khi cài. Chế độ Claude điều khiển console mặc định chỉ đọc và hỏi trước.",
   "refs": []
 }

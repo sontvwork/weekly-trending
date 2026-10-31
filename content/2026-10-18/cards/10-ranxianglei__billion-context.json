@@ -12,7 +12,5 @@
     "💸 Hoá đơn token của agent tăng vọt vì hội thoại dài: nén lịch sử để tiêu ít token hơn",
     "🪟 Dùng model có cửa sổ ngữ cảnh nhỏ (khoảng 100K): vẫn chạy được phiên dài nhờ nén dần"
   ],
-  "audience": "Người dùng coding agent (Claude Code, Codex, OpenCode, Aider và nhiều agent khác) hay chạy phiên dài hoặc dùng model có cửa sổ nhỏ.",
-  "notable": "Đóng vai proxy giữa agent và API nên agent nào cũng dùng được qua đổi base URL. Nén có thể hoàn tác và giữ nguyên prefix cache.",
   "refs": []
 }

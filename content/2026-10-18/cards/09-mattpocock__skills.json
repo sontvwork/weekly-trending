@@ -12,7 +12,5 @@
     "🐞 Agent viết code chạy không đúng: dùng vòng TDD và quy trình chẩn đoán lỗi để nó có phản hồi thật",
     "🏚️ Codebase do agent viết bắt đầu rối: quét định kỳ để tìm chỗ cần gọn lại"
   ],
-  "audience": "Người dùng coding agent hằng ngày, muốn tự kiểm soát quy trình thay vì để một framework quy trình quyết định hết.",
-  "notable": "Trên codebase cũ, công cụ kiến trúc chỉ liệt kê ứng viên cải thiện, không tự gỡ rối giúp bạn. Hỗ trợ Claude Code, Codex, Copilot, Gemini CLI.",
   "refs": []
 }

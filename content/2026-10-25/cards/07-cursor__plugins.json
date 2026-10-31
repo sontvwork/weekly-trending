@@ -11,7 +11,5 @@
     "📅 Muốn agent đọc mail, lịch hay tài liệu công việc ngay trong Cursor: bật plugin Gmail, Google Calendar, Google Docs",
     "🛠️ Định viết plugin riêng cho Cursor: xem cấu trúc chuẩn và dùng plugin scaffold để dựng khung"
   ],
-  "audience": "Người dùng Cursor muốn agent làm được nhiều việc hơn ngoài viết code, và người muốn tự làm plugin theo chuẩn của Cursor.",
-  "notable": "Mỗi plugin là một thư mục độc lập với manifest riêng. Giấy phép MIT.",
   "refs": []
 }

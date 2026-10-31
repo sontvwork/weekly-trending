@@ -12,7 +12,5 @@
     "🧵 Hội thoại vừa bị nén mà agent quên đang sửa file nào: nó lấy lại đúng phần liên quan để làm tiếp",
     "🔍 Cần thống kê trên cả codebase lớn: để agent viết script đếm thay vì đọc từng file vào context"
   ],
-  "audience": "Người dùng coding agent cho phiên làm việc dài, hay gọi nhiều MCP tool và hay vấp tình trạng agent quên việc sau khi compact.",
-  "notable": "Hỗ trợ nhiều nền tảng như Claude Code, Gemini CLI, Cursor, OpenCode. License ELv2, không phải license mã nguồn mở thông thường.",
   "refs": []
 }

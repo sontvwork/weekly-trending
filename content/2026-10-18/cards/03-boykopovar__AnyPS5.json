@@ -12,7 +12,5 @@
     "🕹️ Chơi trên PC bằng tay cầm hoặc bàn phím: cấu hình điều khiển qua file `anyps5-input.ini`",
     "🔍 Tìm hiểu cách chạy phần mềm PS5 ở hệ khác: đọc tài liệu kiến trúc, theo dõi tiến độ trên blocker map"
   ],
-  "audience": "Người quan tâm đến tương thích ngược, bảo tồn game và nghiên cứu cách chạy phần mềm console trên PC.",
-  "notable": "Dự án còn đang phát triển: tiến độ thư viện và shader được theo dõi công khai, gặp trạng thái chưa hỗ trợ sẽ báo lỗi và dừng. Giấy phép GPL v2.",
   "refs": []
 }

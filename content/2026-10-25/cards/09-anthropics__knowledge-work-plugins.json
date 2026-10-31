@@ -11,7 +11,5 @@
     "📜 Có chồng hợp đồng hoặc NDA cần xem: nhờ Claude rà soát và phân loại rủi ro trước khi bạn đọc kỹ",
     "🏢 Muốn Claude hiểu quy trình riêng của team: chỉnh file plugin hoặc tạo plugin mới cho vai trò chưa có"
   ],
-  "audience": "Team không chỉ có dev muốn Claude làm việc đúng quy trình và công cụ của mình, kể cả khi không biết code.",
-  "notable": "Làm cho Claude Cowork, cũng dùng được với Claude Code. Không cần code hay build, nhưng plugin gốc chỉ là điểm khởi đầu chung chung, cần chỉnh theo công ty.",
   "refs": []
 }

@@ -10,7 +10,5 @@
     "🗓️ Đến kỳ rà soát bảo mật định kỳ cho một repo: giao agent quét cả repo, bạn chỉ việc đọc báo cáo",
     "🧭 Mới tiếp cận một codebase lạ: để agent vẽ sơ đồ kiến trúc và ranh giới tin cậy trước khi săn lỗi"
   ],
-  "audience": "Nhóm phát triển muốn rà lỗ hổng bảo mật bằng coding agent trước khi phát hành, và người nghiên cứu công cụ bảo mật dùng AI.",
-  "notable": "Cần sandbox do hệ điều hành thực thi khi chạy code của mục tiêu; thiếu sandbox thì nghi vấn chỉ được giữ ở mức needs_validation. Giấy phép MIT.",
   "refs": []
 }
