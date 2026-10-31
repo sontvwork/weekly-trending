@@ -1,11 +1,15 @@
 {
   "repo": "anthropics/knowledge-work-plugins",
   "tagline": "Biến Claude thành đồng nghiệp chuyên đúng vai trò của bạn, từ sales tới legal",
-  "summary": "Thuê một nhân viên mới giỏi nhưng chưa biết quy trình công ty thì bạn vẫn phải dặn từng việc. Bộ plugin này dặn sẵn thay bạn: mỗi plugin gói kỹ năng, kết nối công cụ, slash command và sub-agent cho một mảng công việc như sales, tài chính, hỗ trợ khách hàng. Toàn bộ chỉ là file markdown và JSON, sửa theo cách team bạn làm việc.",
+  "summary": [
+    "🧩 Một bộ plugin giúp Claude (Cowork, Claude Code) làm việc như chuyên viên của từng phòng ban mà không cần viết code.",
+    "📁 Mỗi plugin gói sẵn kỹ năng, lệnh slash, kết nối công cụ và sub-agent cho một vai trò như sales, legal, finance.",
+    "✏️ Toàn bộ chỉ là file markdown và JSON, bạn sửa theo thuật ngữ và quy trình công ty mình."
+  ],
   "use_cases": [
-    "📞 Gõ `/sales:call-prep` để chuẩn bị cuộc gọi khách hàng, khỏi lục CRM bằng tay",
-    "🧾 Dùng plugin finance để đối soát tài khoản và phân tích chênh lệch khi chốt sổ",
-    "🛠️ Tự dựng plugin riêng cho quy trình nội bộ bằng cowork-plugin-management"
+    "📞 Sắp gọi khách hàng tiềm năng: để Claude tra cứu thông tin và chuẩn bị nội dung cuộc gọi với `/sales:call-prep`",
+    "📜 Có chồng hợp đồng hoặc NDA cần xem: nhờ Claude rà soát và phân loại rủi ro trước khi bạn đọc kỹ",
+    "🏢 Muốn Claude hiểu quy trình riêng của team: chỉnh file plugin hoặc tạo plugin mới cho vai trò chưa có"
   ],
   "audience": "Team không chỉ có dev muốn Claude làm việc đúng quy trình và công cụ của mình, kể cả khi không biết code.",
   "notable": "Làm cho Claude Cowork, cũng dùng được với Claude Code. Không cần code hay build, nhưng plugin gốc chỉ là điểm khởi đầu chung chung, cần chỉnh theo công ty.",

@@ -1,11 +1,16 @@
 {
   "repo": "cursor/plugins",
   "tagline": "Chợ plugin chính thức giúp agent của Cursor làm được nhiều việc hơn viết code",
-  "summary": "Trợ lý AI giỏi mấy cũng khó làm việc nếu không có chìa khoá vào Gmail, GitHub hay Salesforce của bạn. Repo này là kho plugin chính thức cho Cursor, mỗi plugin là một thư mục riêng gói sẵn skill, rule và cấu hình MCP, từ quy trình review code đến kết nối dịch vụ bên thứ ba.",
+  "summary": [
+    "🧩 Một kho plugin giúp agent trong Cursor làm việc với công cụ và dịch vụ bạn đang dùng hằng ngày mà không phải tự viết phần kết nối.",
+    "🏪 Mỗi plugin là một thư mục độc lập có manifest riêng, nên chỉ cần lấy đúng cái mình cần.",
+    "🛠️ Ngoài mục tích hợp SaaS còn có plugin quy trình cho dev: review PR, chạy song song nhiều agent, scaffold plugin mới.",
+    "📐 Đồng thời là bản mẫu về cấu trúc plugin (skills, rules, MCP) để bạn tự làm theo."
+  ],
   "use_cases": [
-    "🔍 Chạy review nhánh kỹ lưỡng bằng nhiều subagent song song với plugin `thermos`",
-    "📬 Cho agent tìm, đọc và soạn email hoặc lịch họp thay vì bạn tự mở từng app",
-    "🧩 Dùng `create-plugin` để dựng và kiểm tra plugin riêng cho đội mình"
+    "🔍 Review PR dài và khó đọc: dựng diff thành canvas xếp theo mức độ quan trọng",
+    "📬 Cần agent tra email, lịch, CRM hay ticket ngay trong editor: cắm plugin tương ứng thay vì chuyển tab",
+    "🧱 Muốn tự làm plugin cho đội mình: xem plugin mẫu và dùng `create-plugin` để dựng khung"
   ],
   "audience": "Người dùng Cursor muốn nối agent với công cụ hằng ngày hoặc đóng gói quy trình làm việc của đội thành plugin dùng lại được.",
   "notable": "Gồm cả plugin do tác giả cộng đồng đóng góp, và giấy phép MIT.",

@@ -1,11 +1,16 @@
 {
   "repo": "morluto/rea",
   "tagline": "Cho agent mổ xẻ một app không có mã nguồn và chỉ ra bằng chứng",
-  "summary": "Thấy một tính năng hay trong app người khác mà không có mã nguồn thì chẳng khác nào ăn món ngon mà không biết công thức. REA nối agent của bạn với các công cụ soi binary, app JavaScript/Electron, .NET và website. Agent tự lần theo code, giải thích tính năng chạy ra sao, kèm bằng chứng và giới hạn của từng kết luận.",
+  "summary": [
+    "🔍 Một MCP server giúp coding agent (Claude Code, Codex, Cursor) \"mổ xẻ\" app để hiểu tính năng chạy ra sao mà không cần mã nguồn",
+    "🧾 Mỗi kết luận đi kèm bằng chứng và giới hạn, nên bạn kiểm chứng được thay vì tin mù quáng",
+    "🏠 Phân tích chạy ngay trên máy bạn; agent chỉ nhận kết quả công cụ trả về",
+    "💻 Cùng bộ công cụ đó dùng được trực tiếp từ terminal, không bắt buộc phải qua agent"
+  ],
   "use_cases": [
-    "🔍 Hỏi agent app Notes tìm kiếm thế nào, rồi nhờ viết bản tương tự cho dự án của bạn",
-    "🧩 Lần theo clipboard của app Electron qua preload và IPC tới tiến trình chính",
-    "🛠️ Dựng lại hàm C từ pseudocode dở dang của một file thực thi cũ"
+    "🎯 Thấy app có tính năng bạn muốn có: nhờ agent điều tra, giải thích rồi dựng bản tương tự",
+    "📦 Có app Electron không mã nguồn: lần theo module và IPC để hiểu nó làm gì",
+    "🕹️ Muốn dựng lại phép tính trong chương trình cũ: đọc pseudocode, assembly rồi viết lại bằng C"
   ],
   "audience": "Người dùng coding agent muốn hiểu cách một ứng dụng hoạt động mà không có mã nguồn, từ nghiên cứu, học tập đến bảo tồn phần mềm.",
   "notable": "Phân tích chạy local. Phân tích native cần Hopper, Ghidra hoặc IDA; chỉ dùng cho phần mềm bạn được phép phân tích hợp pháp.",

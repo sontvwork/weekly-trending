@@ -1,11 +1,16 @@
 {
   "repo": "mksglu/context-mode",
   "tagline": "Giữ context window của coding agent không bị dữ liệu thô nuốt sạch",
-  "summary": "Bắt agent đọc nguyên một bản snapshot hay một loạt issue cũng như đổ cả thùng giấy lên bàn làm việc: chẳng mấy chốc hết chỗ để nghĩ. context-mode giữ dữ liệu thô trong sandbox, chỉ đưa kết quả cô đọng vào context, và ghi lại tiến độ phiên vào SQLite để agent không quên mình đang làm gì sau khi compact.",
+  "summary": [
+    "🧠 Một MCP server giúp coding agent (Claude Code, Gemini CLI, Cursor) làm việc lâu mà không bị output công cụ làm đầy context window.",
+    "📦 Output của công cụ được nhốt trong sandbox, README nêu mức giảm 98%: 315 KB còn 5.4 KB, agent chỉ thấy phần kết quả.",
+    "🔁 Mọi lần sửa file, thao tác git, lỗi, quyết định được lưu lại, nên sau khi hội thoại bị nén agent vẫn nhớ đang làm dở gì.",
+    "💻 Thay vì đọc 50 file rồi tự đếm, agent viết một đoạn script và chỉ in kết quả cuối."
+  ],
   "use_cases": [
-    "🧯 Chạy phiên code dài mà context không cạn sau vài chục phút gọi tool",
-    "🧠 Sau khi hội thoại bị compact, agent vẫn nhớ file đang sửa và việc đang dở",
-    "📈 Xem agent tiết kiệm được bao nhiêu context qua lệnh `ctx stats`"
+    "🕐 Phiên code kéo dài, ngồi nửa tiếng là context đầy: output của Playwright hay danh sách issue không còn nuốt hết chỗ",
+    "🧵 Hội thoại vừa bị nén mà agent quên đang sửa file nào: nó lấy lại đúng phần liên quan để làm tiếp",
+    "🔍 Cần thống kê trên cả codebase lớn: để agent viết script đếm thay vì đọc từng file vào context"
   ],
   "audience": "Người dùng coding agent cho phiên làm việc dài, hay gọi nhiều MCP tool và hay vấp tình trạng agent quên việc sau khi compact.",
   "notable": "Hỗ trợ nhiều nền tảng như Claude Code, Gemini CLI, Cursor, OpenCode. License ELv2, không phải license mã nguồn mở thông thường.",

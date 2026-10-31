@@ -1,11 +1,14 @@
 {
   "repo": "anthropics/claude-plugins-official",
   "tagline": "Gian hàng chính thức để thêm phụ kiện cho Claude Code bằng một lệnh",
-  "summary": "Claude Code giống cái máy đa năng, nhưng muốn thêm tính năng thì bạn phải tự đi tìm đồ chơi ở đâu đó. Repo này là gian hàng do Anthropic quản lý: gom các plugin đã được tuyển chọn, gồm cả plugin của Anthropic lẫn đối tác và cộng đồng, để bạn duyệt và cài ngay trong Claude Code.",
+  "summary": [
+    "🏬 Một danh mục plugin do Anthropic quản lý giúp bạn tìm và cài thêm tiện ích cho Claude Code ngay trong công cụ.",
+    "🤝 Chia hai nhóm rõ ràng: plugin do Anthropic tự làm, và plugin của đối tác, cộng đồng phải qua kiểm duyệt chất lượng và bảo mật.",
+    "📦 Mỗi plugin có cấu trúc chuẩn, có thể gói sẵn lệnh slash, agent, skill hoặc cấu hình MCP server."
+  ],
   "use_cases": [
-    "🛍️ Mở `/plugin` rồi duyệt mục Discover để tìm plugin hợp việc, khỏi lục GitHub",
-    "⚡ Cài thêm lệnh, agent, skill hoặc MCP server bằng `/plugin install`",
-    "📦 Đóng gói bộ skill của bạn thành plugin, hoặc gửi plugin lên để được đưa vào danh mục"
+    "🔎 Muốn Claude Code làm thêm việc mới: mở `/plugin` rồi Discover để duyệt và cài thay vì tự cấu hình",
+    "🛠️ Đang tự viết plugin: xem plugin mẫu làm chuẩn, rồi gửi form để được đưa vào danh mục"
   ],
   "audience": "Người dùng Claude Code muốn mở rộng khả năng bằng plugin đáng tin hơn, và người viết plugin muốn có chỗ phát hành chính thức.",
   "notable": "Anthropic nói rõ không kiểm soát nội dung bên trong plugin và không đảm bảo plugin không thay đổi, nên hãy tin tưởng plugin trước khi cài.",

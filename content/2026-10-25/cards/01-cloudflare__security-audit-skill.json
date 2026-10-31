@@ -1,11 +1,14 @@
 {
   "repo": "cloudflare/security-audit-skill",
   "tagline": "Biến coding agent thành đội kiểm toán bảo mật tự cãi nhau để loại báo động giả",
-  "summary": "Nhờ một AI tự soi lỗi code giống như để chính người viết bài tự chấm bài: dễ tin nhầm kết quả của mình. Skill này chia việc cho nhiều agent riêng biệt, người săn lỗi khác người kiểm chứng, và chỉ xác nhận lỗ hổng khi có dấu vết nguồn rõ ràng. Kết quả ra thành file JSON và báo cáo Markdown.",
+  "summary": [
+    "🎯 Skill biến coding agent thành người rà bảo mật, là bản khởi đầu Cloudflare dùng để dựng hệ thống săn lỗ hổng của họ",
+    "🚫 Ít báo động giả: agent tìm ra lỗi không được tự xác nhận, vì mỗi nghi vấn đều có agent khác thử bác bỏ",
+    "🏷️ Kết luận gắn nhãn rõ: đã chứng minh, cần kiểm tra thêm hoặc đã loại, kèm bộ câu hỏi riêng cho từng loại dự án"
+  ],
   "use_cases": [
-    "🔍 Gõ \"security audit this codebase\" để agent tự quét cả repo và xuất báo cáo",
-    "🧪 Lọc bớt báo động giả: mỗi nghi vấn đều được một agent mới cố bác bỏ trước khi kết luận",
-    "🔁 Chạy lặp nhiều lần trên cùng repo để lấp dần các vùng chưa được kiểm tra"
+    "🗓️ Đến kỳ rà soát bảo mật định kỳ cho một repo: giao agent quét cả repo, bạn chỉ việc đọc báo cáo",
+    "🧭 Mới tiếp cận một codebase lạ: để agent vẽ sơ đồ kiến trúc và ranh giới tin cậy trước khi săn lỗi"
   ],
   "audience": "Nhóm phát triển muốn rà lỗ hổng bảo mật bằng coding agent trước khi phát hành, và người nghiên cứu công cụ bảo mật dùng AI.",
   "notable": "Cần sandbox do hệ điều hành thực thi khi chạy code của mục tiêu; thiếu sandbox thì nghi vấn chỉ được giữ ở mức needs_validation. Giấy phép MIT.",

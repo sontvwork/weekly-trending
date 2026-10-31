@@ -1,11 +1,16 @@
 {
   "repo": "ranxianglei/billion-context",
   "tagline": "Giúp một phiên coding agent chạy dài nhiều tháng mà không tràn context, lại tốn ít token hơn",
-  "summary": "Phiên làm việc với agent giống cuốn sổ tay chỉ có vài trang: viết mãi là hết chỗ, mà lần nào cũng phải đọc lại từ đầu. billion-context đứng giữa agent và API của model, để chính model gấp các đoạn đã dùng thành bản tóm tắt chi tiết, cần thì mở ra lại. Cửa sổ 100K là đủ cho một phiên rất dài.",
+  "summary": [
+    "🗜️ Một plugin nén ngữ cảnh giúp coding agent (Claude Code, Codex, OpenCode) chạy một phiên cực dài mà không tràn cửa sổ ngữ cảnh.",
+    "🧠 Chính model tự quyết định khi nào và nén đoạn nào thành bản tóm tắt chi tiết, chứ không bị cắt cụt cứng.",
+    "↩️ Nén từng đoạn nhỏ, cần chi tiết gốc thì giải nén lại được, nên cache prefix không bị phá.",
+    "🔌 Đứng giữa agent và API của model, nên gắn được vào rất nhiều agent chỉ bằng đổi base URL hoặc lệnh khởi chạy."
+  ],
   "use_cases": [
-    "🗓️ Giữ nguyên một phiên coding agent chạy nhiều ngày, không phải mở phiên mới rồi giải thích lại từ đầu",
-    "💸 Cắt hoá đơn token khi mỗi lượt gọi đều phải gửi lại cả đống lịch sử",
-    "🔎 Mở lại đoạn đã nén hoặc tìm theo từ khoá khi cần chi tiết gốc"
+    "⏳ Phiên làm việc kéo dài nhiều ngày: nén phần đã xong để agent không quên mạch, không tràn context",
+    "💸 Hoá đơn token của agent tăng vọt vì hội thoại dài: nén lịch sử để tiêu ít token hơn",
+    "🪟 Dùng model có cửa sổ ngữ cảnh nhỏ (khoảng 100K): vẫn chạy được phiên dài nhờ nén dần"
   ],
   "audience": "Người dùng coding agent (Claude Code, Codex, OpenCode, Aider và nhiều agent khác) hay chạy phiên dài hoặc dùng model có cửa sổ nhỏ.",
   "notable": "Đóng vai proxy giữa agent và API nên agent nào cũng dùng được qua đổi base URL. Nén có thể hoàn tác và giữ nguyên prefix cache.",

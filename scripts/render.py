@@ -211,8 +211,11 @@ def repo_card(repo: Repo) -> str:
         style = f' style="--lang: {repo.language_color}"' if repo.language_color else ""
         stats.append(f'<li class="stat-lang" title="Ngôn ngữ chính"><i class="dot"{style}></i>{esc(repo.language)}</li>')
     uses = "".join(f"<li>{inline(use)}</li>" for use in card_list(card, "use_cases"))
+    summary = card_list(card, "summary")  # card cũ (trước 2026-10-25) có summary là một chuỗi
+    summary_html = (f'<ul class="uses">{"".join(f"<li>{inline(line)}</li>" for line in summary)}</ul>' if summary
+                    else f'<p>{inline(card_text(card, "summary"))}</p>')
     notable = card_text(card, "notable")
-    notable_html = f'<p class="notable"><b>✨ Đáng chú ý</b><span>{inline(notable)}</span></p>' if notable else ""
+    notable_html = f'<p class="notable"><b>📝 Ghi chú</b><span>{inline(notable)}</span></p>' if notable else ""
     return (
         f'<article class="repo{" is-top" if repo.rank <= 3 else ""}" id="hang-{repo.rank}">'
         f'<header class="repo-head"><span class="rank" title="Hạng {repo.rank} trên GitHub Trending tuần">{repo.rank}</span>'
@@ -221,7 +224,7 @@ def repo_card(repo: Repo) -> str:
         f'<p class="repo-tagline">{inline(card_text(card, "tagline"))}</p></div></header>'
         f'<ul class="repo-stats">{"".join(stats)}</ul>'
         f'<div class="repo-body">'
-        f'<section><h3>💡 Để làm gì</h3><p>{inline(card_text(card, "summary"))}</p></section>'
+        f'<section><h3>📖 Là gì</h3>{summary_html}</section>'
         f'<section><h3>🛠️ Use case</h3><ul class="uses">{uses}</ul></section>'
         f'<section><h3>👥 Ai nên dùng</h3><p>{inline(card_text(card, "audience"))}</p></section>'
         f"{notable_html}</div></article>"

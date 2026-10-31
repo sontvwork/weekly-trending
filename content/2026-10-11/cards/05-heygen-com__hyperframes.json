@@ -1,11 +1,16 @@
 {
   "repo": "heygen-com/hyperframes",
   "tagline": "Viết video bằng HTML, để coding agent dựng và xuất ra MP4",
-  "summary": "Làm video thường giống đứng trong phòng dựng phim với timeline phức tạp mà AI khó chạm vào. Ở đây video chỉ là một trang HTML: gắn thuộc tính thời gian cho video, chữ, nhạc, thêm animation bằng GSAP hay CSS. Renderer tua từng khung hình trong Chrome headless rồi mã hoá bằng FFmpeg, nên cùng đầu vào luôn ra đúng cùng một video.",
+  "summary": [
+    "🎬 Một framework mã nguồn mở giúp bạn hoặc AI agent (Claude Code, Codex, Cursor) dựng video MP4 từ HTML và CSS mà không cần phần mềm dựng phim.",
+    "🧪 Cùng một đầu vào luôn ra đúng một video, nên chạy được trong CI và kiểm thử hồi quy như code bình thường.",
+    "🧩 Không cần React hay bước build: file index.html xem thử được ngay trên trình duyệt, khác với Remotion dựa trên React.",
+    "🧰 Đi kèm bộ skill dạy agent quy trình làm video và thư viện khối dựng sẵn như chuyển cảnh, biểu đồ, phụ đề."
+  ],
   "use_cases": [
-    "🚀 Nhờ agent dựng video giới thiệu sản phẩm từ một câu prompt hoặc URL website",
-    "🔀 Biến một pull request thành video giải thích có code diff, lời dẫn và phụ đề",
-    "📈 Tự động xuất biểu đồ động, overlay mạng xã hội trong pipeline CI mà kết quả không đổi giữa các lần chạy"
+    "🚀 Sắp ra mắt sản phẩm hay tính năng mới: đưa URL hoặc brief cho agent để có video giới thiệu",
+    "🔀 Vừa merge một pull request lớn: biến nó thành video giải thích thay đổi, có narration và phụ đề",
+    "⚙️ Cần sinh hàng loạt video tự động từ dữ liệu: render lặp lại được trong pipeline nội dung"
   ],
   "audience": "Người dùng coding agent muốn làm video bằng lời nhắc, và dev web muốn dựng video bằng HTML/CSS quen thuộc thay vì phần mềm dựng phim.",
   "notable": "Giấy phép Apache 2.0, không tính phí theo lượt render. Render chạy local hoặc Docker, cần Node.js 22+ và FFmpeg.",

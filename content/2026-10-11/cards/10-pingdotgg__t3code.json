@@ -1,11 +1,16 @@
 {
   "repo": "pingdotgg/t3code",
   "tagline": "Một bảng điều khiển chung để sai các coding agent từ máy tính lẫn điện thoại",
-  "summary": "Dùng nhiều coding agent giống như có mỗi người một remote riêng, mà ai đi đâu thì remote nằm lại trên bàn làm việc. T3 Code là chiếc điều khiển chung: nó điều khiển các agent đã cài sẵn trên máy bạn qua app desktop, web hoặc app di động.",
+  "summary": [
+    "🎛️ Một ứng dụng giúp bạn điều khiển các coding agent (Claude Code, Codex, Cursor, OpenCode) đang cài trên máy mình từ một giao diện chung.",
+    "📱 Có app di động iOS, Android, web app và app desktop, nên không phải ngồi trước máy mới giao việc được",
+    "🔑 Dùng luôn gói đăng ký agent bạn đã có, chỉ cần các agent đó được cài và đăng nhập sẵn",
+    "🍴 Nhóm làm nói rõ không bán gì, muốn mã mở hoàn toàn để bạn có thể fork nếu họ đi sai hướng"
+  ],
   "use_cases": [
-    "📱 Giao việc và xem agent đang chạy từ điện thoại khi rời bàn làm việc",
-    "🔀 Đổi qua lại giữa Claude Code, Codex, Cursor hay OpenCode trong cùng một giao diện",
-    "🔌 Cho Claude Code, Codex, ChatGPT và agent khác kết nối vào qua MCP"
+    "🚶 Rời bàn làm việc mà agent vẫn đang chạy: mở điện thoại xem tiến độ và giao thêm việc",
+    "🔀 Đang dùng lẫn Claude Code, Codex, Cursor: gom về một giao diện thay vì nhảy qua lại nhiều công cụ",
+    "🖥️ Agent chạy trên máy khác: truy cập từ xa qua điện thoại hoặc máy thứ hai"
   ],
   "audience": "Người đã trả tiền cho một hoặc nhiều coding agent và muốn điều khiển chúng gọn ở một nơi, kể cả từ xa.",
   "notable": "Mã nguồn mở, không bán gì. Dự án còn rất sớm nên có thể gặp lỗi, và tác giả hầu như chưa nhận đóng góp.",

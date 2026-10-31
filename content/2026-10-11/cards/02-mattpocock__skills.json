@@ -1,11 +1,15 @@
 {
   "repo": "mattpocock/skills",
   "tagline": "Bộ skill nhỏ cho coding agent để làm kỹ thuật thật, không phải vibe coding",
-  "summary": "Giao việc cho một dev mới mà không hỏi lại thì kiểu gì cũng ra thứ bạn không muốn. Coding agent cũng vậy. Bộ skill này là những thói quen kỹ thuật của tác giả, đóng gói thành lệnh như `/grill-me` (agent hỏi bạn tới nơi tới chốn trước khi code), `/tdd` và `/diagnosing-bugs`, mỗi skill nhỏ để bạn tự sửa theo ý.",
+  "summary": [
+    "🧰 Một bộ skill giúp coding agent (Claude Code, Codex, GitHub Copilot, Gemini CLI) làm việc có kỷ luật như kỹ sư thật, thay vì code theo cảm hứng.",
+    "🎛️ Mỗi skill nhỏ, ghép được, dùng với model nào cũng được; bạn giữ quyền kiểm soát thay vì để một quy trình cứng quyết định hết.",
+    "🗣️ Mỗi skill chữa một bệnh quen của agent: hiểu sai ý, nói dài dòng, code không chạy, và để codebase rối dần."
+  ],
   "use_cases": [
-    "🔥 Để agent phỏng vấn bạn về kế hoạch trước khi viết code, khỏi làm ra thứ sai ý",
-    "🧪 Bắt agent viết test fail trước rồi mới sửa, nhờ đó code có phản hồi liên tục",
-    "🧭 Lập danh sách thuật ngữ chung của dự án để agent bớt nói dài dòng"
+    "🎯 Sắp giao agent một tính năng mới: cho nó phỏng vấn bạn kỹ bằng `/grill-me` trước khi viết code",
+    "🐛 Agent viết code mãi vẫn lỗi: dùng `/tdd` hoặc `/diagnosing-bugs` để nó có phản hồi thật",
+    "🏗️ Codebase do agent viết khó sửa dần: chạy `/improve-codebase-architecture` định kỳ để tìm chỗ cần gọn lại"
   ],
   "audience": "Người dùng Claude Code, Codex hay coding agent khác hằng ngày, muốn giữ quyền kiểm soát quy trình thay vì giao hết cho một framework có sẵn.",
   "notable": "Hoạt động với mọi model. Tác giả nói rõ skill kiến trúc chỉ là khảo sát tìm ứng viên, không tự gỡ rối codebase cũ.",

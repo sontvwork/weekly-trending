@@ -1,11 +1,16 @@
 {
   "repo": "ruvnet/ruflo",
   "tagline": "Biến một Claude Code đơn lẻ thành cả đội agent biết phối hợp và nhớ việc",
-  "summary": "Một model giỏi viết code cũng như một thợ giỏi làm việc không có xưởng: thiếu dụng cụ, sổ ghi chép và người điều phối. Ruflo là cái xưởng đó cho Claude Code và Codex: thêm 100+ agent chuyên biệt, chia việc theo nhóm (swarm), nhớ giữa các phiên và học từ các task trước. Bạn vẫn dùng Claude Code như bình thường, hooks lo phần điều phối ngầm.",
+  "summary": [
+    "🧰 Một lớp điều phối bọc quanh coding agent (Claude Code, Codex) giúp chúng làm việc theo đội và nhớ qua các phiên, còn bạn vẫn viết code như thường.",
+    "🧠 Agent có bộ nhớ vector và học từ những tác vụ đã làm tốt để định tuyến việc về sau.",
+    "🌐 Federation cho agent ở máy hoặc tổ chức khác trao đổi việc, có xác thực danh tính và lọc thông tin cá nhân trước khi dữ liệu rời máy bạn.",
+    "📊 Có console kiểu buồng lái để theo dõi agent, token và chi phí ngay cạnh Claude Code."
+  ],
   "use_cases": [
-    "🐝 Giao một việc lớn cho nhóm agent chia nhau làm thay vì ngồi dẫn từng bước",
-    "🧠 Để agent nhớ ngữ cảnh dự án qua các phiên, khỏi giải thích lại từ đầu",
-    "📟 Mở bảng điều khiển xem agent, token và chi phí, rồi mở lại từng lần chạy để dò lỗi"
+    "🧩 Giao việc lớn cho Claude Code: chia cho nhóm agent phối hợp thay vì một phiên làm một mình",
+    "🔍 Agent chạy lâu mà khó biết đang làm gì: mở console xem log, kết quả, chi phí từng lượt chạy",
+    "🤝 Hai nhóm muốn chia sẻ tín hiệu mà không lộ dữ liệu khách hàng: dùng federation để lọc PII trước khi gửi"
   ],
   "audience": "Người dùng Claude Code hoặc Codex hằng ngày muốn chạy nhiều agent song song, có trí nhớ dài hạn và kiểm soát được chi phí.",
   "notable": "Các mod chạy với quyền tài khoản, không có sandbox, nên cần đọc code trước khi cài. Chế độ Claude điều khiển console mặc định chỉ đọc và hỏi trước.",

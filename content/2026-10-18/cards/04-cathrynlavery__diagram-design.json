@@ -1,11 +1,15 @@
 {
   "repo": "cathrynlavery/diagram-design",
   "tagline": "Bảo agent vẽ sơ đồ đẹp đúng màu thương hiệu của bạn",
-  "summary": "Nhờ AI vẽ sơ đồ thường ra những khối bo tròn na ná nhau, chẳng ăn nhập gì với website của bạn. Skill này dạy agent có gu: một màu nhấn cho điều quan trọng nhất, nét mảnh, không đổ bóng. Bạn mô tả bằng lời, agent chọn loại sơ đồ và ghi ra một file HTML chứa SVG, mở bằng cách bấm đúp.",
+  "summary": [
+    "🎨 Một skill cho coding agent (Claude Code, Codex, Cursor) giúp bạn vẽ sơ đồ bằng cách mô tả bằng lời, khỏi kéo thả từng hộp.",
+    "📄 Mỗi sơ đồ là một file HTML kèm SVG, bấm đúp là mở, không cần bước build hay JavaScript.",
+    "🏷️ Đưa địa chỉ website, agent lấy bảng màu và font của bạn để mọi sơ đồ sau đó đồng bộ với thương hiệu.",
+    "✂️ Phong cách biên tập tối giản: không đổ bóng, đường kẻ mảnh, chỉ nhấn màu vào một hai điểm quan trọng."
+  ],
   "use_cases": [
-    "🏗️ Gõ một câu để có sơ đồ kiến trúc app cho bài blog, khỏi mất nửa tiếng loay hoay với Figma",
-    "🎨 Đưa link website để mọi sơ đồ sau đó tự dùng bảng màu và font của bạn",
-    "🔄 Vẽ lại sơ đồ Mermaid, draw.io hoặc Excalidraw cũ cho đẹp hơn trước khi xuất bản"
+    "📝 Đang viết blog hay tài liệu cần sơ đồ kiến trúc đẹp: mô tả cho agent là có file xuất bản được",
+    "🧩 Đã có sơ đồ Mermaid, draw.io hoặc Excalidraw nhìn lệch tông: nhờ agent vẽ lại cho đồng bộ"
   ],
   "audience": "Người hay dùng coding agent và cần sơ đồ để đăng blog, tài liệu hay slide, muốn nhìn có gu mà không phải kéo thả thủ công.",
   "notable": "Tác giả tự nêu nhược điểm: chất lượng phụ thuộc model, cùng prompt có thể ra bố cục khác, và kết quả không phải định dạng nguồn để diff.",

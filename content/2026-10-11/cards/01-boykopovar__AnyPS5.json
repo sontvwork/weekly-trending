@@ -1,11 +1,15 @@
 {
   "repo": "boykopovar/AnyPS5",
   "tagline": "Chạy thẳng file thực thi PS5 trên Linux và Windows, không cần giả lập",
-  "summary": "Cầm đĩa game của máy này nhét vào máy khác thì thường chỉ có cách dựng cả một máy ảo bắt chước phần cứng. AnyPS5 làm khác: nó chuyển file thực thi PS5 sang định dạng gốc của Linux hoặc Windows và cung cấp sẵn các thư viện hệ thống để liên kết động. Không có tiến trình giả lập riêng nào chạy kèm.",
+  "summary": [
+    "🎮 Một công cụ giúp chuyển file thực thi của game PS5 sang định dạng gốc của Linux và Windows, chạy mà không cần giả lập.",
+    "⚙️ Không có tiến trình runtime riêng: thư viện hệ thống của PS5 được viết lại để game liên kết động như phần mềm bình thường.",
+    "📈 Tiến độ công khai bằng huy hiệu và danh sách game đã kiểm chứng; Dreaming Sarah chạy ổn định 60 fps trên card GTX 1050 Ti."
+  ],
   "use_cases": [
-    "🎮 Thử chạy game PS5 đã kiểm chứng trên PC; game 2D Dreaming Sarah đạt 60 fps ổn định theo README",
-    "🔬 Đọc code relinker và shader recompiler để học cách port binary giữa các hệ thống",
-    "🗂️ Tra danh sách game đã verify và bản đồ tiến độ thư viện để biết dự án đi tới đâu"
+    "🔬 Muốn hiểu game console chạy thế nào trên PC: đọc relinker và thư viện hệ thống để học cách chuyển đổi",
+    "🕹️ Có bản game PS5 hợp lệ muốn thử trên Linux hoặc Windows: tra danh sách tương thích trước",
+    "🛠️ Muốn đóng góp cho dự án bảo tồn game: có sẵn tài liệu kiến trúc, nợ kỹ thuật và quy ước code"
   ],
   "audience": "Người tò mò về tương thích ngược, bảo tồn game và kỹ thuật dịch binary, muốn đọc hoặc đóng góp code C++.",
   "notable": "Gặp trạng thái chưa hỗ trợ là dừng hẳn với lỗi `std::runtime_error`. Giấy phép GPL v2 và không kèm firmware hay phần mềm có bản quyền.",

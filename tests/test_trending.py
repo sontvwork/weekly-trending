@@ -171,7 +171,7 @@ class ValidateTest(unittest.TestCase):
         self.assertInvalid("thiếu highlights.txt")
 
     def test_english_card(self) -> None:
-        self.box.edit_card(NEW, tagline="A command line tool for chores", summary="This is a command line tool " * 4,
+        self.box.edit_card(NEW, tagline="A command line tool for chores", summary=["🧰 This is a command line tool " * 4, "⚡ Another line of English text here ok"],
                            audience="Developers who like automation", notable="",
                            use_cases=["Run checks before commits", "Bundle scripts into one command"])
         self.assertInvalid("tiếng Việt có dấu")

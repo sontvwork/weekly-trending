@@ -1,11 +1,16 @@
 {
   "repo": "flutter/flutter",
   "tagline": "Viết một lần, ra app mượt cho điện thoại, web và máy tính",
-  "summary": "Làm app cho iOS, Android, web và desktop thường như mở bốn quán riêng, mỗi quán một đội bếp. Flutter là SDK của Google cho bạn một nhà bếp chung: một codebase Dart, biên dịch ra từng nền tảng. Sửa code xong là thấy kết quả ngay nhờ stateful hot reload, app không bị khởi động lại hay mất trạng thái.",
+  "summary": [
+    "📱 Một SDK của Google giúp bạn dựng app cho mobile, web và desktop từ cùng một codebase mà vẫn giữ giao diện mượt.",
+    "🎨 Bạn kiểm soát từng pixel trên màn hình, có sẵn bộ widget kiểu iOS (Cupertino) lẫn Material, và tự tạo thành phần giao diện mới được.",
+    "⚡ Sửa code là thấy kết quả ngay nhờ hot reload, không phải khởi động lại app hay mất trạng thái đang có.",
+    "🔌 Có hàng chục nghìn package, và gọi được code native qua FFI hoặc platform channels."
+  ],
   "use_cases": [
-    "📱 Ra app iOS và Android từ cùng một codebase, khỏi nuôi hai đội",
-    "🎨 Dựng giao diện tuỳ biến đến từng pixel, đúng ý designer",
-    "⚡ Chỉnh code và xem kết quả tức thì, không mất trạng thái app đang chạy"
+    "🚀 Startup nhỏ cần ra app cho cả iOS và Android: một đội, một codebase thay vì hai",
+    "🖌️ Designer muốn giao diện đúng ý mà không bị framework gò bó: tự vẽ và làm animation từng chi tiết",
+    "🧩 Đã có sẵn code native: nối vào app Flutter qua FFI thay vì viết lại từ đầu"
   ],
   "audience": "Người muốn làm app đa nền tảng với một codebase duy nhất và giao diện tự do, kể cả nhóm nhỏ ít người.",
   "notable": "Miễn phí, mã nguồn mở. Gọi được code native qua FFI hoặc platform channels. Công cụ flutter có thể tải tài nguyên từ máy chủ Google, gồm cả Dart SDK.",

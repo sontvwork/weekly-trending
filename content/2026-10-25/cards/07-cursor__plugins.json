@@ -1,11 +1,15 @@
 {
   "repo": "cursor/plugins",
   "tagline": "Kho plugin chính thức để dạy agent của Cursor làm thêm nhiều việc",
-  "summary": "Agent giống nhân viên mới giỏi nhưng chưa có tài khoản công ty và chưa biết quy trình nội bộ. Đây là kho plugin chính thức của Cursor: mỗi plugin là một thư mục gói sẵn skills, rules và kết nối MCP. Có plugin cho quy trình lập trình như review PR, có plugin nối agent với Gmail, GitHub, Salesforce, Playwright.",
+  "summary": [
+    "🧩 Một kho plugin giúp Cursor biết thêm kỹ năng và kết nối với công cụ bạn đang dùng hằng ngày mà không cần tự viết tích hợp.",
+    "📦 Mỗi plugin là một thư mục độc lập, có manifest riêng, có thể chứa skills, rules và định nghĩa MCP server.",
+    "🌐 Ngoài workflow cho dev (review PR, tạo plugin, chạy nhiều agent song song), còn có hàng chục tích hợp như GitHub, Gmail, Salesforce, Playwright."
+  ],
   "use_cases": [
-    "🔍 Review nhánh code kỹ hơn bằng plugin như `thermos` hay `pr-review-canvas`, khỏi đọc diff dài từ đầu",
-    "🔗 Cho agent tìm email, đọc tài liệu, cập nhật CRM ngay trong chat thay vì mở từng app",
-    "🧩 Tự viết plugin riêng, dùng `create-plugin` để dựng khung và kiểm tra"
+    "🔍 Sắp review một PR lớn: dùng plugin để xem diff được gom theo mức độ quan trọng",
+    "📅 Muốn agent đọc mail, lịch hay tài liệu công việc ngay trong Cursor: bật plugin Gmail, Google Calendar, Google Docs",
+    "🛠️ Định viết plugin riêng cho Cursor: xem cấu trúc chuẩn và dùng plugin scaffold để dựng khung"
   ],
   "audience": "Người dùng Cursor muốn agent làm được nhiều việc hơn ngoài viết code, và người muốn tự làm plugin theo chuẩn của Cursor.",
   "notable": "Mỗi plugin là một thư mục độc lập với manifest riêng. Giấy phép MIT.",

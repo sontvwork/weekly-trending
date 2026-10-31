@@ -1,11 +1,15 @@
 {
   "repo": "NationalSecurityAgency/ghidra",
   "tagline": "Mở hộp đen phần mềm đã biên dịch để xem bên trong nó làm gì",
-  "summary": "Có file chạy trong tay mà không có mã nguồn thì giống như nhận một chiếc máy đóng kín, không biết bên trong có gì. Ghidra là bộ dụng cụ tháo máy do NSA phát triển: dịch ngược mã đã biên dịch thành dạng đọc được, vẽ sơ đồ luồng chạy, và cho bạn viết script để tự động hoá việc phân tích.",
+  "summary": [
+    "🔬 Một bộ công cụ giúp bạn \"mổ xẻ\" chương trình đã biên dịch để hiểu nó làm gì mà không cần mã nguồn gốc (Windows, macOS, Linux).",
+    "🏛️ Do bộ phận nghiên cứu của NSA tạo ra và duy trì, vốn xây để giải bài toán làm việc nhóm trên các dự án phân tích phức tạp.",
+    "🧩 Chạy được cả kiểu tương tác lẫn tự động, và bạn tự viết thêm script hoặc extension bằng Java hay Python."
+  ],
   "use_cases": [
-    "🦠 Mổ xẻ một file nghi là mã độc để hiểu nó làm gì trên máy nạn nhân",
-    "🔍 Soi một chương trình không có mã nguồn để tìm lỗ hổng bảo mật tiềm ẩn",
-    "🤖 Viết script Java hoặc Python chạy tự động phân tích hàng loạt file"
+    "🦠 Nhận được một file khả nghi: mở ra phân tích xem mã độc làm gì, có lỗ hổng nào không",
+    "🧪 Cần tự động hoá việc phân tích hàng loạt file: viết script chạy không cần giao diện",
+    "🛠️ Muốn xây công cụ phân tích riêng: làm extension trên nền framework có sẵn"
   ],
   "audience": "Người làm bảo mật, phân tích mã độc và bất kỳ ai cần hiểu phần mềm đã biên dịch khi không có mã nguồn.",
   "notable": "README cảnh báo một số phiên bản Ghidra có lỗ hổng bảo mật đã biết, nên cần đọc Security Advisories trước khi dùng. Chạy được trên Windows, macOS và Linux.",

@@ -66,10 +66,12 @@ TAG = re.compile(r"<[^>]+>")
 CARD_KEYS = {"repo", "tagline", "summary", "use_cases", "audience", "notable", "refs"}
 CARD_REQUIRED = {"repo", "tagline", "summary", "use_cases", "audience"}
 # Độ dài tính bằng SỐ TỪ (tách theo khoảng trắng), khớp với cách prompt mô tả — LLM không đếm được ký tự.
-TEXT_LIMITS = {"tagline": (4, 18), "summary": (15, 70), "audience": (5, 32), "notable": (0, 32)}
+TEXT_LIMITS = {"tagline": (4, 18), "audience": (5, 32), "notable": (0, 32)}
 USE_CASE_LIMITS = (3, 22)
+SUMMARY_LIMITS = (8, 30)  # từ mỗi dòng của summary; mỗi dòng mở đầu bằng 1 emoji như use_cases
+SUMMARY_COUNT = (2, 5)
 LEAD_EMOJI_FIELDS = ()  # trường trong TEXT_LIMITS bắt buộc mở đầu bằng 1 emoji; use_cases xử lý riêng
-USE_CASE_COUNT = (2, 3)
+USE_CASE_COUNT = (1, 3)  # không ép đủ số lượng: chỉ giữ tình huống thật sự có trong nguồn
 MAX_REFS = 3
 HIGHLIGHT_LINES = (1, 3)
 HIGHLIGHT_MAX_WORDS = 22
@@ -457,20 +459,21 @@ def check_card(folder: Path, item: dict) -> tuple[list[str], list[str]]:
         if "\n" in value:
             errors.append(f"{key} phải nằm trên một dòng")
         texts[key] = value
-    uses = card.get("use_cases")
-    if not isinstance(uses, list) or not all(isinstance(use, str) for use in uses):
-        errors.append("use_cases phải là danh sách chuỗi")
-    else:
-        if not USE_CASE_COUNT[0] <= len(uses) <= USE_CASE_COUNT[1]:
-            errors.append(f"use_cases cần {USE_CASE_COUNT[0]}–{USE_CASE_COUNT[1]} mục, đang có {len(uses)}")
-        for number, use in enumerate(uses, 1):
-            emoji, use = split_lead_emoji(use.strip())
+    for key, count, limits in (("summary", SUMMARY_COUNT, SUMMARY_LIMITS), ("use_cases", USE_CASE_COUNT, USE_CASE_LIMITS)):
+        lines = card.get(key)
+        if not isinstance(lines, list) or not all(isinstance(line, str) for line in lines):
+            errors.append(f"{key} phải là danh sách chuỗi")
+            continue
+        if not count[0] <= len(lines) <= count[1]:
+            errors.append(f"{key} cần {count[0]}–{count[1]} mục, đang có {len(lines)}")
+        for number, line in enumerate(lines, 1):
+            emoji, line = split_lead_emoji(line.strip())
             if not emoji:
-                errors.append(f"use_cases[{number}] phải mở đầu bằng đúng 1 emoji rồi dấu cách")
-            words = len(use.split())
-            if not USE_CASE_LIMITS[0] <= words <= USE_CASE_LIMITS[1]:
-                errors.append(f"use_cases[{number}] dài {words} từ, cần {USE_CASE_LIMITS[0]}–{USE_CASE_LIMITS[1]} từ")
-            texts[f"use_cases[{number}]"] = use
+                errors.append(f"{key}[{number}] phải mở đầu bằng đúng 1 emoji rồi dấu cách")
+            words = len(line.split())
+            if not limits[0] <= words <= limits[1]:
+                errors.append(f"{key}[{number}] dài {words} từ, cần {limits[0]}–{limits[1]} từ")
+            texts[f"{key}[{number}]"] = line
     refs = card.get("refs", [])
     if not isinstance(refs, list) or not all(isinstance(ref, str) for ref in refs):
         errors.append("refs phải là danh sách URL")

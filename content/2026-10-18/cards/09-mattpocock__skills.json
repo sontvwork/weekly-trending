@@ -1,11 +1,16 @@
 {
   "repo": "mattpocock/skills",
   "tagline": "Bộ skill nhỏ giúp coding agent hỏi kỹ, viết test và giữ code gọn",
-  "summary": "Giao việc cho một dev mới mà không giải thích kỹ thì bạn sẽ nhận về thứ mình không muốn. Coding agent cũng vậy. Repo này gom các skill tác giả dùng hằng ngày: agent phỏng vấn bạn trước khi làm, dùng chung bảng thuật ngữ của dự án, viết test trước rồi mới code. Mỗi skill nhỏ, dễ sửa, chạy với model nào cũng được.",
+  "summary": [
+    "🧰 Một bộ skill giúp coding agent (Claude Code, Codex, GitHub Copilot) làm đúng điều bạn muốn mà bạn vẫn nắm quyền điều khiển",
+    "🧩 Mỗi skill nhỏ, dễ sửa, ghép được với nhau, không ép bạn theo một quy trình cứng như GSD, BMAD hay Spec-Kit",
+    "🔥 Mở đầu bằng việc agent hỏi dồn bạn về kế hoạch, để hai bên hiểu giống nhau trước khi viết code",
+    "📖 Có file thuật ngữ chung của dự án, nhờ đó agent bớt nói dài dòng và đặt tên nhất quán"
+  ],
   "use_cases": [
-    "🔥 Gõ `/grill-me` để agent hỏi dồn từng nhánh thiết kế, khỏi cảnh code xong mới thấy hiểu sai ý",
-    "🧪 Dùng `/tdd` để agent làm theo vòng red-green-refactor, có phản hồi liên tục thay vì code mò",
-    "🏗️ Chạy `/improve-codebase-architecture` định kỳ để tìm chỗ nên gom lại cho code bớt rối"
+    "🎯 Sắp nhờ agent làm một tính năng mới: cho nó hỏi dồn trước, khỏi nhận về thứ sai ý",
+    "🐞 Agent viết code chạy không đúng: dùng vòng TDD và quy trình chẩn đoán lỗi để nó có phản hồi thật",
+    "🏚️ Codebase do agent viết bắt đầu rối: quét định kỳ để tìm chỗ cần gọn lại"
   ],
   "audience": "Người dùng coding agent hằng ngày, muốn tự kiểm soát quy trình thay vì để một framework quy trình quyết định hết.",
   "notable": "Trên codebase cũ, công cụ kiến trúc chỉ liệt kê ứng viên cải thiện, không tự gỡ rối giúp bạn. Hỗ trợ Claude Code, Codex, Copilot, Gemini CLI.",
