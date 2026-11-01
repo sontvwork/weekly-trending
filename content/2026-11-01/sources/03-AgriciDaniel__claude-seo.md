@@ -5,10 +5,10 @@
 - URL: https://github.com/AgriciDaniel/claude-seo
 - Mô tả trên GitHub: Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.
 - Ngôn ngữ chính: Python
-- Tổng sao: 25175
+- Tổng sao: 25376
 - Sao tăng trong tuần: 4814
-- Fork: 3329
-- Lấy lúc (UTC): 2026-11-01T08:12:17Z
+- Fork: 3343
+- Lấy lúc (UTC): 2026-11-01T16:55:20Z
 - README: README.md (22577 ký tự)
 
 ======== README (nguyên văn) ========

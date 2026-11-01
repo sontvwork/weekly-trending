@@ -5,10 +5,10 @@
 - URL: https://github.com/Nutlope/hallmark
 - Mô tả trên GitHub: Anti-AI-slop design skill for Claude Code, Cursor, and Codex.
 - Ngôn ngữ chính: CSS
-- Tổng sao: 44195
+- Tổng sao: 44564
 - Sao tăng trong tuần: 12062
-- Fork: 2336
-- Lấy lúc (UTC): 2026-11-01T08:12:17Z
+- Fork: 2361
+- Lấy lúc (UTC): 2026-11-01T16:55:20Z
 - README: README.md (8730 ký tự)
 
 ======== README (nguyên văn) ========
