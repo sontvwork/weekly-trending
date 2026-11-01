@@ -1,0 +1,15 @@
+{
+  "repo": "jakubkrehel/skills",
+  "tagline": "Dạy AI agent con mắt của designer để giao diện không chỉ chạy được mà còn đẹp",
+  "summary": [
+    "🎨 Một bộ skill giúp AI agent (như Claude Code) dựng và rà giao diện đúng chuẩn thiết kế, thay vì chỉ cho ra code chạy được",
+    "📏 Mỗi skill lo một mảng riêng như chữ, màu, bố cục, trợ năng, câu chữ trong UI, và có skill gom tất cả thành một báo cáo xếp hạng",
+    "🧪 Có các skill do bạn chủ động gọi để thử một component ở mọi trạng thái, hoặc dựng nhiều biến thể để chọn"
+  ],
+  "use_cases": [
+    "🔍 Sắp merge pull request có đụng giao diện: rà xem nó có làm hỏng trợ năng, bố cục hay chữ không",
+    "🖼️ Có file Figma hoặc ảnh thiết kế trong tay: dựng UI khớp thiết kế, dùng sẵn token và component của dự án",
+    "💥 Vừa làm xong một component: thử nó ở mọi trạng thái để bắt lỗi trước khi người dùng thấy"
+  ],
+  "refs": []
+}

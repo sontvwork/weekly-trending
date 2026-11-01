@@ -1,0 +1,15 @@
+{
+  "repo": "obra/superpowers",
+  "tagline": "Dạy coding agent hỏi kỹ, lên kế hoạch rồi mới viết code",
+  "summary": [
+    "🦸 Một bộ kỹ năng và quy trình làm việc giúp coding agent (Claude Code, Codex, Cursor, Gemini CLI) làm phần mềm bài bản mà bạn không phải nhắc từng bước",
+    "🧠 Agent không lao vào code ngay: nó hỏi lại bạn thật sự muốn gì, rồi trình bày thiết kế thành từng đoạn ngắn đủ để đọc",
+    "🧪 Bắt làm theo TDD: viết test thấy fail trước, rồi mới viết code, và có bước review sau mỗi task",
+    "⚡ Các kỹ năng tự kích hoạt nên bạn không cần làm gì đặc biệt; agent có thể tự chạy vài giờ mà không lệch kế hoạch"
+  ],
+  "use_cases": [
+    "🚀 Giao một tính năng lớn cho agent: duyệt thiết kế và kế hoạch xong, để nó tự làm từng task kèm review",
+    "🐛 Agent hay đoán mò khi sửa lỗi: dùng quy trình tìm nguyên nhân gốc và kiểm chứng trước khi báo xong"
+  ],
+  "refs": []
+}

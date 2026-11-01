@@ -5,8 +5,17 @@
   <subtitle>Bản tin tiếng Việt về các repo nổi bật nhất trên GitHub mỗi tuần: để làm gì, use case.</subtitle>
   <link rel="self" type="application/atom+xml" href="https://sontvwork.github.io/weekly-trending/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sontvwork.github.io/weekly-trending/"/>
-  <updated>2026-10-25T12:00:00Z</updated>
+  <updated>2026-11-01T12:00:00Z</updated>
   <author><name>Weekly Trending</name></author>
+  <entry>
+    <id>https://sontvwork.github.io/weekly-trending/2026-11-01/</id>
+    <title>Top 10 GitHub Trending · 26/10 – 01/11/2026</title>
+    <link rel="alternate" type="text/html" href="https://sontvwork.github.io/weekly-trending/2026-11-01/"/>
+    <published>2026-11-01T12:00:00Z</published>
+    <updated>2026-11-01T12:00:00Z</updated>
+    <summary type="text">🎨 hallmark: skill giúp coding agent dựng trang web không lộ vẻ AI làm, chọn chất liệu thiết kế riêng, tự lint · 🛡️ security-audit-skill: agent tự rà lỗi bảo mật toàn codebase, một agent khác cố bác bỏ từng nghi vấn · 🔎 claude-seo: plugin miễn phí kiểm tra SEO cả website trong Claude Code, nhiều agent chuyên trách, ra kế hoạch ưu tiên</summary>
+    <content type="html">&lt;p&gt;🎨 hallmark: skill giúp coding agent dựng trang web không lộ vẻ AI làm, chọn chất liệu thiết kế riêng, tự lint&lt;br&gt;🛡️ security-audit-skill: agent tự rà lỗi bảo mật toàn codebase, một agent khác cố bác bỏ từng nghi vấn&lt;br&gt;🔎 claude-seo: plugin miễn phí kiểm tra SEO cả website trong Claude Code, nhiều agent chuyên trách, ra kế hoạch ưu tiên&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/Nutlope/hallmark&quot;&gt;Nutlope/hallmark&lt;/a&gt; — Dạy AI dựng giao diện web không còn cái mùi làm bằng máy&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/cloudflare/security-audit-skill&quot;&gt;cloudflare/security-audit-skill&lt;/a&gt; — Biến coding agent thành đội rà soát bảo mật, mỗi lỗi đều được kiểm chứng chéo&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/AgriciDaniel/claude-seo&quot;&gt;AgriciDaniel/claude-seo&lt;/a&gt; — Thuê cả đội chuyên gia SEO chạy song song ngay trong terminal&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/pbakaus/impeccable&quot;&gt;pbakaus/impeccable&lt;/a&gt; — Dạy AI agent nói đúng ngôn ngữ thiết kế để giao diện bớt mùi AI&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/obra/superpowers&quot;&gt;obra/superpowers&lt;/a&gt; — Dạy coding agent hỏi kỹ, lên kế hoạch rồi mới viết code&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/multica-ai/andrej-karpathy-skills&quot;&gt;multica-ai/andrej-karpathy-skills&lt;/a&gt; — Bốn nguyên tắc trong một file để AI code bớt tự ý và bớt rườm rà&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/TauricResearch/TradingAgents&quot;&gt;TauricResearch/TradingAgents&lt;/a&gt; — Một công ty giao dịch thu nhỏ gồm các agent AI cãi nhau trước khi chốt lệnh&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/jakubkrehel/skills&quot;&gt;jakubkrehel/skills&lt;/a&gt; — Dạy AI agent con mắt của designer để giao diện không chỉ chạy được mà còn đẹp&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/Leonxlnx/taste-skill&quot;&gt;Leonxlnx/taste-skill&lt;/a&gt; — Dạy AI viết code biết thiết kế, thay vì ra trang web na ná nhau&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/pingdotgg/t3code&quot;&gt;pingdotgg/t3code&lt;/a&gt; — Một màn hình điều khiển chung cho mọi coding agent trên máy bạn&lt;/li&gt;&lt;/ol&gt;</content>
+  </entry>
   <entry>
     <id>https://sontvwork.github.io/weekly-trending/2026-10-25/</id>
     <title>Top 10 GitHub Trending · 19/10 – 25/10/2026</title>

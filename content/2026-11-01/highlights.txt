@@ -1,0 +1,3 @@
+🎨 hallmark: skill giúp coding agent dựng trang web không lộ vẻ AI làm, chọn chất liệu thiết kế riêng, tự lint
+🛡️ security-audit-skill: agent tự rà lỗi bảo mật toàn codebase, một agent khác cố bác bỏ từng nghi vấn
+🔎 claude-seo: plugin miễn phí kiểm tra SEO cả website trong Claude Code, nhiều agent chuyên trách, ra kế hoạch ưu tiên

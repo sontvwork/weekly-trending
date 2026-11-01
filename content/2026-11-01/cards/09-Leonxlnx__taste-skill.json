@@ -1,0 +1,16 @@
+{
+  "repo": "Leonxlnx/taste-skill",
+  "tagline": "Dạy AI viết code biết thiết kế, thay vì ra trang web na ná nhau",
+  "summary": [
+    "🎨 Một bộ skill giúp coding agent (Claude Code, Codex) tự thiết kế trang web và màn hình app có cá tính riêng mà không cần API key",
+    "🧭 Agent được chọn một hướng nghệ thuật rút ra từ nghiên cứu 247 website, rồi tìm ra ý tưởng riêng cho khách hàng trước khi dựng",
+    "🖼️ Ảnh là ảnh thật lấy từ kho mở như Wikimedia Commons, có ghi nguồn ngay trên trang",
+    "🔍 Dựng xong, agent tự mở trình duyệt thật, chụp màn hình, chấm lỗi rồi sửa lại"
+  ],
+  "use_cases": [
+    "🏪 Cần landing page cho quán cà phê hay đêm nhạc: đưa một brief, agent dựng trang có ảnh thật",
+    "📊 Phải làm dashboard hoặc trang admin mà ngại giao diện thô: agent dựng theo phong cách lấy từ sản phẩm thật",
+    "🛠️ Trang cũ trông chung chung: để agent kiểm tra trong trình duyệt thật rồi mới sửa"
+  ],
+  "refs": []
+}

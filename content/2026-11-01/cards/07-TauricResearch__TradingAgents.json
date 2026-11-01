@@ -1,0 +1,16 @@
+{
+  "repo": "TauricResearch/TradingAgents",
+  "tagline": "Một công ty giao dịch thu nhỏ gồm các agent AI cãi nhau trước khi chốt lệnh",
+  "summary": [
+    "🏦 Một framework giúp bạn dựng \"công ty giao dịch\" gồm các agent AI mỗi người một vai, cùng phân tích mã, chạy với LLM (OpenAI, Claude, Gemini)",
+    "⚔️ Phe bullish và bearish tranh luận để cân lời lãi với rủi ro, rồi trader đề xuất và Portfolio Manager duyệt hoặc bác",
+    "🧠 Mỗi quyết định được ghi lại, tới hạn thì tính lãi lỗ thực tế và rút bài học cho các lần sau",
+    "🕰️ Chạy với ngày trong quá khứ thì chỉ đọc dữ liệu đã công bố tới ngày đó, nên backtest không nhìn trước tương lai"
+  ],
+  "use_cases": [
+    "🔬 Muốn nghiên cứu cách nhiều agent LLM phối hợp phân tích tài chính: chỉnh vai trò, số vòng tranh luận, model",
+    "📈 Cần biết hệ thống quyết định có tốt không: chạy backtest trên lưới mã và ngày, xem alpha so với benchmark",
+    "📰 Trước khi tự quyết về một mã: nhận báo cáo gộp tài chính, tin tức, tâm lý mạng xã hội"
+  ],
+  "refs": []
+}

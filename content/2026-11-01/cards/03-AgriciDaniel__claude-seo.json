@@ -1,0 +1,16 @@
+{
+  "repo": "AgriciDaniel/claude-seo",
+  "tagline": "Thuê cả đội chuyên gia SEO chạy song song ngay trong terminal",
+  "summary": [
+    "🧰 Một plugin miễn phí giúp bạn kiểm tra SEO toàn bộ website ngay trong Claude Code, không cần thuê agency hay trả phí công cụ riêng",
+    "👥 Nhiều agent chuyên trách (kỹ thuật, nội dung, schema, tốc độ, AI search) soi site cùng lúc rồi gộp thành kế hoạch xếp theo mức ưu tiên",
+    "🤖 Không chỉ lo thứ hạng Google, còn chấm xem ChatGPT, Perplexity, Gemini có dễ trích dẫn trang của bạn không",
+    "🔒 Báo cáo lưu thành file Markdown, PDF, JSON trên máy bạn; mỗi đề xuất kèm cách kiểm tra đã sửa đúng chưa"
+  ],
+  "use_cases": [
+    "🏢 Freelancer hoặc agency cần audit nhanh cho khách: ngay cuộc gọi đầu đã có điểm số và lỗi cần sửa",
+    "🚀 Vừa ra mắt site SaaS hay shop online: biết lỗi kỹ thuật, schema, tốc độ cần sửa trước khi lên Google",
+    "💬 Muốn thương hiệu được AI search trích dẫn: kiểm tra AI crawler có vào được site không"
+  ],
+  "refs": []
+}

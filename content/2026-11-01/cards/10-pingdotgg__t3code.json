@@ -1,0 +1,15 @@
+{
+  "repo": "pingdotgg/t3code",
+  "tagline": "Một màn hình điều khiển chung cho mọi coding agent trên máy bạn",
+  "summary": [
+    "🎛️ Một ứng dụng giúp bạn điều khiển các coding agent (Claude Code, Codex, Cursor) đã cài sẵn trên máy mà không cần mua thêm gói nào",
+    "📱 Có app di động, web và desktop, nên agent chạy ở máy này vẫn điều khiển được từ chỗ khác",
+    "🔓 Mở hoàn toàn: nếu nhóm tác giả đi sai hướng, bạn có đủ mọi thứ để fork và dựng trình soạn thảo theo ý mình"
+  ],
+  "use_cases": [
+    "🚶 Rời bàn làm việc khi agent đang chạy: dùng điện thoại xem tiến độ và điều khiển tiếp",
+    "🔀 Đang dùng song song nhiều agent như Claude Code và Codex: gom vào một giao diện thay vì mở từng công cụ",
+    "🔌 Muốn agent bên ngoài gọi sang agent khác: kết nối qua MCP theo tài liệu của repo"
+  ],
+  "refs": []
+}

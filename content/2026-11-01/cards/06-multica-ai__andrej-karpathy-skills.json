@@ -1,0 +1,16 @@
+{
+  "repo": "multica-ai/andrej-karpathy-skills",
+  "tagline": "Bốn nguyên tắc trong một file để AI code bớt tự ý và bớt rườm rà",
+  "summary": [
+    "📜 Một file CLAUDE.md giúp coding agent (Claude Code, Cursor) bớt đoán mò, bớt viết thừa và chỉ sửa đúng chỗ được nhờ",
+    "🧠 Rút từ những lỗi LLM hay mắc khi code theo nhận xét của Andrej Karpathy: tự giả định rồi chạy luôn, phình code, sửa lan",
+    "🎯 Dạy AI nhận mục tiêu kiểm chứng được, ví dụ viết test tái hiện lỗi rồi sửa cho qua, thay vì lệnh mơ hồ",
+    "🔧 Cài như plugin hoặc tải về làm CLAUDE.md, ghép được với quy tắc riêng của dự án"
+  ],
+  "use_cases": [
+    "🧾 Diff của AI hay kèm sửa lan man: thêm quy tắc để PR chỉ chứa đúng phần bạn yêu cầu",
+    "❓ AI hay tự giả định rồi làm sai hướng: buộc nó hỏi lại và nêu các cách hiểu trước khi code",
+    "🧪 Giao việc nhiều bước cho AI: đặt tiêu chí kiểm chứng như test để nó tự lặp đến khi xong"
+  ],
+  "refs": []
+}

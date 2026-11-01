@@ -1,0 +1,16 @@
+{
+  "repo": "Nutlope/hallmark",
+  "tagline": "Dạy AI dựng giao diện web không còn cái mùi làm bằng máy",
+  "summary": [
+    "🎨 Một skill thiết kế giúp coding agent (Claude Code, Codex, Cursor, OpenCode) dựng trang web không lộ vẻ AI làm, mà vẫn tự kiểm tra kết quả",
+    "🧵 Mỗi trang được dựng từ một trong năm mươi \"chất liệu\" thiết kế, nên hai yêu cầu cùng theme vẫn ra hai trang khác nhau",
+    "🔍 Có bộ lint chạy trong trình duyệt thật để bắt các dấu hiệu quen thuộc của trang AI làm, rồi một reviewer mới đọc lại lần cuối",
+    "📷 Ảnh lấy từ kho ảnh giấy phép mở và ghi nguồn ngay trên trang, nội dung không bị bịa ra"
+  ],
+  "use_cases": [
+    "🚀 Cần landing page cho sản phẩm mới: mô tả việc khách muốn làm, agent dựng trang xoay quanh hành động đó",
+    "♻️ Có trang cũ nhìn như template AI: chạy redesign để đổi giao diện mà giữ nguyên nội dung và liên kết",
+    "🩺 Muốn biết trang mình dính dấu hiệu AI nào: chạy audit để chỉ nhận báo cáo, không sửa gì"
+  ],
+  "refs": []
+}

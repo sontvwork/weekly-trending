@@ -1,0 +1,16 @@
+{
+  "repo": "cloudflare/security-audit-skill",
+  "tagline": "Biến coding agent thành đội rà soát bảo mật, mỗi lỗi đều được kiểm chứng chéo",
+  "summary": [
+    "🛡️ Một skill giúp coding agent của bạn tự rà lỗi bảo mật trong cả codebase mà không cần dựng quy trình audit từ đầu",
+    "🧑‍⚖️ Agent tìm ra lỗi không bao giờ là agent kiểm tra lỗi đó: một agent mới sẽ cố bác bỏ từng nghi vấn",
+    "🗂️ Kết quả chia rõ ba loại: đã xác nhận, cần kiểm chứng thêm, và đã bị bác bỏ, kèm file JSON máy đọc được",
+    "🌱 Là bản khởi đầu của hệ thống tìm lỗ hổng mà Cloudflare đã mô tả trên blog của họ"
+  ],
+  "use_cases": [
+    "🔍 Vừa nhận một codebase lạ hoặc sắp phát hành: nhờ agent audit để có báo cáo lỗi kèm bằng chứng",
+    "🔁 Đã audit một lần nhưng muốn sâu hơn: chạy lại, skill dựa vào lần trước để nhắm vào vùng còn sót",
+    "🧪 Cần danh sách lỗi đưa vào CI hay công cụ khác: lấy file findings theo schema có sẵn"
+  ],
+  "refs": []
+}

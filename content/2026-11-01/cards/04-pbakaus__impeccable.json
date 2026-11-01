@@ -1,0 +1,16 @@
+{
+  "repo": "pbakaus/impeccable",
+  "tagline": "Dạy AI agent nói đúng ngôn ngữ thiết kế để giao diện bớt mùi AI",
+  "summary": [
+    "🎨 Một bộ lệnh thiết kế giúp coding agent (Claude Code, Cursor, Codex CLI) hiểu bạn muốn chỉnh giao diện thế nào mà không phải đoán mò",
+    "🗣️ Thay vì nói \"làm cho nổi hơn\", bạn gọi đúng việc như `bolder`, `quieter`, `polish` kèm một mục tiêu cụ thể",
+    "🔍 Có sẵn người chấm: `critique` chấm điểm trải nghiệm, `audit` xếp lỗi từ P0 đến P3",
+    "🛡️ Bộ dò dấu hiệu \"AI làm\" gồm 62 luật cố định, không cần LLM hay API key"
+  ],
+  "use_cases": [
+    "🤖 Agent hay ra giao diện gradient tím xanh, chữ Inter: để hook tự quét và báo lỗi ngay",
+    "🚀 Sắp ship một trang: chạy `polish` hoặc `harden` để rà lần cuối, gồm lỗi và trường hợp biên",
+    "🧪 Muốn chặn giao diện xấu ngay ở CI: chạy `npx impeccable detect` trên thư mục code hoặc một URL"
+  ],
+  "refs": []
+}
