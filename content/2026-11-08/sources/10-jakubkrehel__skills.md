@@ -5,11 +5,11 @@
 - URL: https://github.com/jakubkrehel/skills
 - Mô tả trên GitHub: A collection of agent skills that help you build great interfaces.
 - Ngôn ngữ chính: Markdown
-- Tổng sao: 9926
-- Sao tăng trong tuần: 1272
-- Fork: 385
-- Lấy lúc (UTC): 2026-11-01T16:55:20Z
-- README: README.md (3632 ký tự)
+- Tổng sao: 11566
+- Sao tăng trong tuần: 1938
+- Fork: 450
+- Lấy lúc (UTC): 2026-11-08T08:00:45Z
+- README: README.md (3859 ký tự)
 
 ======== README (nguyên văn) ========
 
@@ -39,6 +39,7 @@ These skills cover topics that I write about on [my personal website](https://ja
 - [**teardown**](skills/teardown/SKILL.md): Creates a technical illustration of an object and lets you configure it, color it and download as an SVG, PNG or PDF.
 - [**state-machine**](skills/state-machine/SKILL.md): Renders every state of a component you choose on a throwaway page, with mock data and a switcher, so you can work on each state. User-invoked.
 - [**variant**](skills/variant/SKILL.md): Builds multiple **variants** of a component you're working on and helps you iterate and pick one. User-invoked.
+- [**afk**](skills/afk/SKILL.md): Works through a project while you're away, finding **improvements** and **new ideas**, building the strongest few on a local branch and leaving a **report** for when you're back. User-invoked.
 
 ## Install
 
