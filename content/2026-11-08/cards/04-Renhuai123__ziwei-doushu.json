@@ -1,0 +1,16 @@
+{
+  "repo": "Renhuai123/ziwei-doushu",
+  "tagline": "Máy lập lá số Tử Vi Đẩu Số mở công khai, kèm kho luận giải sẵn",
+  "summary": [
+    "🔓 Một bộ máy giúp lập trình viên lập lá số Tử Vi Đẩu Số (môn xem vận mệnh cổ Trung Hoa) mà không phải tự viết thuật toán",
+    "📖 Bám theo hệ thống «Thiên Kỷ» của Nghê Hải Hạ, có sẵn tứ hóa, kho cách cục và nguyên văn sách cổ",
+    "🕰️ Không cứng một trường phái: giờ mặt trời thật, giờ mùa hè Trung Quốc, tháng nhuận đều có nhiều cách tính để chọn",
+    "🗂️ Kèm bộ dữ liệu luận giải 13 chiều, sinh bằng quy tắc cố định chứ không qua AI"
+  ],
+  "use_cases": [
+    "🤖 Cần dữ liệu để tinh chỉnh model nhỏ hoặc dựng RAG về tử vi: tải bộ luận giải có sẵn",
+    "🛠️ Muốn làm app xem lá số riêng: lấy engine chạy ngay trên trình duyệt, không cần API key",
+    "🔬 Đang đối chiếu cách tính lá số: đọc code và nguyên văn sách cổ để kiểm tra từng quy tắc"
+  ],
+  "refs": []
+}

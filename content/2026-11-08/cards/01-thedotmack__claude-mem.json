@@ -1,0 +1,16 @@
+{
+  "repo": "thedotmack/claude-mem",
+  "tagline": "Cho coding agent trí nhớ để phiên mới không phải bắt đầu lại từ số không",
+  "summary": [
+    "🧠 Một plugin giúp coding agent (Claude Code, Codex, Cursor, OpenCode) nhớ việc đã làm ở các phiên trước mà bạn không phải nhắc lại.",
+    "📝 Một agent thứ hai ngồi cạnh ghi chú khi agent chính làm việc, rồi phiên sau đưa lại một bản mục lục ngắn.",
+    "🪙 Chi tiết chỉ được mở khi cần, nên agent chỉ tốn token cho phần nó thật sự đọc.",
+    "🔒 Dữ liệu nằm trên máy bạn, và đoạn nào bọc trong thẻ `<private>` thì không bao giờ được lưu."
+  ],
+  "use_cases": [
+    "🔁 Agent cứ hỏi lại những câu cũ và lặp lại lỗi đã sửa: phiên mới tự có sẵn bối cảnh",
+    "🔍 Cần nhớ lại tuần trước đã sửa bug đăng nhập thế nào: tra lịch sử dự án bằng tìm kiếm",
+    "👥 Cả nhóm cùng dùng agent: chia sẻ điều đã học qua TeamBrain, mỗi người tự chọn phần chia sẻ"
+  ],
+  "refs": []
+}

@@ -1,0 +1,15 @@
+{
+  "repo": "anthropics/skills",
+  "tagline": "Dạy Claude làm đúng việc theo cách của bạn, chỉ bằng một thư mục hướng dẫn",
+  "summary": [
+    "🧩 Một kho mẫu giúp Claude (Claude Code, Claude.ai, API) làm tốt các việc chuyên biệt, chỉ cần một thư mục chứa hướng dẫn và script",
+    "📄 Có cả bộ skill xử lý Word, PDF, PowerPoint, Excel, chính là phần đứng sau tính năng tạo file của Claude",
+    "📝 Mỗi skill nằm gọn trong một thư mục với file `SKILL.md`, kèm template để bạn tự viết skill của mình"
+  ],
+  "use_cases": [
+    "🎨 Muốn Claude luôn viết tài liệu đúng chuẩn thương hiệu công ty: đóng gói quy tắc thành một skill dùng lại",
+    "🛠️ Chuẩn bị tự viết skill đầu tiên: xem các mẫu có sẵn và bắt đầu từ template",
+    "📑 Cần Claude Code đọc hoặc trích dữ liệu từ file PDF: cài `document-skills` rồi gọi skill PDF"
+  ],
+  "refs": []
+}

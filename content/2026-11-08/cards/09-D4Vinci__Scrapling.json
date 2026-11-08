@@ -1,0 +1,16 @@
+{
+  "repo": "D4Vinci/Scrapling",
+  "tagline": "Từ lấy vài trường dữ liệu đến cào cả website, gói gọn trong một thư viện",
+  "summary": [
+    "🕷️ Một framework Python giúp bạn và AI agent (Claude, Cursor) thu thập dữ liệu từ website, kể cả trang có chặn bot, mà không phải ghép nhiều công cụ rời",
+    "🥷 Trình duyệt ẩn danh xử lý được màn kiểm tra Cloudflare Turnstile, còn request thường thì giả được dấu vân tay trình duyệt",
+    "🎯 Trang đổi giao diện thì có thể tự tìm lại đúng phần tử cần lấy, đỡ phải sửa selector",
+    "⏯️ Crawl dài bị ngắt giữa chừng vẫn dừng và chạy tiếp được, tự chỉnh nhịp theo phản hồi của website"
+  ],
+  "use_cases": [
+    "📚 Dựng RAG từ một website tài liệu: cào cả trang về thành Markdown sạch, không cần LLM xen vào",
+    "🛒 Cần gom danh mục sản phẩm của cửa hàng Shopify: dùng spider có sẵn, mỗi biến thể một dòng",
+    "🤖 Muốn AI agent tự lên web lấy dữ liệu: cắm MCP server để agent duyệt trang và trích thông tin"
+  ],
+  "refs": []
+}

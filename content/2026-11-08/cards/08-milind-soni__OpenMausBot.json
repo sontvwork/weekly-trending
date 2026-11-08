@@ -1,0 +1,16 @@
+{
+  "repo": "milind-soni/OpenMausBot",
+  "tagline": "Một danh bạ toàn bot AI, chat như nhắn tin mà bot làm việc thật",
+  "summary": [
+    "🤖 Một ứng dụng chat giúp bạn quản lý cả đội bot AI như danh bạ liên lạc, chạy ngay trên máy bạn (Claude, Codex, Grok)",
+    "🖥️ Mỗi bot có tính cách, model, máy tính riêng và app kết nối riêng, nên làm được việc thay vì chỉ trả lời",
+    "🔒 Dùng luôn tài khoản và CLI bạn đã có, dữ liệu nằm trong máy chứ không qua đám mây của bên thứ ba",
+    "✋ Lệnh shell hay sửa file đều hiện thẻ hỏi trước, bạn bấm Allow hoặc Deny"
+  ],
+  "use_cases": [
+    "⏰ Việc lặp lại mỗi ngày như tóm tắt hộp thư: đặt lịch hoặc webhook, bot tự chạy",
+    "🗂️ Đang chạy nhiều dự án song song: tách kênh riêng cho từng dự án, mỗi kênh một nhóm bot",
+    "🔧 Cần điều khiển bot từ script, CI hoặc Claude Desktop: dùng lệnh CLI hoặc MCP server"
+  ],
+  "refs": []
+}

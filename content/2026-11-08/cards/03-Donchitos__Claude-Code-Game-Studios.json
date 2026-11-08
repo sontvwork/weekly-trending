@@ -1,0 +1,16 @@
+{
+  "repo": "Donchitos/Claude-Code-Game-Studios",
+  "tagline": "Biến một phiên chat với AI thành cả studio làm game có giám đốc, QA và trưởng nhóm",
+  "summary": [
+    "🎮 Một bộ template giúp bạn làm game một mình với Claude Code như có cả studio hậu thuẫn, mà vẫn tự quyết mọi thứ (Godot, Unity, Unreal)",
+    "🏢 49 agent chia ba tầng như studio thật: giám đốc giữ tầm nhìn, trưởng bộ phận phụ trách mảng của mình, chuyên viên làm việc tay chân",
+    "🙋 Không phải autopilot: agent hỏi trước, đưa vài phương án, và không ghi gì xuống nếu bạn chưa duyệt",
+    "🎚️ Chỉnh được mức quy trình bằng một thiết lập, từ nhanh kiểu game jam đến đủ tài liệu và review"
+  ],
+  "use_cases": [
+    "🧑‍💻 Làm game solo với AI mà sợ code cẩu thả, bỏ qua thiết kế: agent review và QA canh giúp",
+    "🧭 Chưa biết bắt đầu từ đâu: gõ `/start`, hệ thống hỏi bạn đang ở bước nào rồi dẫn đường",
+    "⚡ Cần bản chơi được nhanh cho game jam: mức `minimal` mặc định ít giấy tờ, vẫn chạy thử game"
+  ],
+  "refs": []
+}

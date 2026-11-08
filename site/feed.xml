@@ -5,8 +5,17 @@
   <subtitle>Bản tin tiếng Việt về các repo nổi bật nhất trên GitHub mỗi tuần: để làm gì, use case.</subtitle>
   <link rel="self" type="application/atom+xml" href="https://sontvwork.github.io/weekly-trending/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sontvwork.github.io/weekly-trending/"/>
-  <updated>2026-11-01T12:00:00Z</updated>
+  <updated>2026-11-08T12:00:00Z</updated>
   <author><name>Weekly Trending</name></author>
+  <entry>
+    <id>https://sontvwork.github.io/weekly-trending/2026-11-08/</id>
+    <title>Top 10 GitHub Trending · 02/11 – 08/11/2026</title>
+    <link rel="alternate" type="text/html" href="https://sontvwork.github.io/weekly-trending/2026-11-08/"/>
+    <published>2026-11-08T12:00:00Z</published>
+    <updated>2026-11-08T12:00:00Z</updated>
+    <summary type="text">🧠 claude-mem: plugin cho coding agent nhớ việc ở các phiên trước, chỉ mở chi tiết khi cần, dữ liệu nằm trên máy · 🌳 worktrunk: quản lý git worktree bằng một lệnh wt, chạy nhiều agent song song, dùng chung cache build · 🕷️ Scrapling: framework Python cào web, vượt Cloudflare Turnstile, tự tìm lại phần tử khi trang đổi</summary>
+    <content type="html">&lt;p&gt;🧠 claude-mem: plugin cho coding agent nhớ việc ở các phiên trước, chỉ mở chi tiết khi cần, dữ liệu nằm trên máy&lt;br&gt;🌳 worktrunk: quản lý git worktree bằng một lệnh wt, chạy nhiều agent song song, dùng chung cache build&lt;br&gt;🕷️ Scrapling: framework Python cào web, vượt Cloudflare Turnstile, tự tìm lại phần tử khi trang đổi&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/thedotmack/claude-mem&quot;&gt;thedotmack/claude-mem&lt;/a&gt; — Cho coding agent trí nhớ để phiên mới không phải bắt đầu lại từ số không&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/max-sixty/worktrunk&quot;&gt;max-sixty/worktrunk&lt;/a&gt; — Mở, chuyển và dọn nhánh làm việc song song nhẹ như đổi branch&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/Donchitos/Claude-Code-Game-Studios&quot;&gt;Donchitos/Claude-Code-Game-Studios&lt;/a&gt; — Biến một phiên chat với AI thành cả studio làm game có giám đốc, QA và trưởng nhóm&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/Renhuai123/ziwei-doushu&quot;&gt;Renhuai123/ziwei-doushu&lt;/a&gt; — Máy lập lá số Tử Vi Đẩu Số mở công khai, kèm kho luận giải sẵn&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/pingdotgg/t3code&quot;&gt;pingdotgg/t3code&lt;/a&gt; — Một bảng điều khiển chung để sai khiến mọi coding agent trên máy bạn từ xa&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/anthropics/skills&quot;&gt;anthropics/skills&lt;/a&gt; — Dạy Claude làm đúng việc theo cách của bạn, chỉ bằng một thư mục hướng dẫn&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/Nutlope/hallmark&quot;&gt;Nutlope/hallmark&lt;/a&gt; — Dạy AI dựng giao diện có hồn, không còn nét máy móc quen thuộc&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/milind-soni/OpenMausBot&quot;&gt;milind-soni/OpenMausBot&lt;/a&gt; — Một danh bạ toàn bot AI, chat như nhắn tin mà bot làm việc thật&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/D4Vinci/Scrapling&quot;&gt;D4Vinci/Scrapling&lt;/a&gt; — Từ lấy vài trường dữ liệu đến cào cả website, gói gọn trong một thư viện&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/jakubkrehel/skills&quot;&gt;jakubkrehel/skills&lt;/a&gt; — Gắn thêm con mắt thiết kế cho AI agent để giao diện bớt thô&lt;/li&gt;&lt;/ol&gt;</content>
+  </entry>
   <entry>
     <id>https://sontvwork.github.io/weekly-trending/2026-11-01/</id>
     <title>Top 10 GitHub Trending · 26/10 – 01/11/2026</title>

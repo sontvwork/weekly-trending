@@ -1,0 +1,15 @@
+{
+  "repo": "jakubkrehel/skills",
+  "tagline": "Gắn thêm con mắt thiết kế cho AI agent để giao diện bớt thô",
+  "summary": [
+    "🎨 Một bộ skill giúp AI agent (như Claude Code) soi và chỉnh giao diện như một design engineer, chỉ cần cài một lệnh",
+    "📋 Mỗi skill lo một mảng riêng: chữ, màu, bố cục, câu chữ, accessibility, và có skill gom tất cả thành một báo cáo xếp hạng",
+    "📐 Hướng dẫn đưa ra giá trị cụ thể như bo góc, đổ bóng, căn chỉnh, thay vì nhận xét chung chung"
+  ],
+  "use_cases": [
+    "🔍 Sắp merge pull request đụng tới UI: nhờ agent rà xem có làm hỏng accessibility, bố cục hay câu chữ không",
+    "🖼️ Có file Figma hoặc ảnh thiết kế: để agent dựng đúng theo, dùng lại token và component sẵn có",
+    "🧩 Đang làm component, chưa chắc chịu được mọi trạng thái: dựng trang tạm để thử từng trạng thái"
+  ],
+  "refs": []
+}

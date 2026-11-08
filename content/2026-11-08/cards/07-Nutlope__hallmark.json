@@ -1,0 +1,16 @@
+{
+  "repo": "Nutlope/hallmark",
+  "tagline": "Dạy AI dựng giao diện có hồn, không còn nét máy móc quen thuộc",
+  "summary": [
+    "🎨 Một skill thiết kế giúp coding agent (Claude Code, Codex, Cursor) dựng trang web trông như người làm, không lộ dấu vết AI",
+    "🧪 Tự mở trình duyệt thật để soi những dấu hiệu lộ máy làm, như form báo cảm ơn mà chẳng gửi gì",
+    "🗂️ Có sẵn kho giao diện theo chất liệu (giấy, chữ, màu, bề mặt), mỗi lần dựng ra một bố cục riêng",
+    "👀 Cuối cùng một người review mới, không biết gì về quá trình dựng, sẽ chốt đạt hay chưa"
+  ],
+  "use_cases": [
+    "🚀 Cần landing page nhanh từ một prompt: agent dựng trang xoay quanh việc khách đến làm, như đặt lịch hay mua hàng",
+    "🔧 Có trang cũ nhìn đã chán mắt: redesign để đổi giao diện mà giữ nguyên nội dung và các liên kết, form",
+    "🔍 Muốn biết trang của mình có lộ vẻ AI làm không: chạy audit chỉ để nhận báo cáo, không sửa gì"
+  ],
+  "refs": []
+}

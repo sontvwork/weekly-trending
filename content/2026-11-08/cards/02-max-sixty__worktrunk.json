@@ -1,0 +1,16 @@
+{
+  "repo": "max-sixty/worktrunk",
+  "tagline": "Mở, chuyển và dọn nhánh làm việc song song nhẹ như đổi branch",
+  "summary": [
+    "🌳 Một công cụ dòng lệnh giúp bạn và các AI agent (Claude Code, Codex) làm nhiều nhánh cùng lúc mà không giẫm chân nhau.",
+    "⌨️ Gọi worktree bằng tên nhánh, đường dẫn tự tính từ mẫu cấu hình; việc cần ba lệnh git giờ gói trong một lệnh `wt`.",
+    "♻️ Các worktree dùng chung cache build như `target/` hay `node_modules/`, khỏi build lại hay copy lại cho từng cái.",
+    "🪝 Có hook chạy tự động khi tạo hoặc merge, và lệnh merge gộp squash, rebase, merge, dọn dẹp làm một."
+  ],
+  "use_cases": [
+    "🤖 Muốn chạy 5-10 agent cùng lúc, mỗi agent một tính năng: một lệnh `wt switch -x claude -c` cho mỗi việc",
+    "📋 Có nhiều nhánh dở dang, quên cái nào còn thay đổi hay chưa push: `wt list` cho thấy trạng thái từng nhánh",
+    "🔀 Nhận PR cần xem nhanh mà không muốn stash việc đang làm: `wt switch pr:123` mở sẵn một worktree riêng"
+  ],
+  "refs": []
+}

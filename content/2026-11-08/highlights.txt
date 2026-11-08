@@ -1,0 +1,3 @@
+🧠 claude-mem: plugin cho coding agent nhớ việc ở các phiên trước, chỉ mở chi tiết khi cần, dữ liệu nằm trên máy
+🌳 worktrunk: quản lý git worktree bằng một lệnh wt, chạy nhiều agent song song, dùng chung cache build
+🕷️ Scrapling: framework Python cào web, vượt Cloudflare Turnstile, tự tìm lại phần tử khi trang đổi
