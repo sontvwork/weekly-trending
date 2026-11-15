@@ -5,10 +5,10 @@
 - URL: https://github.com/meta/astryx
 - Mô tả trên GitHub: An open source design system that's fully customizable and agent ready
 - Ngôn ngữ chính: TypeScript
-- Tổng sao: 28346
+- Tổng sao: 28672
 - Sao tăng trong tuần: 13660
-- Fork: 2209
-- Lấy lúc (UTC): 2026-11-15T08:28:23Z
+- Fork: 2240
+- Lấy lúc (UTC): 2026-11-15T17:26:48Z
 - README: README.md (9004 ký tự)
 
 ======== README (nguyên văn) ========
