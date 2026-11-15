@@ -1,0 +1,3 @@
+🧱 astryx: design system React của Meta, 150+ component, đổi theme bằng biến CSS, coding agent cũng dùng chuẩn được
+🔎 sherlock: gõ một username, dò tài khoản trên hơn 400 mạng xã hội, xuất kết quả ra CSV hoặc Excel
+🐘 elephant-goldfish-model: một AI nắm bối cảnh soạn spec, một AI không biết gì soi lỗi thiết kế trước khi code

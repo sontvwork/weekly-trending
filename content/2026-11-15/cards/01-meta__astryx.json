@@ -1,0 +1,16 @@
+{
+  "repo": "meta/astryx",
+  "tagline": "Bộ linh kiện giao diện từng chạy khắp Meta, nay mở cho cả người lẫn AI cùng dựng",
+  "summary": [
+    "🧱 Một design system giúp bạn và coding agent lắp giao diện React từ 150+ component dựng sẵn mà không cần cài build plugin hay thư viện styling riêng",
+    "🏢 Lớn lên suốt tám năm bên trong Meta và trở thành design system được dùng nhiều nhất ở đó, hiện đang Beta",
+    "🎨 Đổi theme chỉ bằng cách ghi đè biến CSS, chỉnh style bằng Tailwind hay CSS sẵn có, không phải fork hay bọc lại component",
+    "🤖 API, tài liệu và CLI được thiết kế cùng nhau để AI assistant đọc cùng một nguồn và code giống hệt người"
+  ],
+  "use_cases": [
+    "🚀 Dựng app nội bộ hay trang quản trị mới: có sẵn mẫu trang bảng, form nhiều bước, dark mode để ráp nhanh",
+    "🤖 Hay nhờ coding agent viết UI: cho agent tra tài liệu component qua CLI để code đúng chuẩn, bớt đoán mò",
+    "🎨 Cần giao diện mang màu thương hiệu riêng: chọn một trong bảy theme có sẵn rồi tinh chỉnh"
+  ],
+  "refs": []
+}

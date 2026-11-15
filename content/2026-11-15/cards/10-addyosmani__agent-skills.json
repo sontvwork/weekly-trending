@@ -1,0 +1,16 @@
+{
+  "repo": "addyosmani/agent-skills",
+  "tagline": "Dạy AI viết code theo kỷ luật của kỹ sư senior thay vì đi đường tắt",
+  "summary": [
+    "🧭 Một bộ quy trình giúp AI coding agent làm việc như kỹ sư senior mà không bỏ qua spec, test hay review (Claude Code, Cursor, Codex, Gemini CLI)",
+    "🚫 Mỗi skill liệt kê sẵn những cái cớ agent hay viện ra để bỏ bước, như “để test sau”, kèm lời phản bác",
+    "✅ Không chấp nhận “trông có vẻ đúng”: mỗi quy trình phải kết thúc bằng bằng chứng như test pass hay kết quả build",
+    "🏢 Đúc kết từ văn hoá kỹ thuật của Google, gói thành vài lệnh gọn như `/spec`, `/plan`, `/build`, `/ship`"
+  ],
+  "use_cases": [
+    "🤖 Giao việc cho agent mà hay nhận về code chạy được nhưng thiếu test: ép nó đi đúng quy trình",
+    "💡 Mới có ý tưởng còn mơ hồ: để agent hỏi từng câu một, chốt spec rồi mới bắt tay code",
+    "🔍 Sắp merge thay đổi do AI viết: cho agent review như một staff engineer trước khi lên production"
+  ],
+  "refs": []
+}

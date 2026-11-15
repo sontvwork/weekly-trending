@@ -1,0 +1,16 @@
+{
+  "repo": "vercel-labs/agent-browser",
+  "tagline": "Trao cho AI agent một trình duyệt để tự mở trang, đọc và bấm như người thật",
+  "summary": [
+    "🌐 Một công cụ dòng lệnh giúp AI agent tự lướt web, đọc trang và bấm nút bằng từng lệnh shell ngắn mà trình duyệt vẫn mở giữa các bước",
+    "🏷️ Trang web được thu gọn thành văn bản, mỗi nút có mã như `@e1` để agent bấm rồi đọc lại kiểm tra",
+    "🚧 Không báo thành công giả: bấm vào nút bị che bởi banner cookie hay bị vô hiệu hoá thì lệnh báo lỗi để agent xử lý tiếp",
+    "🔌 Kèm sẵn skill khớp đúng phiên bản CLI và MCP server, cắm được vào agent hoặc dùng trình duyệt cloud (Browserbase, Browserless, Browser Use)"
+  ],
+  "use_cases": [
+    "🧪 Đang để coding agent sửa giao diện web: cho nó tự mở trang, bấm thử và soi lỗi console thay bạn",
+    "🔐 Cần agent thao tác trên trang phải đăng nhập: giữ phiên và thông tin đăng nhập qua các lần chạy",
+    "☁️ Agent chạy trên máy chủ không tiện cài Chrome: chuyển sang trình duyệt cloud mà vẫn dùng cùng bộ lệnh"
+  ],
+  "refs": []
+}

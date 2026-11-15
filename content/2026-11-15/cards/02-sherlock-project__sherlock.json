@@ -1,0 +1,16 @@
+{
+  "repo": "sherlock-project/sherlock",
+  "tagline": "Gõ một username, biết ngay nó đang có tài khoản ở những mạng xã hội nào",
+  "summary": [
+    "🔎 Một công cụ dòng lệnh giúp bạn tìm xem một username có tài khoản ở đâu mà không phải mở từng trang dò tay",
+    "🌐 Một lệnh dò cùng lúc trên hơn 400 mạng xã hội, nhập nhiều username một lượt cũng được",
+    "📁 Kết quả tự lưu ra file, xuất được CSV hoặc Excel để đọc lại và chia sẻ",
+    "🧩 Thử luôn các biến thể của tên với dấu gạch dưới, gạch ngang, dấu chấm, khỏi gõ từng kiểu"
+  ],
+  "use_cases": [
+    "🕵️ Cần lần ra dấu vết online của một username: chạy một lệnh là có danh sách trang có tài khoản đó",
+    "🏷️ Định đặt username cho dự án hay thương hiệu: kiểm tra xem tên đã có người dùng ở đâu",
+    "📊 Phải tổng hợp kết quả dò cho nhiều tên cùng lúc: xuất thẳng ra bảng Excel hoặc CSV"
+  ],
+  "refs": []
+}

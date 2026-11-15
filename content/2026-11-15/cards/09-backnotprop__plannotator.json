@@ -1,0 +1,16 @@
+{
+  "repo": "backnotprop/plannotator",
+  "tagline": "Chấm bài kế hoạch và code của AI agent, góp ý gửi thẳng về cho nó sửa",
+  "summary": [
+    "📝 Một bàn duyệt giúp bạn ghi chú lên kế hoạch, code của agent mà góp ý về tới agent bằng một cú bấm (Claude Code, Codex, Gemini CLI)",
+    "🚦 Agent vừa lập kế hoạch là trang duyệt tự bật lên, bạn phê duyệt hoặc trả lại kèm ghi chú như sếp phê công văn",
+    "📬 Inbox gom tin nhắn, câu hỏi của nhiều agent vào một cửa sổ, bạn trả lời lúc rảnh còn agent vẫn làm tiếp",
+    "🔒 Kế hoạch, diff và ghi chú nằm trên máy bạn, không thu thập telemetry"
+  ],
+  "use_cases": [
+    "🗺️ Giao agent một tính năng lớn: soát và sửa kế hoạch trước khi nó lao vào viết code",
+    "🔍 Agent vừa sửa cả loạt file hoặc có PR cần xem: comment từng dòng diff rồi trả về cho agent sửa tiếp",
+    "🤹 Chạy nhiều agent cùng lúc: trả lời câu hỏi của từng agent ở một chỗ thay vì nhảy qua lại từng phiên"
+  ],
+  "refs": []
+}

@@ -5,8 +5,17 @@
   <subtitle>Bản tin tiếng Việt về các repo nổi bật nhất trên GitHub mỗi tuần: để làm gì, use case.</subtitle>
   <link rel="self" type="application/atom+xml" href="https://sontvwork.github.io/weekly-trending/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sontvwork.github.io/weekly-trending/"/>
-  <updated>2026-11-08T12:00:00Z</updated>
+  <updated>2026-11-15T12:00:00Z</updated>
   <author><name>Weekly Trending</name></author>
+  <entry>
+    <id>https://sontvwork.github.io/weekly-trending/2026-11-15/</id>
+    <title>Top 10 GitHub Trending · 09/11 – 15/11/2026</title>
+    <link rel="alternate" type="text/html" href="https://sontvwork.github.io/weekly-trending/2026-11-15/"/>
+    <published>2026-11-15T12:00:00Z</published>
+    <updated>2026-11-15T12:00:00Z</updated>
+    <summary type="text">🧱 astryx: design system React của Meta, 150+ component, đổi theme bằng biến CSS, coding agent cũng dùng chuẩn được · 🔎 sherlock: gõ một username, dò tài khoản trên hơn 400 mạng xã hội, xuất kết quả ra CSV hoặc Excel · 🐘 elephant-goldfish-model: một AI nắm bối cảnh soạn spec, một AI không biết gì soi lỗi thiết kế trước khi code</summary>
+    <content type="html">&lt;p&gt;🧱 astryx: design system React của Meta, 150+ component, đổi theme bằng biến CSS, coding agent cũng dùng chuẩn được&lt;br&gt;🔎 sherlock: gõ một username, dò tài khoản trên hơn 400 mạng xã hội, xuất kết quả ra CSV hoặc Excel&lt;br&gt;🐘 elephant-goldfish-model: một AI nắm bối cảnh soạn spec, một AI không biết gì soi lỗi thiết kế trước khi code&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/meta/astryx&quot;&gt;meta/astryx&lt;/a&gt; — Bộ linh kiện giao diện từng chạy khắp Meta, nay mở cho cả người lẫn AI cùng dựng&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/sherlock-project/sherlock&quot;&gt;sherlock-project/sherlock&lt;/a&gt; — Gõ một username, biết ngay nó đang có tài khoản ở những mạng xã hội nào&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/anthropics/skills&quot;&gt;anthropics/skills&lt;/a&gt; — Sổ tay nghiệp vụ mẫu để dạy Claude làm việc chuyên môn theo cách của bạn&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/vercel-labs/agent-browser&quot;&gt;vercel-labs/agent-browser&lt;/a&gt; — Trao cho AI agent một trình duyệt để tự mở trang, đọc và bấm như người thật&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/google/elephant-goldfish-model&quot;&gt;google/elephant-goldfish-model&lt;/a&gt; — Một AI nhớ hết để viết thiết kế, một AI quên sạch để soi lỗi&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/milind-soni/OpenMausBot&quot;&gt;milind-soni/OpenMausBot&lt;/a&gt; — Biến các AI agent sẵn có thành một đội nhân viên bạn nhắn tin như danh bạ&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/ZhuLinsen/daily_stock_analysis&quot;&gt;ZhuLinsen/daily_stock_analysis&lt;/a&gt; — Mỗi ngày làm việc, AI soạn sẵn bản phân tích cho đúng các mã bạn theo dõi&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/google-deepmind/mujoco&quot;&gt;google-deepmind/mujoco&lt;/a&gt; — Phòng thí nghiệm vật lý ảo nơi robot và AI tập đi, tập giữ thăng bằng&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/backnotprop/plannotator&quot;&gt;backnotprop/plannotator&lt;/a&gt; — Chấm bài kế hoạch và code của AI agent, góp ý gửi thẳng về cho nó sửa&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/addyosmani/agent-skills&quot;&gt;addyosmani/agent-skills&lt;/a&gt; — Dạy AI viết code theo kỷ luật của kỹ sư senior thay vì đi đường tắt&lt;/li&gt;&lt;/ol&gt;</content>
+  </entry>
   <entry>
     <id>https://sontvwork.github.io/weekly-trending/2026-11-08/</id>
     <title>Top 10 GitHub Trending · 02/11 – 08/11/2026</title>

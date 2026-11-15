@@ -1,0 +1,16 @@
+{
+  "repo": "ZhuLinsen/daily_stock_analysis",
+  "tagline": "Mỗi ngày làm việc, AI soạn sẵn bản phân tích cho đúng các mã bạn theo dõi",
+  "summary": [
+    "📈 Một hệ thống giúp nhà đầu tư nhận bản phân tích AI hằng ngày cho các mã đang theo dõi mà không phải tự lùng tin",
+    "🎯 Mỗi báo cáo chốt gọn: kết luận mua, bán hay quan sát, điểm số, vùng giá vào ra, cảnh báo rủi ro và yếu tố hỗ trợ",
+    "💸 Chạy miễn phí trên GitHub Actions, không cần server, rồi gửi thẳng về chat (Telegram, Discord, Slack, email)",
+    "🌏 Bao phủ cổ phiếu Trung Quốc, Hồng Kông, Mỹ, Nhật, Hàn, Đài Loan; tác giả nói rõ không phải lời khuyên đầu tư"
+  ],
+  "use_cases": [
+    "📬 Theo dõi nhiều mã nhưng ít thời gian: cuối ngày đọc một tin nhắn tổng hợp là nắm tình hình",
+    "🧪 Đang tập phân tích theo lý thuyết sóng hay đường trung bình: hỏi agent theo đúng chiến lược đó",
+    "🛠️ Muốn tự dựng bot chứng khoán chạy bằng LLM: fork về làm khung rồi đổi model tuỳ ý"
+  ],
+  "refs": []
+}

@@ -1,0 +1,16 @@
+{
+  "repo": "google-deepmind/mujoco",
+  "tagline": "Phòng thí nghiệm vật lý ảo nơi robot và AI tập đi, tập giữ thăng bằng",
+  "summary": [
+    "🦾 Một bộ mô phỏng vật lý giúp bạn cho robot hay mô hình cơ thể cử động, va chạm trong thế giới ảo mà vẫn nhanh và chính xác",
+    "🌐 Dùng được nhiều cách (trình duyệt, Python, Unity): mở web là nghịch ngay, cần thật thì `pip install mujoco`",
+    "🧮 Có nhánh MJX viết bằng JAX, lấy được gradient từ chính bước vật lý để huấn luyện chính sách di chuyển",
+    "🏛️ Do Google DeepMind duy trì và là nền móng cho rất nhiều bộ môi trường mô phỏng khác"
+  ],
+  "use_cases": [
+    "🤖 Đang dạy robot đi lại hay giữ thăng bằng bằng machine learning: cho nó tập trong mô phỏng vật lý",
+    "🎓 Mới bước chân vào robotics: mở notebook Colab hoặc trình duyệt để nghịch mô hình, chưa cần cài gì",
+    "🔄 Đã có mô hình CAD hay OpenSim: chuyển sang định dạng của MuJoCo bằng các converter có sẵn"
+  ],
+  "refs": []
+}

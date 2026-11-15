@@ -1,0 +1,16 @@
+{
+  "repo": "milind-soni/OpenMausBot",
+  "tagline": "Biến các AI agent sẵn có thành một đội nhân viên bạn nhắn tin như danh bạ",
+  "summary": [
+    "💬 Một ứng dụng chat giúp bạn nhắn tin giao việc cho cả đội bot AI như với đồng nghiệp, mà chạy bằng agent sẵn có (Claude, Codex, Grok)",
+    "💻 Mỗi bot có máy tính riêng để tự làm việc: desktop đám mây, máy ảo hoặc chính máy bạn nếu bạn cho phép",
+    "🙋 Lệnh shell, sửa file hay việc rủi ro đều hiện thành thẻ trong chat để bạn bấm cho phép hoặc từ chối",
+    "🔒 Mã nguồn mở, dùng luôn tài khoản và gói thuê bao bạn đang có, lịch sử và khoá nằm trên máy bạn"
+  ],
+  "use_cases": [
+    "🌅 Muốn khỏi tự lục hộp thư mỗi sáng: dặn bot đặt lịch tóm tắt email, sáng ra chỉ việc đọc",
+    "📁 Đang ôm nhiều dự án cùng lúc: tách mỗi dự án một kênh với đội bot, thư mục và chỉ dẫn riêng",
+    "🤝 Thích kiểu đội agent như Grok Bot nhưng không muốn mua thêm gói: tận dụng login Claude, Codex sẵn có"
+  ],
+  "refs": []
+}

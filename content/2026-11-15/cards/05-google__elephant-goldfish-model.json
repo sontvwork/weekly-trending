@@ -1,0 +1,16 @@
+{
+  "repo": "google/elephant-goldfish-model",
+  "tagline": "Một AI nhớ hết để viết thiết kế, một AI quên sạch để soi lỗi",
+  "summary": [
+    "🐘 Một plugin giúp coding agent cùng bạn thiết kế phần mềm, rồi nhờ AI \"người lạ\" soi bản thiết kế trước khi code (Claude Code, Codex, Antigravity)",
+    "🐟 \"Voi\" nắm hết bối cảnh dự án để soạn spec; \"cá vàng\" đọc lại mà không biết cuộc trò chuyện trước, nên lộ ra giả định ngầm",
+    "🧭 Bạn vẫn là người chốt đánh đổi kiến trúc và duyệt thiết kế, AI chỉ soạn thảo và phản biện",
+    "🧩 Mã nguồn mở, mỗi skill dùng riêng được khi cần, không bắt buộc đi hết quy trình"
+  ],
+  "use_cases": [
+    "🪝 Sắp làm tính năng nhiều quyết định khó như webhook: chốt spec và bị phản biện trước khi code",
+    "🔍 Có sẵn design doc hay kế hoạch PR: nhờ reviewer mắt mới soi lại so với code thật",
+    "📚 Tài liệu thiết kế viết từ lâu, code đã đổi nhiều: tìm chỗ hai bên lệch nhau"
+  ],
+  "refs": []
+}
