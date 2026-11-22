@@ -5,10 +5,10 @@
 - URL: https://github.com/backnotprop/plannotator
 - Mô tả trên GitHub: The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.
 - Ngôn ngữ chính: TypeScript
-- Tổng sao: 14245
+- Tổng sao: 14358
 - Sao tăng trong tuần: 3396
-- Fork: 1417
-- Lấy lúc (UTC): 2026-11-22T08:53:22Z
+- Fork: 1427
+- Lấy lúc (UTC): 2026-11-22T18:04:06Z
 - README: README.md (29370 ký tự)
 
 ======== README (nguyên văn) ========

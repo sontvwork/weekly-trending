@@ -5,10 +5,10 @@
 - URL: https://github.com/ag-ui-protocol/ag-ui
 - Mô tả trên GitHub: AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.
 - Ngôn ngữ chính: TypeScript
-- Tổng sao: 21072
+- Tổng sao: 21149
 - Sao tăng trong tuần: 3792
-- Fork: 2152
-- Lấy lúc (UTC): 2026-11-22T08:53:22Z
+- Fork: 2154
+- Lấy lúc (UTC): 2026-11-22T18:04:06Z
 - README: README.md (19417 ký tự)
 
 ======== README (nguyên văn) ========

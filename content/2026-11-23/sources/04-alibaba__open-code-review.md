@@ -5,11 +5,11 @@
 - URL: https://github.com/alibaba/open-code-review
 - Mô tả trên GitHub: Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.
 - Ngôn ngữ chính: Go
-- Tổng sao: 55212
+- Tổng sao: 55333
 - Sao tăng trong tuần: 4032
-- Fork: 4579
-- Lấy lúc (UTC): 2026-11-22T08:53:22Z
-- README: README.md (16352 ký tự)
+- Fork: 4595
+- Lấy lúc (UTC): 2026-11-22T18:04:06Z
+- README: README.md (16485 ký tự)
 
 ======== README (nguyên văn) ========
 
@@ -50,7 +50,7 @@
   <a href="#supported-agents"><img alt="Kimi Code" src="https://img.shields.io/badge/Kimi_Code-supported-blueviolet.svg" /></a>
 </p>
 <p align="center">
-  English | <a href="docs/i18n/README.zh-CN.md">简体中文</a> | <a href="docs/i18n/README.ja-JP.md">日本語</a> | <a href="docs/i18n/README.ko-KR.md">한국어</a> | <a href="docs/i18n/README.ru-RU.md">Русский</a>
+  English | <a href="docs/i18n/README.zh-CN.md">简体中文</a> | <a href="docs/i18n/README.ja-JP.md">日本語</a> | <a href="docs/i18n/README.ko-KR.md">한국어</a> | <a href="docs/i18n/README.ru-RU.md">Русский</a> | <a href="docs/i18n/README.tr-TR.md">Türkçe</a>
 </p>
 
 ---
@@ -117,8 +117,11 @@ The agent's strengths are concentrated where they matter most — dynamic decisi
 
 ## How to Use
 
+<a id="supported-platforms"></a>
+
 ### Prerequisites
 
+- **Operating system:** Windows, macOS, or Linux.
 - **Git >= 2.41** — Open Code Review relies on Git for diff generation, code search, and repository operations.
 
 <a id="supported-agents"></a>

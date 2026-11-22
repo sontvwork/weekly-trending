@@ -5,10 +5,10 @@
 - URL: https://github.com/ChromeDevTools/chrome-devtools-mcp
 - Mô tả trên GitHub: Chrome DevTools for coding agents
 - Ngôn ngữ chính: TypeScript
-- Tổng sao: 58741
+- Tổng sao: 58802
 - Sao tăng trong tuần: 2795
-- Fork: 4908
-- Lấy lúc (UTC): 2026-11-22T08:53:22Z
+- Fork: 4913
+- Lấy lúc (UTC): 2026-11-22T18:04:06Z
 - README: README.md (9582 ký tự)
 
 ======== README (nguyên văn) ========

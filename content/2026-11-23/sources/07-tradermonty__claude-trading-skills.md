@@ -5,10 +5,10 @@
 - URL: https://github.com/tradermonty/claude-trading-skills
 - Mô tả trên GitHub: Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.
 - Ngôn ngữ chính: Python
-- Tổng sao: 7679
+- Tổng sao: 7750
 - Sao tăng trong tuần: 3113
-- Fork: 1485
-- Lấy lúc (UTC): 2026-11-22T08:53:22Z
+- Fork: 1494
+- Lấy lúc (UTC): 2026-11-22T18:04:06Z
 - README: README.md (43625 ký tự, đã cắt còn 30000)
 
 ======== README (nguyên văn) ========

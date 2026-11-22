@@ -5,11 +5,11 @@
 - URL: https://github.com/meta/astryx
 - Mô tả trên GitHub: An open source design system that's fully customizable and agent ready
 - Ngôn ngữ chính: TypeScript
-- Tổng sao: 31959
+- Tổng sao: 32126
 - Sao tăng trong tuần: 3967
-- Fork: 2508
-- Lấy lúc (UTC): 2026-11-22T08:53:22Z
-- README: README.md (9340 ký tự)
+- Fork: 2524
+- Lấy lúc (UTC): 2026-11-22T18:04:06Z
+- README: README.md (9511 ký tự)
 
 ======== README (nguyên văn) ========
 
@@ -151,10 +151,13 @@ the [Component Lifecycle](https://github.com/meta/astryx/wiki/Component-Lifecycl
 the [Contributing Templates](https://github.com/meta/astryx/wiki/Contributing-Templates),
 and the [Blog Review Rubric](https://github.com/meta/astryx/wiki/Blog-Review-Rubric#three-required-scored-criteria). Read the relevant rubric before opening a PR.
 
-Quick start for contributors: this repo uses **Node 22+ on an active LTS line**
-and **pnpm 11**. Install pnpm directly, or enable
-[Corepack](https://nodejs.org/api/corepack.html) once so the pinned pnpm version
-installs automatically:
+For local development, install the Node.js version pinned in [`.nvmrc`](.nvmrc)
+and use **pnpm 11**. If you use nvm, run `nvm install` from the repository root.
+The [CLI package](packages/cli/package.json) supports Node.js 22.13.0 and later
+when run in consumer projects.
+
+Install pnpm directly, or enable [Corepack](https://nodejs.org/api/corepack.html)
+so the pinned pnpm version installs automatically:
 
 ```bash
 corepack enable

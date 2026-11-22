@@ -5,10 +5,10 @@
 - URL: https://github.com/mvanhorn/last30days-skill
 - Mô tả trên GitHub: AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary
 - Ngôn ngữ chính: Python
-- Tổng sao: 72247
+- Tổng sao: 72566
 - Sao tăng trong tuần: 4198
-- Fork: 6396
-- Lấy lúc (UTC): 2026-11-22T08:53:22Z
+- Fork: 6418
+- Lấy lúc (UTC): 2026-11-22T18:04:06Z
 - README: README.md (35071 ký tự, đã cắt còn 30000)
 
 ======== README (nguyên văn) ========

@@ -5,10 +5,10 @@
 - URL: https://github.com/GoogleChrome/modern-web-guidance-src
 - Mô tả trên GitHub: Keep your coding agent up to date with the latest web best practices
 - Ngôn ngữ chính: TypeScript
-- Tổng sao: 9998
+- Tổng sao: 10145
 - Sao tăng trong tuần: 4400
-- Fork: 799
-- Lấy lúc (UTC): 2026-11-22T08:53:22Z
+- Fork: 807
+- Lấy lúc (UTC): 2026-11-22T18:04:06Z
 - README: README.md (110462 ký tự, đã cắt còn 30000)
 
 ======== README (nguyên văn) ========

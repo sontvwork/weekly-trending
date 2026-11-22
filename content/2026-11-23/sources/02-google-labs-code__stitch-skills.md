@@ -5,10 +5,10 @@
 - URL: https://github.com/google-labs-code/stitch-skills
 - Mô tả trên GitHub: A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.
 - Ngôn ngữ chính: TypeScript
-- Tổng sao: 11622
+- Tổng sao: 11828
 - Sao tăng trong tuần: 2431
-- Fork: 1454
-- Lấy lúc (UTC): 2026-11-22T08:53:22Z
+- Fork: 1471
+- Lấy lúc (UTC): 2026-11-22T18:04:06Z
 - README: README.md (11128 ký tự)
 
 ======== README (nguyên văn) ========
