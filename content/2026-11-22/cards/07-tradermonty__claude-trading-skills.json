@@ -1,0 +1,15 @@
+{
+  "repo": "tradermonty/claude-trading-skills",
+  "tagline": "Biến Claude thành trợ lý giữ kỷ luật giao dịch, còn lệnh mua bán vẫn do bạn quyết",
+  "summary": [
+    "📈 Một bộ skill giúp Claude làm trợ lý đầu tư cho người bận rộn mà quyết định mua bán vẫn nằm trong tay bạn (Claude Code, Claude web)",
+    "🛑 Không phát tín hiệu hay hứa lãi: có cả cầu dao chặn vào lệnh khi thua liên tiếp, lệnh quá lớn hoặc không có kế hoạch",
+    "🆓 Có lộ trình khởi đầu chỉ cần CSV công khai, ảnh chart và file trên máy, không phải trả tiền API dữ liệu"
+  ],
+  "use_cases": [
+    "⏰ Chỉ có 15 phút mỗi sáng: xem nhanh thị trường đang cho vào lệnh mới hay nên ưu tiên giữ tiền",
+    "📓 Hay vào lệnh theo cảm xúc rồi quên lý do: ghi nhật ký từng lệnh và rút bài học khi đóng",
+    "📅 Đến kỳ tổng kết tháng: xem lại hiệu quả giao dịch rồi chỉnh lại luật chơi của chính mình"
+  ],
+  "refs": []
+}

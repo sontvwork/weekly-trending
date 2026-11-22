@@ -1,0 +1,16 @@
+{
+  "repo": "alibaba/open-code-review",
+  "tagline": "Review code bằng AI mà không bỏ sót file, không chỉ nhầm dòng",
+  "summary": [
+    "🔍 Một công cụ CLI giúp bạn hoặc coding agent (Claude Code, Codex, Cursor, Kimi Code) soát lỗi từng thay đổi code, nhận xét trỏ đúng tới từng dòng",
+    "🏢 Từng là trợ lý review code nội bộ chính thức của Alibaba, phục vụ hàng chục nghìn developer trước khi được mở mã nguồn",
+    "🧱 Phần không được phép sai như chọn file, khớp luật, định vị nhận xét do code cứng đảm nhận; AI chỉ lo phần cần suy luận",
+    "🎯 Theo benchmark của dự án, chính xác hơn Claude Code dùng cùng model mà chỉ tốn khoảng 1/9 token, chấp nhận bỏ sót hơn để bớt báo động giả"
+  ],
+  "use_cases": [
+    "🔀 Sắp merge một PR lớn: rà đủ mọi file thay đổi, khỏi lo AI đọc lướt rồi bỏ qua vài file",
+    "🧭 Mới nhận một codebase lạ chẳng có diff gì để xem: dùng `ocr scan` quét cả thư mục tìm lỗi",
+    "🚦 Muốn có người soát code tự động trong pipeline: gắn vào GitHub Actions, GitLab CI hoặc Gerrit"
+  ],
+  "refs": []
+}

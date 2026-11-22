@@ -1,0 +1,16 @@
+{
+  "repo": "ChromeDevTools/chrome-devtools-mcp",
+  "tagline": "Để AI agent tự mở trình duyệt, soi lỗi và đo tốc độ trang web thay bạn",
+  "summary": [
+    "🌐 Một MCP server giúp coding agent (Claude, Cursor, Copilot, Antigravity) tự điều khiển và quan sát một trình duyệt Chrome thật mà không cần bạn ngồi bấm hộ",
+    "🔬 Không chỉ click hộ: agent đọc được console, request mạng và trace hiệu năng y như một dev đang mở DevTools",
+    "📦 Kèm CLI `chrome-devtools` cho terminal và bộ skill dạy agent soi accessibility, cookie, rò rỉ bộ nhớ",
+    "⚠️ Mặc định gửi thống kê sử dụng cho Google, tắt bằng cờ `--no-usage-statistics`"
+  ],
+  "use_cases": [
+    "🐢 Trang web load chậm mà không rõ vì sao: nhờ agent ghi trace và chỉ ra chỗ cần tối ưu",
+    "🐞 Agent vừa sửa code frontend: để nó tự mở trang, đọc lỗi console và request hỏng rồi sửa tiếp",
+    "🍪 Đăng nhập lúc được lúc không: cho agent soi cookie và session để tìm nguyên nhân"
+  ],
+  "refs": []
+}

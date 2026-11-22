@@ -1,0 +1,16 @@
+{
+  "repo": "mvanhorn/last30days-skill",
+  "tagline": "Biết người thật đang nói gì về bất kỳ chủ đề nào trong 30 ngày qua",
+  "summary": [
+    "🔎 Một skill cho AI agent giúp bạn nắm người thật đang bàn gì về một chủ đề mà không phải lục từng mạng xã hội (Claude Code, Codex, Cursor)",
+    "📊 Kết quả xếp theo upvote, lượt thích và cả kèo cược bằng tiền thật trên Polymarket, chứ không theo SEO hay biên tập viên",
+    "🌉 Bắc cầu qua những nơi Google hay từng chatbot riêng lẻ không với tới hết: bình luận Reddit, bài X, transcript YouTube, TikTok",
+    "🕵️ Hỏi về một công ty, nó còn đọc đơn sáng chế và trang tuyển dụng để đoán thứ sắp ra trước khi công bố"
+  ],
+  "use_cases": [
+    "🤝 Mai gặp đối tác hay CEO: biết tháng này họ làm gì, nói gì thay vì đọc LinkedIn cũ",
+    "⚖️ Đang phân vân giữa vài công cụ: xem cộng đồng thực sự so sánh, khen chê ra sao",
+    "📈 Muốn bắt chủ đề trước khi nó bùng nổ: hỏi mảng AI agent đang có gì nổi lên"
+  ],
+  "refs": []
+}

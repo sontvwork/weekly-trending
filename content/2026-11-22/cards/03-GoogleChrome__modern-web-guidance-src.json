@@ -1,0 +1,16 @@
+{
+  "repo": "GoogleChrome/modern-web-guidance-src",
+  "tagline": "Kéo AI viết code web ra khỏi thói quen cũ, về với tính năng trình duyệt hiện đại",
+  "summary": [
+    "🧭 Một bộ skill giúp coding agent viết web theo cách hiện đại mà không phải đợi model được huấn luyện lại",
+    "🕰️ Nỗi đau quen thuộc: AI học từ quá nhiều code cũ nên hay viết JavaScript cồng kềnh cho việc trình duyệt đã làm sẵn",
+    "🎯 Chỉ bơm đúng hướng dẫn cần thiết vào ngữ cảnh của agent, cắt bớt những gì model đã biết để tiết kiệm token",
+    "🤝 Do đội Chrome, Edge, Firefox và MDN cùng chăm; repo này là nơi soạn, hiệu chỉnh và chấm điểm các hướng dẫn đó"
+  ],
+  "use_cases": [
+    "🪟 Nhờ agent làm dialog, tooltip, popover: nhận lời giải bằng API gốc của trình duyệt thay vì thêm thư viện nặng",
+    "🧹 Tiếp quản codebase web cũ: chạy `legacy-scan` để tìm những chỗ nên hiện đại hoá",
+    "📝 Muốn góp hoặc kiểm chứng hướng dẫn cho agent: xem cách nội dung được viết và đánh giá bằng eval"
+  ],
+  "refs": []
+}

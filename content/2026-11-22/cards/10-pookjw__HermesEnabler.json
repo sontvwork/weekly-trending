@@ -1,0 +1,15 @@
+{
+  "repo": "pookjw/HermesEnabler",
+  "tagline": "Đeo mặt đồng hồ Hermès trên chiếc Apple Watch bình thường của bạn",
+  "summary": [
+    "⌚ Một app nhỏ cài lên đồng hồ giúp bạn bật các mặt đồng hồ Hermès trên bất kỳ chiếc Apple Watch nào",
+    "🛠️ Tự cài bằng Apple ID cá nhân (Sideloadly hoặc Xcode trên Mac, WatchBridge trên Windows), sau đó làm theo hướng dẫn ngay trong app",
+    "⚠️ Chỉ hỗ trợ watchOS 27.0 đến 27.3 beta 1, bản watchOS khác thì tác giả gợi ý dùng Clocky",
+    "💾 App sao lưu cấu hình máy (MobileGestalt) để khôi phục trước khi gỡ, nhưng bạn vẫn tự chịu rủi ro"
+  ],
+  "use_cases": [
+    "🎨 Dùng Apple Watch thường nhưng mê mặt đồng hồ Hermès: mở khoá chúng mà không phải mua máy mới",
+    "💻 Chỉ có máy Windows trong tay: vẫn cài được app lên đồng hồ nhờ WatchBridge"
+  ],
+  "refs": []
+}

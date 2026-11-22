@@ -1,0 +1,16 @@
+{
+  "repo": "meta/astryx",
+  "tagline": "Bộ giao diện React mà cả bạn lẫn AI agent đều dựng đúng một chuẩn",
+  "summary": [
+    "🧩 Một bộ linh kiện giao diện React giúp bạn và AI agent lắp màn hình đồng bộ mà không cần cài build plugin",
+    "🏢 Lớn lên trong Meta suốt tám năm, từng là design system được dùng nhiều nhất công ty trước khi mở mã nguồn",
+    "🤖 Lệnh `init` ghi sẵn hướng dẫn vào AGENTS.md và CLAUDE.md, để agent dùng đúng component thay vì đoán mò",
+    "🎨 Đổi theme chỉ bằng CSS variables, ghi đè bằng Tailwind hay CSS thường, cần sâu hơn thì kéo hẳn mã component về tự sửa"
+  ],
+  "use_cases": [
+    "🚀 Sắp dựng app nội bộ hay dashboard bằng React: có sẵn mẫu trang bảng, form nhiều bước, khỏi vẽ từ đầu",
+    "🤖 Để coding agent viết UI mà mỗi lần ra một kiểu: cài vào để agent bám cùng bộ quy ước",
+    "🖌️ Cần giao diện mang đúng nhận diện thương hiệu: tự chỉnh theme thay vì fork cả thư viện"
+  ],
+  "refs": []
+}

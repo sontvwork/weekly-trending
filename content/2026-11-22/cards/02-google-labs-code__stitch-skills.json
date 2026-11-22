@@ -1,0 +1,16 @@
+{
+  "repo": "google-labs-code/stitch-skills",
+  "tagline": "Để coding agent tự vẽ giao diện rồi chuyển bản thiết kế thành code cho bạn",
+  "summary": [
+    "🎨 Một bộ kỹ năng giúp coding agent (Claude Code, Cursor, Gemini CLI, Codex) thiết kế màn hình trên Google Stitch chỉ bằng lời ra lệnh",
+    "🔁 Đi được cả hai chiều: từ code có sẵn thành bản thiết kế, và từ thiết kế thành component React hay React Native",
+    "📐 Giữ giao diện nhất quán nhờ file DESIGN.md, giống cuốn cẩm nang màu sắc và font chữ mà agent luôn làm theo",
+    "📦 Theo chuẩn mở Agent Skills, cài cả bộ hoặc chọn lẻ từng skill, chạy kèm Stitch MCP server"
+  ],
+  "use_cases": [
+    "💡 Có ý tưởng app nhưng không rành thiết kế: nhờ agent dựng màn hình, thử biến thể rồi xuất code",
+    "🧭 Muốn làm mới giao diện app cũ: đưa code lên Stitch, rút design system ra DESIGN.md",
+    "🌐 Cần gấp một website portfolio nhiều trang: mô tả trong một câu, agent tự sinh và kiểm tra từng trang"
+  ],
+  "refs": []
+}

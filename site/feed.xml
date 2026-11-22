@@ -5,8 +5,17 @@
   <subtitle>Bản tin tiếng Việt về các repo nổi bật nhất trên GitHub mỗi tuần: để làm gì, use case.</subtitle>
   <link rel="self" type="application/atom+xml" href="https://sontvwork.github.io/weekly-trending/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://sontvwork.github.io/weekly-trending/"/>
-  <updated>2026-11-15T12:00:00Z</updated>
+  <updated>2026-11-22T12:00:00Z</updated>
   <author><name>Weekly Trending</name></author>
+  <entry>
+    <id>https://sontvwork.github.io/weekly-trending/2026-11-22/</id>
+    <title>Top 10 GitHub Trending · 16/11 – 22/11/2026</title>
+    <link rel="alternate" type="text/html" href="https://sontvwork.github.io/weekly-trending/2026-11-22/"/>
+    <published>2026-11-22T12:00:00Z</published>
+    <updated>2026-11-22T12:00:00Z</updated>
+    <summary type="text">📝 plannotator: ghi chú thẳng lên kế hoạch và code của AI agent trên trình duyệt, góp ý tự quay về agent · 🎨 stitch-skills: để coding agent thiết kế màn hình trên Google Stitch, chuyển thiết kế thành component React · 🧭 modern-web-guidance-src: bộ skill của đội Chrome, Firefox, MDN giúp AI viết web hiện đại, bớt JavaScript cũ</summary>
+    <content type="html">&lt;p&gt;📝 plannotator: ghi chú thẳng lên kế hoạch và code của AI agent trên trình duyệt, góp ý tự quay về agent&lt;br&gt;🎨 stitch-skills: để coding agent thiết kế màn hình trên Google Stitch, chuyển thiết kế thành component React&lt;br&gt;🧭 modern-web-guidance-src: bộ skill của đội Chrome, Firefox, MDN giúp AI viết web hiện đại, bớt JavaScript cũ&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/backnotprop/plannotator&quot;&gt;backnotprop/plannotator&lt;/a&gt; — Cầm bút đỏ sửa kế hoạch và code của AI agent ngay trên trình duyệt&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/google-labs-code/stitch-skills&quot;&gt;google-labs-code/stitch-skills&lt;/a&gt; — Để coding agent tự vẽ giao diện rồi chuyển bản thiết kế thành code cho bạn&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/GoogleChrome/modern-web-guidance-src&quot;&gt;GoogleChrome/modern-web-guidance-src&lt;/a&gt; — Kéo AI viết code web ra khỏi thói quen cũ, về với tính năng trình duyệt hiện đại&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/alibaba/open-code-review&quot;&gt;alibaba/open-code-review&lt;/a&gt; — Review code bằng AI mà không bỏ sót file, không chỉ nhầm dòng&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/mvanhorn/last30days-skill&quot;&gt;mvanhorn/last30days-skill&lt;/a&gt; — Biết người thật đang nói gì về bất kỳ chủ đề nào trong 30 ngày qua&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/ChromeDevTools/chrome-devtools-mcp&quot;&gt;ChromeDevTools/chrome-devtools-mcp&lt;/a&gt; — Để AI agent tự mở trình duyệt, soi lỗi và đo tốc độ trang web thay bạn&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/tradermonty/claude-trading-skills&quot;&gt;tradermonty/claude-trading-skills&lt;/a&gt; — Biến Claude thành trợ lý giữ kỷ luật giao dịch, còn lệnh mua bán vẫn do bạn quyết&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/ag-ui-protocol/ag-ui&quot;&gt;ag-ui-protocol/ag-ui&lt;/a&gt; — Một chuẩn chung để agent nào cũng nói chuyện được với giao diện nào&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/meta/astryx&quot;&gt;meta/astryx&lt;/a&gt; — Bộ giao diện React mà cả bạn lẫn AI agent đều dựng đúng một chuẩn&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/pookjw/HermesEnabler&quot;&gt;pookjw/HermesEnabler&lt;/a&gt; — Đeo mặt đồng hồ Hermès trên chiếc Apple Watch bình thường của bạn&lt;/li&gt;&lt;/ol&gt;</content>
+  </entry>
   <entry>
     <id>https://sontvwork.github.io/weekly-trending/2026-11-15/</id>
     <title>Top 10 GitHub Trending · 09/11 – 15/11/2026</title>

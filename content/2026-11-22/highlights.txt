@@ -1,0 +1,3 @@
+📝 plannotator: ghi chú thẳng lên kế hoạch và code của AI agent trên trình duyệt, góp ý tự quay về agent
+🎨 stitch-skills: để coding agent thiết kế màn hình trên Google Stitch, chuyển thiết kế thành component React
+🧭 modern-web-guidance-src: bộ skill của đội Chrome, Firefox, MDN giúp AI viết web hiện đại, bớt JavaScript cũ

@@ -1,0 +1,16 @@
+{
+  "repo": "ag-ui-protocol/ag-ui",
+  "tagline": "Một chuẩn chung để agent nào cũng nói chuyện được với giao diện nào",
+  "summary": [
+    "🔌 Một giao thức mở giúp bạn đưa AI agent lên app cho người dùng mà không phải tự đi dây riêng cho từng framework (LangChain, CrewAI, Mastra, Google ADK)",
+    "🔄 Như một ổ cắm chuẩn: cùng một agent chạy được sau web, app mobile, terminal hay Slack, đổi agent thì phía client không phải sửa",
+    "🧩 Đứng cạnh MCP (agent dùng tool) và A2A (agent làm việc với agent), AG-UI lo đúng phần còn thiếu là nối agent tới người dùng",
+    "📜 Bản 1.0 có đặc tả đã đóng băng và tương thích hai chiều với agent, client đời 0.x"
+  ],
+  "use_cases": [
+    "💬 Đã có agent chạy ở backend, giờ cần khung chat hiện chữ dần trên web: khỏi tự chế giao thức stream",
+    "✋ Agent cần người dùng duyệt trước khi làm tiếp: dừng giữa chừng để họ đồng ý, sửa hoặc từ chối",
+    "🔀 Muốn thử đổi sang framework agent khác: frontend giữ nguyên vì hai bên cùng nói AG-UI"
+  ],
+  "refs": []
+}

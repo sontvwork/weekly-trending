@@ -1,0 +1,16 @@
+{
+  "repo": "backnotprop/plannotator",
+  "tagline": "Cầm bút đỏ sửa kế hoạch và code của AI agent ngay trên trình duyệt",
+  "summary": [
+    "📝 Một bàn duyệt bài giúp bạn ghi chú thẳng lên kế hoạch và code AI agent viết mà góp ý tự quay về agent (Claude Code, Codex, Gemini CLI)",
+    "🧭 Agent vừa lập kế hoạch là trang duyệt tự bật lên, bạn duyệt hoặc trả lại kèm ghi chú để nó sửa",
+    "📥 Inbox gom câu hỏi và file của nhiều agent vào một cửa sổ, agent vẫn làm tiếp chứ không ngồi chờ bạn",
+    "🔒 Chạy local trên máy bạn, muốn đồng đội góp ý thì gửi link, bản lớn được mã hoá và tự hết hạn"
+  ],
+  "use_cases": [
+    "🧐 Agent sắp sửa cả loạt file: soát và chỉnh kế hoạch trước khi nó bắt tay vào code",
+    "🔍 Agent vừa xong thay đổi lớn hoặc PR: review diff theo từng chương, comment từng dòng rồi trả về sửa",
+    "🎨 Đang làm giao diện cùng agent: ghi chú thẳng lên trang localhost đang chạy thay vì tả lỗi bằng lời"
+  ],
+  "refs": []
+}
