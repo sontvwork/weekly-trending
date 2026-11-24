@@ -222,8 +222,8 @@ def repo_card(repo: Repo) -> str:
         f'<p class="repo-tagline">{inline(card_text(card, "tagline"))}</p></div></header>'
         f'<ul class="repo-stats">{"".join(stats)}</ul>'
         f'<div class="repo-body">'
-        f'<section><h3>📖 Là gì</h3>{summary_html}</section>'
-        f'<section><h3>🛠️ Use case</h3><ul class="uses">{uses}</ul></section>'
+        f'<section><h3>Là gì</h3>{summary_html}</section>'
+        f'<section><h3>Use case</h3><ul class="uses">{uses}</ul></section>'
         f"</div></article>"
     )
 

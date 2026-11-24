@@ -295,8 +295,7 @@ code {
   text-transform: uppercase;
 }
 .repo-body p { margin: 0; }
-.uses { display: grid; gap: 4px; margin: 0; padding-left: 20px; }
-.uses li::marker { color: var(--accent-ink); }
+.uses { display: grid; gap: 4px; margin: 0; padding-left: 20px; list-style: none; }
 
 /* ---------- Trạng thái rỗng, 404 ---------- */
 .empty {
